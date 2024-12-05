@@ -2,7 +2,6 @@ import { GlobalSolution, TaskStatus } from '@prisma/client';
 import { generateObject } from 'ai';
 import {z, ZodSchema} from 'zod';
 import { prisma } from '@/lib/db';
-import {queryGeminiPro} from "@/lib/agents/geminiProClient";
 import {getModel} from "@/lib/utils/modelUtils";
 
 const TaskSchema: ZodSchema = z.object({
@@ -16,6 +15,20 @@ const TaskSchema: ZodSchema = z.object({
 });
 
 type TaskInput = z.infer<typeof TaskSchema>;
+
+// Define a recursive schema for task hierarchy
+const TaskHierarchySchema: z.ZodType<{
+  name: string;
+  subtasks?: Array<{
+    name: string;
+    subtasks?: any[];
+  }>;
+}> = z.object({
+  name: z.string().describe('The name of the task'),
+  subtasks: z.array(z.lazy(() => TaskHierarchySchema)).optional().describe('Array of subtasks'),
+});
+
+type TaskHierarchy = z.infer<typeof TaskHierarchySchema>;
 
 interface TaskWithHierarchy {
   task: TaskInput;
@@ -46,7 +59,7 @@ class GlobalSolutionDecomposerAgent {
     return `Successfully decomposed GlobalSolution "${globalSolutionName}" into atomic tasks using Google AI.`;
   }
 
-  private async getTaskHierarchyFromGoogleAI(globalSolution: GlobalSolution): Promise<any> {
+  private async getTaskHierarchyFromGoogleAI(globalSolution: GlobalSolution): Promise<TaskHierarchy> {
     const prompt = `
     Create a comprehensive, deeply nested hierarchical JSON object representing the task breakdown
      for the following goal:
@@ -56,24 +69,43 @@ class GlobalSolutionDecomposerAgent {
 
     Important Notes:
     - Ensure that the task breakdown is comprehensive and covers all aspects of the goal.
-    - Each task should have a 'task' property with its name and a 'subtasks' array containing its subtasks.
+    - Each task should have a 'name' property and an optional 'subtasks' array.
     - Continue nesting subtasks until you reach atomic tasks that cannot be further broken down.
+
+    Example format:
+    {
+      "name": "Build AI Platform",
+      "subtasks": [
+        {
+          "name": "Design System Architecture",
+          "subtasks": [
+            {
+              "name": "Define Database Schema"
+            }
+          ]
+        },
+        {
+          "name": "Implement Core Features"
+        }
+      ]
+    }
 
     Return only the JSON object without any additional explanation.
     `;
 
-    const result = await queryGeminiPro(prompt, this.temperature);
-    const objectStart = result.indexOf('{');
-    const objectEnd = result.lastIndexOf('}');
-    const str = result.substring(objectStart, objectEnd + 1);
-    const obj = JSON.parse(str);
-    // if there's only one top-level property like "goal", return its value so we just get
-    // the recursive task hierarchy object
-    return Object.keys(obj).length === 1 ? obj[Object.keys(obj)[0]] : obj;
+    const result = await generateObject({
+      model: getModel(),
+      schema: TaskHierarchySchema,
+      prompt,
+    });
+
+    return result.object;
   }
 
-  private async storeTaskHierarchy(taskHierarchy: any, globalSolutionId: string, userId: string, parentTaskId?: string): Promise<void> {
-    const task = await this.createTask(taskHierarchy.task, globalSolutionId, userId, parentTaskId);
+  private async storeTaskHierarchy(taskHierarchy: TaskHierarchy, globalSolutionId: string, userId: string,
+     parentTaskId?: string): Promise<void> {
+    
+    const task = await this.createTask(taskHierarchy.name, globalSolutionId, userId, parentTaskId);
 
     if (taskHierarchy.subtasks && taskHierarchy.subtasks.length > 0) {
       for (const subtask of taskHierarchy.subtasks) {
@@ -83,8 +115,10 @@ class GlobalSolutionDecomposerAgent {
   }
 
   private async createTask(taskName: string, globalSolutionId: string, userId: string, parentTaskId?: string): Promise<any> {
+    if(!taskName) {
+      throw new Error('Task name is required');
+    }
     const taskDetails = await this.generateTaskDetails(taskName);
-
     const createdTask = await prisma.globalTask.create({
       data: {
         userId,
