@@ -1,6 +1,6 @@
 'use client'
 
-import { getServerSession } from "next-auth/next"
+import { requireAuth } from "@/lib/auth"
 import { prisma } from "@/lib/prisma"
 import { redirect } from "next/navigation"
 import { Card } from "@/components/ui/card"
@@ -52,10 +52,7 @@ function Chart({ children }: { children: React.ReactNode }) {
 }
 
 export default async function PetitionAnalyticsPage({ params }: { params: { id: string } }) {
-  const session = await getServerSession()
-  if (!session?.user) {
-    redirect('/api/auth/signin')
-  }
+  const session = await requireAuth() 
 
   const petition = await prisma.petition.findUnique({
     where: { id: params.id },

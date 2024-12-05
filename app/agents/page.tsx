@@ -1,16 +1,11 @@
 import React from "react"
-import { redirect } from "next/navigation"
-
-import { authOptions } from "@/lib/auth"
-import { getCurrentUser } from "@/lib/session"
 import { Shell } from "@/components/layout/shell"
-import AgentListPublished from "@/components/agents/agent-list-published";
+import AgentListPublished from "@/components/agents/agent-list-published"
+import { requireAuth } from "@/lib/auth"
 
 export default async function AgentListPage() {
-  const user = await getCurrentUser()
-  if (!user) {
-    redirect(authOptions?.pages?.signIn || "/signin")
-  }
+  await requireAuth({ returnTo: true })
+  
   return (
     <Shell className="size-full">
       <AgentListPublished></AgentListPublished>

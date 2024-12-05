@@ -5,9 +5,11 @@ import EmailProvider from "next-auth/providers/email"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import type { OAuthConfig } from "next-auth/providers/oauth"
+import { redirect } from "next/navigation"
 
 import { env } from "@/env.mjs"
 import { prisma as db } from "@/lib/db"
+import { headers } from "next/headers"
 
 interface DFDAProfile {
   id: number | string
@@ -202,3 +204,32 @@ export const authOptions: NextAuthOptions = {
     },
   },
 }
+
+export async function requireAuth(options?: { 
+  redirectTo?: string // Optional override for redirect path
+  returnTo?: true  // Whether to return to current page after login
+}) {
+  const session = await getServerSession(authOptions)
+  
+  if (!session?.user) {
+    const signInPath = authOptions?.pages?.signIn || "/signin"
+    
+    let redirectUrl = signInPath
+    
+    if (options?.redirectTo) {
+      // Use provided redirect path
+      redirectUrl = `${signInPath}?callbackUrl=${encodeURIComponent(options.redirectTo)}`
+    } else if (options?.returnTo) {
+      // Get current path from headers
+      const headersList = headers()
+      const currentPath = headersList.get("x-pathname") || headersList.get("x-invoke-path")
+      if (currentPath) {
+        redirectUrl = `${signInPath}?callbackUrl=${encodeURIComponent(currentPath)}`
+      }
+    }
+    
+    redirect(redirectUrl)
+  }
+  
+  return session
+} 

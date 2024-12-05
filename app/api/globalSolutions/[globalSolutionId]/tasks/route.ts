@@ -1,62 +1,42 @@
-import * as z from "zod"
-
-import { getUserIdServer } from "@/lib/api/getUserIdServer"
-import { prisma } from "@/lib/db"
-import { handleError } from "@/lib/errorHandler"
-
-const routeContextSchema = z.object({
-  params: z.object({
-    globalSolutionId: z.string(),
-  }),
-})
+import { prisma } from '@/lib/db'
+import { NextResponse } from 'next/server'
 
 export async function GET(
-  req: Request,
-  context: z.infer<typeof routeContextSchema>
+  request: Request,
+  { params }: { params: { globalSolutionId: string } }
 ) {
-  const { params } = routeContextSchema.parse(context)
-  const globalSolutionId = params.globalSolutionId
-
-  const globalSolutionTasks = await prisma.globalSolutionTask.findMany({
-    where: {
-      globalSolutionId,
-    },
-    include: {
-      globalTask: true,
-    },
-  })
-  const globalTasks = globalSolutionTasks.map((gst) => gst.globalTask)
-
-  return new Response(JSON.stringify(globalTasks))
-}
-
-export async function POST(
-  req: Request,
-  context: z.infer<typeof routeContextSchema>
-) {
-  const userId = await getUserIdServer()
-  if (!userId) {
-    return new Response(
-      JSON.stringify({
-        message: "You need to be logged in to create a global solution",
-      })
-    )
-  }
-  const { params } = routeContextSchema.parse(context)
-  const globalSolutionId = params.globalSolutionId
-  const body = await req.json()
   try {
-    const globalTask = await prisma.globalTask.create({
-      data: body,
-    })
-    await prisma.globalSolutionTask.create({
-      data: {
-        globalSolutionId,
-        globalTaskId: globalTask.id,
+    const tasks = await prisma.globalTask.findMany({
+      where: {
+        globalSolutionTasks: {
+          some: {
+            globalSolutionId: params.globalSolutionId
+          }
+        }
       },
+      include: {
+        childTasks: {
+          include: {
+            child: {
+              include: {
+                childTasks: {
+                  include: {
+                    child: true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     })
-    return new Response(JSON.stringify(globalTask))
+
+    return NextResponse.json(tasks)
   } catch (error) {
-    return handleError(error)
+    console.error('Error fetching tasks:', error)
+    return NextResponse.json(
+      { error: 'Failed to fetch tasks' },
+      { status: 500 }
+    )
   }
 }

@@ -1,23 +1,17 @@
 import { Suspense } from 'react'
-import { getServerSession } from 'next-auth'
-import { redirect } from 'next/navigation'
-import { authOptions } from '@/lib/auth'
 import { GitHubExplorer } from '@/components/github/GitHubExplorer'
 import prisma from '@/lib/prisma'
+import { requireAuth } from '@/lib/auth'
 
 export default async function GitHubPage() {
-  const session = await getServerSession(authOptions)
-
-  if (!session?.user) {
-    redirect('/auth/signin?callbackUrl=/github')
-  }
+  const session = await requireAuth({ returnTo: true })
 
   async function getAccessToken() {
     'use server'
     try {
-      console.log('Fetching GitHub access token for user:', session?.user.id)
+      console.log('Fetching GitHub access token for user:', session.user.id)
       const accounts = await prisma?.account.findMany({
-        where: { userId: session?.user.id, provider: 'github' },
+        where: { userId: session.user.id, provider: 'github' },
         select: {
           access_token: true,
           scope: true,
@@ -72,7 +66,7 @@ export default async function GitHubPage() {
     <div className="container mx-auto py-8">
       <h1 className="text-3xl font-bold mb-8">GitHub Explorer</h1>
       <Suspense fallback={<div>Loading...</div>}>
-        {accessToken ? ( // Conditionally render GitHubExplorer
+        {accessToken ? (
           <GitHubExplorer accessToken={accessToken} />
         ) : (
           <p>No GitHub access token found.</p>

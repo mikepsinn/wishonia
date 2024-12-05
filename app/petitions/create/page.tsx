@@ -1,12 +1,8 @@
-import { getServerSession } from "next-auth/next"
-import { redirect } from "next/navigation"
 import { CreatePetitionForm } from "../components/CreatePetitionForm"
+import { requireAuth } from "@/lib/auth"
 
 export default async function CreatePetitionPage() {
-  const session = await getServerSession()
-  if (!session?.user) {
-    redirect('/api/auth/signin')
-  }
+  await requireAuth()
 
   return (
     <div className="container mx-auto px-4 py-8">

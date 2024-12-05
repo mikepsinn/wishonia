@@ -1,110 +1,106 @@
-import { getServerSession } from "next-auth/next"
 import { prisma } from "@/lib/prisma"
 import Link from "next/link"
-import { redirect } from "next/navigation"
 import { Card } from "@/components/ui/card"
+import { requireAuth } from "@/lib/auth"
+import { PetitionSignature } from "@prisma/client"
+
+type PetitionWithCount = {
+  id: string
+  title: string
+  _count: {
+    signatures: number
+  }
+}
+
+type SignatureWithPetition = PetitionSignature & {
+  petition: PetitionWithCount
+  user: {
+    name: string | null
+    email: string | null
+  }
+}
 
 export default async function MyReferralsPage() {
-  const session = await getServerSession()
-  if (!session?.user) {
-    redirect('/api/auth/signin')
-  }
+  const session = await requireAuth({ returnTo: true })
 
-  const referrals = await prisma.petitionSignature.groupBy({
-    by: ['petitionId'],
+  const referrals = await prisma.petitionSignature.findMany({
     where: {
       referrerId: session.user.id,
     },
-    _count: {
-      _all: true
-    }
-  })
-
-  const petitionsWithReferrals = await prisma.petition.findMany({
-    where: {
-      id: {
-        in: referrals.map(r => r.petitionId)
-      }
-    },
     include: {
-      _count: {
-        select: { 
-          signatures: true 
+      petition: {
+        select: {
+          id: true,
+          title: true,
+          _count: {
+            select: { signatures: true }
+          }
         }
       },
-      signatures: {
-        where: {
-          referrerId: session.user.id
-        },
-        include: {
-          user: {
-            select: {
-              name: true,
-              image: true
-            }
-          }
-        },
-        orderBy: {
-          signedAt: 'desc'
+      user: {
+        select: {
+          name: true,
+          email: true
         }
       }
-    }
+    },
+    orderBy: { signedAt: 'desc' }
   })
+
+  const referralsByPetition = (referrals as SignatureWithPetition[]).reduce((acc, ref) => {
+    const petitionId = ref.petition.id
+    if (!acc[petitionId]) {
+      acc[petitionId] = {
+        petition: ref.petition,
+        referrals: []
+      }
+    }
+    acc[petitionId].referrals.push(ref)
+    return acc
+  }, {} as Record<string, { petition: PetitionWithCount, referrals: SignatureWithPetition[] }>)
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">My Petition Referrals</h1>
-      
-      <div className="grid gap-8">
-        {petitionsWithReferrals.map((petition) => (
-          <Card key={petition.id} className="p-6">
-            <div className="flex justify-between items-start mb-4">
-              <div>
+      <h1 className="text-3xl font-bold mb-8">My Referrals</h1>
+
+      {Object.values(referralsByPetition).length > 0 ? (
+        <div className="space-y-8">
+          {Object.values(referralsByPetition).map(({ petition, referrals }) => (
+            <Card key={petition.id} className="p-6">
+              <div className="mb-4">
                 <Link 
                   href={`/petitions/${petition.id}`}
-                  className="text-xl font-semibold hover:text-blue-600"
+                  className="text-xl font-semibold hover:underline"
                 >
                   {petition.title}
                 </Link>
-                <p className="text-sm text-gray-600 mt-1">
-                  {petition.signatures.length} referrals out of {petition._count.signatures} total signatures
+                <p className="text-sm text-muted-foreground mt-1">
+                  {referrals.length} referral{referrals.length !== 1 ? 's' : ''}
                 </p>
               </div>
-              
-              <div className="text-right">
-                <p className="text-sm font-medium">Share your referral link:</p>
+
+              <div className="space-y-2">
+                <div className="flex justify-between items-center text-sm text-muted-foreground mb-2">
+                  <label htmlFor={`share-link-${petition.id}`}>Share Link:</label>
+                </div>
                 <input
+                  id={`share-link-${petition.id}`}
+                  type="text"
                   readOnly
-                  className="w-96 p-2 text-sm bg-gray-50 rounded border mt-1"
+                  aria-label={`Share link for ${petition.title}`}
+                  className="w-full p-2 bg-muted rounded text-sm"
                   value={`${process.env.NEXT_PUBLIC_APP_URL}/petitions/${petition.id}?ref=${session.user.id}`}
-                  onClick={e => e.currentTarget.select()}
+                  onClick={(e) => (e.target as HTMLInputElement).select()}
                 />
               </div>
-            </div>
-
-            <div className="mt-6">
-              <h3 className="font-medium mb-3">Recent Referrals</h3>
-              <div className="space-y-2">
-                {petition.signatures.map((signature) => (
-                  <div key={signature.id} className="flex items-center gap-3 text-sm">
-                    {signature.user.image && (
-                      <img 
-                        src={signature.user.image} 
-                        alt="" 
-                        className="w-6 h-6 rounded-full"
-                      />
-                    )}
-                    <span className="font-medium">{signature.user.name}</span>
-                    <span className="text-gray-500">
-                      signed {new Date(signature.signedAt).toLocaleDateString()}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Card>
-        ))}
-      </div>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <p className="text-muted-foreground">
+          You haven't referred anyone to petitions yet. Share petitions with your referral link to track your impact!
+        </p>
+      )}
     </div>
   )
 } 

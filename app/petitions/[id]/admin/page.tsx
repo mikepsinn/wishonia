@@ -1,13 +1,10 @@
-import { getServerSession } from "next-auth/next"
 import { prisma } from "@/lib/prisma"
 import { redirect } from "next/navigation"
 import { PetitionAdminControls } from "../../components/PetitionAdminControls"
+import { requireAuth } from "@/lib/auth"
 
 export default async function PetitionAdminPage({ params }: { params: { id: string } }) {
-  const session = await getServerSession()
-  if (!session?.user) {
-    redirect('/api/auth/signin')
-  }
+  const session = await requireAuth({ returnTo: true })
 
   const petition = await prisma.petition.findUnique({
     where: { id: params.id },
