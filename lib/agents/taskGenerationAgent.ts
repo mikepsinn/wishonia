@@ -118,38 +118,63 @@ class GlobalSolutionDecomposerAgent {
     if(!taskName) {
       throw new Error('Task name is required');
     }
-    const taskDetails = await this.generateTaskDetails(taskName);
-    const createdTask = await prisma.globalTask.create({
-      data: {
-        userId,
-        name: taskName,
-        description: taskDetails.description,
-        status: TaskStatus.NOT_STARTED,
-        estimatedHours: taskDetails.estimatedHours,
-      },
+
+    // First check if task already exists
+    let task = await prisma.globalTask.findUnique({
+      where: { name: taskName }
     });
 
-    await prisma.globalSolutionTask.create({
-      data: {
-        globalSolutionId: globalSolutionId,
-        globalTaskId: createdTask.id,
-      },
-    });
-
-    if (parentTaskId) {
-      await prisma.globalTaskRelation.create({
+    // If task doesn't exist, create it with full details
+    if (!task) {
+      const taskDetails = await this.generateTaskDetails(taskName);
+      task = await prisma.globalTask.create({
         data: {
-          parentId: parentTaskId,
-          childId: createdTask.id,
+          userId,
+          name: taskName,
+          description: taskDetails.description,
+          status: TaskStatus.NOT_STARTED,
+          estimatedHours: taskDetails.estimatedHours,
         },
+      });
+
+      if (taskDetails.skills) {
+        await this.createSkills(task.id, taskDetails.skills);
+      }
+    }
+
+    // Create relationship with solution (if it doesn't exist)
+    await prisma.globalSolutionTask.upsert({
+      where: {
+        globalTaskId_globalSolutionId: {
+          globalTaskId: task.id,
+          globalSolutionId: globalSolutionId
+        }
+      },
+      create: {
+        globalSolutionId: globalSolutionId,
+        globalTaskId: task.id,
+      },
+      update: {} // No update needed if it exists
+    });
+
+    // Create parent-child relationship (if it doesn't exist)
+    if (parentTaskId) {
+      await prisma.globalTaskRelation.upsert({
+        where: {
+          parentId_childId: {
+            parentId: parentTaskId,
+            childId: task.id
+          }
+        },
+        create: {
+          parentId: parentTaskId,
+          childId: task.id,
+        },
+        update: {} // No update needed if it exists
       });
     }
 
-    if (taskDetails.skills) {
-      await this.createSkills(createdTask.id, taskDetails.skills);
-    }
-
-    return createdTask;
+    return task;
   }
 
   private async generateTaskDetails(taskName: string): Promise<TaskInput> {
