@@ -2,7 +2,7 @@
  * @jest-environment node
  */
 import { generatePrismaSchema } from "@/lib/db/schemaGenerator"
-import { searchDevelopersByLibraries } from "@/lib/github/githubAgent"
+import { searchDevelopersByLibraries } from "@/lib/github/utils"
 import { getGithubUser } from "@/lib/github/githubUser"
 import {
   getOwnerRepoFromNpm,

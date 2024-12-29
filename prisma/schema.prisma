@@ -167,44 +167,45 @@ model User {
   newsletterEmails                      Boolean                               @default(false)
   unsubscribeFromAll                    Boolean                               @default(false)
   callSchedulesCreated                  CallSchedule[]
+  platformCredentials                   PlatformCredential[]
 }
 
 // Need this to create digital twins for people that are not users
 model Person {
-  id               String                   @id @default(cuid())
-  bio              String?
-  birthday         DateTime?
-  blog             String?
-  city             String?
-  company          String?
-  createdAt        DateTime                 @default(now())
-  createdAtTwitter DateTime?
-  email            String?                  @unique
-  firstName        String?
-  gender           String?
-  githubUsername   String?                  @unique
-  hireable         Boolean?
-  image            String?
-  jobTitle         String?
-  lastName         String?
-  location         String?
-  memberships      OrganizationMembership[]
-  name             String
-  phoneNumber      String?                  @unique
-  postalCode       String?
-  profileBannerUrl String?
-  stateProvince    String?
-  telephone        String?
-  timeZone         String?
-  twitterHandle    String?                  @unique
-  updatedAt        DateTime                 @updatedAt
-  user             User?                    @relation(fields: [userId], references: [id])
-  userId           String?                  @unique
-  web3Wallet       String?                  @unique
-  website          String?
-  callSchedules    CallSchedule[]
-  globalProblems   PersonGlobalProblem[]
-  globalSolutions  PersonGlobalSolution[]
+  id                    String                   @id @default(cuid())
+  bio                   String?
+  birthday              DateTime?
+  blog                  String?
+  city                  String?
+  company               String?
+  createdAt             DateTime                 @default(now())
+  createdAtTwitter      DateTime?
+  email                 String?                  @unique
+  firstName             String?
+  gender                String?
+  githubUsername        String?                  @unique
+  hireable              Boolean?
+  image                 String?
+  jobTitle              String?
+  lastName              String?
+  location              String?
+  memberships           OrganizationMembership[]
+  name                  String
+  phoneNumber           String?                  @unique
+  postalCode            String?
+  profileBannerUrl      String?
+  stateProvince         String?
+  telephone             String?
+  timeZone              String?
+  twitterHandle         String?                  @unique
+  updatedAt             DateTime                 @updatedAt
+  user                  User?                    @relation(fields: [userId], references: [id])
+  userId                String?                  @unique
+  web3Wallet            String?                  @unique
+  website               String?
+  callSchedules         CallSchedule[]
+  globalProblems        PersonGlobalProblem[]
+  globalSolutions       PersonGlobalSolution[]
   callSummaryRecipients CallSummaryRecipient[]
 
   // Add index for common queries
@@ -771,6 +772,7 @@ model Agent {
   workflowSteps        WorkflowStep[]
   Chat                 Chat[]
   callSchedules        CallSchedule[]
+  platformActions      PlatformAction[]
 
   @@unique([userId, name])
 }
@@ -807,18 +809,23 @@ model AgentDatasource {
 }
 
 model Tool {
-  id           String      @id @default(uuid())
-  name         String
-  description  String
-  type         ToolType
-  returnDirect Boolean     @default(false)
-  metadata     String?
-  createdAt    DateTime    @default(now())
-  updatedAt    DateTime    @updatedAt
-  userId       String
-  toolConfig   Json?
-  tools        AgentTool[]
-  user         User        @relation(fields: [userId], references: [id])
+  id                 String              @id @default(uuid())
+  name               String
+  description        String
+  type               ToolType
+  returnDirect       Boolean             @default(false)
+  metadata           String?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  userId             String
+  toolConfig         Json?
+  tools              AgentTool[]
+  user               User                @relation(fields: [userId], references: [id])
+  credentialId       String?
+  platformCredential PlatformCredential? @relation(fields: [credentialId], references: [id])
+  platformActions    PlatformAction[]
+
+  @@index([credentialId])
 }
 
 model AgentTool {
@@ -1257,6 +1264,15 @@ enum ToolType {
   ADVANCED_SCRAPER
   GOOGLE_SEARCH
   SEC
+  DISCORD
+  TELEGRAM
+  TWITTER
+  LINKEDIN
+  GITHUB_APP
+  SLACK
+  WHATSAPP
+  EMAIL
+  SMS
 }
 
 enum DatasourceType {
@@ -2081,16 +2097,16 @@ model ScheduledCall {
   id           String       @id @default(cuid())
   scheduleId   String
   schedule     CallSchedule @relation(fields: [scheduleId], references: [id])
-  scheduledFor DateTime     // When the call was scheduled for
+  scheduledFor DateTime // When the call was scheduled for
   status       CallStatus   @default(SCHEDULED)
-  retellCallId String?     // ID returned by Retell API
-  errorMessage String?     // If the call failed
-  createdAt    DateTime    @default(now())
-  updatedAt    DateTime    @updatedAt
-  completedAt  DateTime?   // When call was completed/failed/cancelled
+  retellCallId String? // ID returned by Retell API
+  errorMessage String? // If the call failed
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  completedAt  DateTime? // When call was completed/failed/cancelled
 
   // Add fields for call summary and notifications
-  callSummary  String?    @db.Text  // AI-generated summary of the call
+  callSummary String? @db.Text // AI-generated summary of the call
 
   // Many-to-many relation with Person for notifications
   callSummaryRecipients CallSummaryRecipient[]
@@ -2103,14 +2119,14 @@ model ScheduledCall {
 
 // New model to handle notification preferences
 model CallSummaryRecipient {
-  id             String        @id @default(cuid())
-  personId       String
+  id              String         @id @default(cuid())
+  personId        String
   scheduledCallId String
-  person         Person        @relation(fields: [personId], references: [id])
-  scheduledCall  ScheduledCall @relation(fields: [scheduledCallId], references: [id])
-  notifyBy       NotifyMethod[]
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
+  person          Person         @relation(fields: [personId], references: [id])
+  scheduledCall   ScheduledCall  @relation(fields: [scheduledCallId], references: [id])
+  notifyBy        NotifyMethod[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
 
   @@unique([personId, scheduledCallId])
   @@index([personId])
@@ -2226,4 +2242,62 @@ enum NotifyMethod {
   EMAIL
   SMS
   PUSH
+}
+
+// New model for storing platform credentials
+model PlatformCredential {
+  id           String    @id @default(uuid())
+  name         String
+  userId       String
+  platform     ToolType
+  clientId     String?
+  clientSecret String?
+  accessToken  String?
+  refreshToken String?
+  webhookUrl   String?
+  apiKey       String?
+  metadata     Json? // For platform-specific additional fields
+  expiresAt    DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  user  User   @relation(fields: [userId], references: [id])
+  tools Tool[] // Tools using these credentials
+
+  @@unique([userId, platform])
+  @@index([userId])
+}
+
+// New model for tracking platform actions/communications
+model PlatformAction {
+  id           String       @id @default(uuid())
+  toolId       String
+  agentId      String
+  platform     ToolType
+  actionType   String // e.g., "create_repo", "send_message", "create_pr"
+  status       ActionStatus @default(PENDING)
+  requestData  Json // The data sent to the platform
+  responseData Json? // The response received from the platform
+  errorMessage String?
+  metadata     Json? // Additional context about the action
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  completedAt  DateTime?
+
+  tool  Tool  @relation(fields: [toolId], references: [id])
+  agent Agent @relation(fields: [agentId], references: [id])
+
+  @@index([toolId])
+  @@index([agentId])
+  @@index([platform])
+  @@index([status])
+  @@index([createdAt])
+}
+
+enum ActionStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  FAILED
+  CANCELLED
 }
