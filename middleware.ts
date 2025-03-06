@@ -34,7 +34,25 @@ export default withAuth(
     const isAuth = !!token
     const pathname = req.nextUrl.pathname
 
-    // Check redirects first
+    // Check for DFDA paths first
+    if (pathname.startsWith('/dfda/')) {
+      const newUrl = new URL(pathname, 'https://www.dfda.earth')
+      
+      // Preserve query parameters
+      const searchParams = new URLSearchParams(req.nextUrl.search)
+      searchParams.forEach((value, key) => {
+        newUrl.searchParams.set(key, value)
+      })
+
+      // Preserve hash fragment
+      if (req.nextUrl.hash) {
+        newUrl.hash = req.nextUrl.hash
+      }
+
+      return NextResponse.redirect(newUrl, { status: 308 })
+    }
+
+    // Check redirects
     const redirect = redirects.find(r => r.source === pathname)
     if (redirect) {
       const newUrl = new URL(redirect.destination, req.url)
@@ -102,8 +120,6 @@ export const config = {
     "/dashboard/:path*",
     "/signin",
     "/signup",
-    "/dfda/right-to-trial",
-    "/dfda/right-to-trial-act",
-    "/dfda/health-savings-sharing",
+    "/dfda/:path*",
   ],
 }
