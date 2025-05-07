@@ -51,7 +51,7 @@ This is an ambitious, iterative journey. Feedback and adjustments are welcome.
 - [ ] **8. Platform Transaction Tax & UBI Pool**
     *   **Goal**: Implement a small, flat transaction tax on all (or specific types of) "$WISH"-based exchanges. Taxes accumulate in a transparent Community UBI Pool.
     *   **Key Features**: `PlatformTransaction` logging, UBI Pool accounting.
-    *   **Impact**: Establishes the funding mechanism for UBI.
+    *   **Impact**: Establishes the funding mechanism for UBI **and a Community Fund for broader public goods prioritized by the community.**
 - [ ] **9. UBI Distribution System**
     *   **Goal**: Design and implement a fair and regular distribution of "$WISH" from the UBI Pool to all eligible, active platform `User`s.
     *   **Key Features**: Eligibility criteria, distribution schedule, user notifications.
@@ -60,8 +60,8 @@ This is an ambitious, iterative journey. Feedback and adjustments are welcome.
 ## Phase 4: Ethical Sustainability, Governance & Advanced AI
 
 - [ ] **10. Platform Sustainability & Community Fund Governance**
-    *   **Goal**: Develop mechanisms for the Community UBI Pool (or a separate Community Fund from surplus taxes/donations) to fund ongoing platform development, maintenance, and moderation, as decided by a transparent community governance process (potentially involving `GenieDAO`s or a dedicated governance structure).
-    *   **Impact**: Aims for long-term operational sustainability aligned with platform values.
+    *   **Goal**: Develop mechanisms for the Community UBI Pool (or a separate Community Fund from surplus taxes/donations) to fund ongoing platform development, maintenance, moderation, **and a wide range of other community-prioritized public goods,** as decided by a transparent community governance process (potentially involving `GenieDAO`s or a dedicated governance structure).
+    *   **Impact**: Aims for long-term operational sustainability and the robust, transparent funding of diverse public goods, all aligned with platform values.
 - [ ] **11. Problem & Solution Space Definition (AI-Assisted)**
     *   **Goal**: Employ AI agents and human input to comprehensively list problems and solutions, leveraging the now active internal economy to potentially reward these contributions.
 - [ ] **12. "ToDo List for Humanity" (AI-Driven Decomposition)**
