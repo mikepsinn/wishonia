@@ -4,7 +4,7 @@
 
 The Wishonia Marketplace module is designed to connect users with needs ("Wishers") to providers who can offer solutions ("Genies"). These Genies can be `GenieDAO`s (organizations or groups of users) or individual `User`s. The marketplace facilitates the entire lifecycle from posting a need, proposing solutions, fulfilling the accepted proposal, and providing feedback.
 
-A core goal is to empower providers by helping them generate leads, optimize their revenue through efficient processes, and manage their service offerings. The system also supports breaking down complex solutions into manageable tasks and even outsourcing these tasks.
+A core goal is to empower providers by helping them generate leads, optimize their revenue through efficient processes, and manage their service offerings. The system also supports breaking down complex solutions into manageable tasks and even outsourcing these tasks, potentially using the internal platform currency, $WISH.
 
 ## Key Entities & Their Roles
 
@@ -14,7 +14,7 @@ A core goal is to empower providers by helping them generate leads, optimize the
 *   **`Sector`**: Categorizes `WishingWell`s to help providers find relevant opportunities (e.g., "AI Development", "Local Services", "Creative Design").
 *   **`ServiceCategory`**: Categorizes the types of services offered by Genies (e.g., "AI Agent Development", "Marketing Automation Strategy", "Custom Software Development").
 *   **`GenieServiceOffering`**: A pre-defined service or AI agent solution offered by a `GenieDAO` or an individual `User`. This includes a description, base pricing information, and estimated effort, helping providers standardize their offerings.
-*   **`WishFulfillmentProposal`**: A specific bid or proposal submitted by a Genie (`GenieDAO` or `User`) in response to a `WishingWell`. It details how the Genie intends to fulfill the wish, the proposed price, estimated hours, and can be based on a standard `GenieServiceOffering` or be entirely custom.
+*   **`WishFulfillmentProposal`**: A specific bid or proposal submitted by a Genie (`GenieDAO` or `User`) in response to a `WishingWell`. It details how the Genie intends to fulfill the wish, the proposed price (which could be in $WISH or another agreed-upon unit if an optional monetary layer is active), estimated hours, and can be based on a standard `GenieServiceOffering` or be entirely custom.
 *   **`GlobalTask`**: Accepted `WishFulfillmentProposal`s can be broken down into a series of `GlobalTask`s, each with its own description, budget, status, and assigned users.
 *   **`TaskBid`**: Individual `GlobalTask`s can be marked for outsourcing. Other `GenieDAO`s or `User`s can then submit `TaskBid`s to complete these specific tasks.
 *   **`FulfillmentReview`**: After a `WishFulfillmentProposal` is completed, the Wisher can leave a review for the Genie, rating their performance, adherence to budget, and timeliness. This contributes to the Genie's reputation.
@@ -30,7 +30,7 @@ A core goal is to empower providers by helping them generate leads, optimize the
     *   A Genie can define standard services via `GenieServiceOffering`, categorized by `ServiceCategory`.
     *   To respond to a `WishingWell`, the Genie submits a `WishFulfillmentProposal`.
         *   This proposal can be based on one of their existing `GenieServiceOffering`s or be custom.
-        *   It includes specific pricing (`proposedPrice`) and effort (`estimatedHoursForProposal`) for that particular wish.
+        *   It includes specific pricing (`proposedPrice`) and effort (`estimatedHoursForProposal`) for that particular wish (potentially denominated in $WISH).
 
 3.  **Proposal Review & Acceptance (Wisher Journey)**:
     *   The Wisher reviews submitted `WishFulfillmentProposal`s.
@@ -100,6 +100,6 @@ graph LR
 
 *   **Lead Generation**: `WishingWell`s act as qualified leads.
 *   **Standardized Offerings**: `GenieServiceOffering` allows providers to quickly bid on common request types.
-*   **Revenue/Hour Calculation**: The `proposedPrice` and `estimatedHoursForProposal` in `WishFulfillmentProposal` (and similar fields in `GenieServiceOffering` and `TaskBid`) allow providers to track and optimize their earnings per unit of effort.
+*   **Revenue/Hour Calculation**: The `proposedPrice` (potentially in $WISH) and `estimatedHoursForProposal` in `WishFulfillmentProposal` (and similar fields in `GenieServiceOffering` and `TaskBid`) allow providers to track and optimize their earnings per unit of effort within the platform's economy.
 *   **Reputation Building**: `FulfillmentReview`s and `GenieDAOFeedback` help good providers stand out.
 *   **Scalability via Outsourcing**: The `TaskBid` system allows successful Genies to scale their operations by outsourcing parts of the fulfillment. 

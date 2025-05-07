@@ -4,20 +4,20 @@ name: "Roadmap to a Utilitarian Paretopia"
 featuredImage: /docs/roadmap.jpg
 description: >-
   Wishonia's roadmap to building a platform for **Pareto optimal resource allocation**,
-  underpinned by a phased evolution towards a gift economy, internal "WishCredits" (for utility exchange),
+  underpinned by a phased evolution towards a gift economy, internal "$WISH" (for utility exchange),
   fair taxation (funding UBI & public goods), and Universal Basic Income, aiming for **maximum aggregate preference satisfaction**.
 ---
 
 # Roadmap to a Utilitarian Paretopia
 
-This roadmap outlines the key phases and milestones for developing the Wishonia platform. It aims for **Pareto optimal resource allocation** through AI and specialized modules, while progressively implementing an economic model centered around a gift economy (utility-maximizing contributions), internal "WishCredits" (for utility exchange), a fair transaction tax (funding UBI & public goods), and Universal Basic Income (UBI) – all designed to achieve **maximum aggregate preference satisfaction (universal wish fulfillment)**.
+This roadmap outlines the key phases and milestones for developing the Wishonia platform. It aims for **Pareto optimal resource allocation** through AI and specialized modules, while progressively implementing an economic model centered around a gift economy (utility-maximizing contributions), internal "$WISH" (for utility exchange), a fair transaction tax (funding UBI & public goods), and Universal Basic Income (UBI) – all designed to achieve **maximum aggregate preference satisfaction (universal wish fulfillment)**.
 
 This is an ambitious, iterative journey. Feedback and adjustments are welcome.
 
 ## Phase 0: Vision, Community, and Seed Resources
 
 - [ ] **1. Manifesto & Core Principles Definition (Utilitarian & Pareto Optimal Framework)**
-    *   **Goal**: Clearly articulate and document the vision for Wishonia's economy based on **utilitarian principles** and the pursuit of **Pareto optimality**. Define how the gift economy, "WishCredits," fair tax, and UBI contribute to **maximum preference satisfaction** and avoid activities that reduce aggregate well-being.
+    *   **Goal**: Clearly articulate and document the vision for Wishonia's economy based on **utilitarian principles** and the pursuit of **Pareto optimality**. Define how the gift economy, "$WISH," fair tax, and UBI contribute to **maximum preference satisfaction** and avoid activities that reduce aggregate well-being.
     *   **Impact**: Provides a precise philosophical and economic guiding framework for all development and community building.
 - [ ] **2. Seed Community & Values-Aligned Funding/Bootstrapping**
     *   **Goal**: Attract a foundational community that believes in the vision. Secure initial resources (grants, philanthropic contributions, or team bootstrapping) explicitly to build *this specific vision*.
@@ -29,31 +29,31 @@ This is an ambitious, iterative journey. Feedback and adjustments are welcome.
     *   **Goal**: Create AI agents for project management, code generation, and codebase improvement.
     *   **Impact**: Accelerates development of the platform itself.
 - [ ] **4. Core Platform & Data Modeling (Anticipating Economic Evolution)**
-    *   **Goal**: Establish the core database schema for `User`, `Person`, `Organization`, `GlobalTask`, `WishingWell`, `GenieDAO`, `WishFulfillmentProposal`, etc., designed to support initial gift-economy interactions and future "WishCredit" transactions.
+    *   **Goal**: Establish the core database schema for `User`, `Person`, `Organization`, `GlobalTask`, `WishingWell`, `GenieDAO`, `WishFulfillmentProposal`, etc., designed to support initial gift-economy interactions and future "$WISH" transactions.
     *   **Impact**: Data backbone for all modules, with foresight for economic features.
 - [ ] **5. Wishonia Marketplace Module (Gift Economy Focus)**
     *   **Goal**: Launch the marketplace for posting needs (`WishingWell`) and allowing providers (`GenieDAO`, `User`) to offer solutions/help (`WishFulfillmentProposal`) primarily based on non-monetary exchange.
     *   **Key Features**: Robust reputation system (`FulfillmentReview`, `GenieDAOFeedback`), clear signaling of "gift" offers, task breakdown (`GlobalTask`).
     *   **Documentation**: [Marketplace Module Details](./marketplace.md)
 - [ ] **6. Wishonia Recruitment Module (Skills & Opportunity Matching)**
-    *   **Goal**: Enable organizations to post opportunities (`WishingWell`) and candidates (`Person`) to showcase skills and apply (`JobApplication`), initially focusing on connecting talent with needs, potentially on a volunteer/internship/pro-bono basis or for future WishCredit-based roles.
+    *   **Goal**: Enable organizations to post opportunities (`WishingWell`) and candidates (`Person`) to showcase skills and apply (`JobApplication`), initially focusing on connecting talent with needs, potentially on a volunteer/internship/pro-bono basis or for future "$WISH"-based roles.
     *   **Documentation**: [Recruitment Module Details](./recruitment.md)
 
-## Phase 2: Internal Economy - "WishCredits" Introduction
+## Phase 2: Internal Economy - "$WISH" Introduction
 
-- [ ] **7. "WishCredits" System - Design & Implementation**
-    *   **Goal**: Introduce a non-blockchain internal digital credit system ("WishCredits") as a unit of account and optional medium of exchange within Wishonia.
+- [ ] **7. "$WISH" System - Design & Implementation**
+    *   **Goal**: Introduce a non-blockchain internal digital credit system ("$WISH") as a unit of account and optional medium of exchange within Wishonia.
     *   **Key Features**: User balances, initial distribution method (e.g., grants to early contributors, rewards for valued actions from Phase 1), mechanisms for earning (e.g., optional payment for fulfilled wishes, tips, platform bounties) and spending (e.g., boosting visibility, thanking others).
     *   **Impact**: Familiarizes the community with an internal value unit, still strongly tied to platform utility and contribution.
 
 ## Phase 3: Fair Taxation & Universal Basic Income (UBI)
 
 - [ ] **8. Platform Transaction Tax & UBI Pool**
-    *   **Goal**: Implement a small, flat transaction tax on all (or specific types of) WishCredit-based exchanges. Taxes accumulate in a transparent Community UBI Pool.
+    *   **Goal**: Implement a small, flat transaction tax on all (or specific types of) "$WISH"-based exchanges. Taxes accumulate in a transparent Community UBI Pool.
     *   **Key Features**: `PlatformTransaction` logging, UBI Pool accounting.
     *   **Impact**: Establishes the funding mechanism for UBI.
 - [ ] **9. UBI Distribution System**
-    *   **Goal**: Design and implement a fair and regular distribution of WishCredits from the UBI Pool to all eligible, active platform `User`s.
+    *   **Goal**: Design and implement a fair and regular distribution of "$WISH" from the UBI Pool to all eligible, active platform `User`s.
     *   **Key Features**: Eligibility criteria, distribution schedule, user notifications.
     *   **Impact**: Provides a foundational economic layer within Wishonia, potentially enabling more participation in gift-based activities.
 
@@ -65,13 +65,13 @@ This is an ambitious, iterative journey. Feedback and adjustments are welcome.
 - [ ] **11. Problem & Solution Space Definition (AI-Assisted)**
     *   **Goal**: Employ AI agents and human input to comprehensively list problems and solutions, leveraging the now active internal economy to potentially reward these contributions.
 - [ ] **12. "ToDo List for Humanity" (AI-Driven Decomposition)**
-    *   **Goal**: AI agents decompose solutions into `GlobalTask`s, potentially creating internal WishCredit bounties for their completion.
+    *   **Goal**: AI agents decompose solutions into `GlobalTask`s, potentially creating internal "$WISH" bounties for their completion.
 - [ ] **13. [Digital Twin Safe](digital-twin-safe/README.md)** & **[Positron Agents & Network](positron-network/positron-network.md)**
-    *   **Goal**: Develop advanced, personalized, and decentralized AI capabilities, potentially interacting with or utilizing the WishCredit economy for resource allocation or service exchange within the network.
+    *   **Goal**: Develop advanced, personalized, and decentralized AI capabilities, potentially interacting with or utilizing the "$WISH" economy for resource allocation or service exchange within the network.
 
 ## Ultimate Vision Milestone
 
 - [ ] **14. [Wishonia - The Virtual World of Ethical Collaboration](wishonian-government/wishonian-government.md)**
-    *   **Goal**: A virtual environment where AI agents and humans, supported by the WishCredit UBI and gift economy, collaborate to optimize resource allocation for societal well-being, as defined and governed by the community.
+    *   **Goal**: A virtual environment where AI agents and humans, supported by the "$WISH" UBI and gift economy, collaborate to optimize resource allocation for societal well-being, as defined and governed by the community.
 
 This roadmap emphasizes building core utility first, then layering the unique economic model. It's a complex endeavor requiring dedication to both the technological build and the socio-economic principles.
