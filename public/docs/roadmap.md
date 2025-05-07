@@ -1,27 +1,27 @@
 ---
 slug: roadmap
-name: "Roadmap to an Ethical & Optimal Economy"
+name: "Roadmap to a Utilitarian Paretopia"
 featuredImage: /docs/roadmap.jpg
 description: >-
-  Wishonia's roadmap to building a platform for efficient resource allocation,
-  underpinned by a phased evolution towards a gift economy, internal credits,
-  fair taxation, and Universal Basic Income.
+  Wishonia's roadmap to building a platform for **Pareto optimal resource allocation**,
+  underpinned by a phased evolution towards a gift economy, internal "WishCredits" (for utility exchange),
+  fair taxation (funding UBI & public goods), and Universal Basic Income, aiming for **maximum aggregate preference satisfaction**.
 ---
 
-# Roadmap to an Ethical & Optimal Economy
+# Roadmap to a Utilitarian Paretopia
 
-This roadmap outlines the key phases and milestones for developing the Wishonia platform. It aims for efficient resource allocation through AI and specialized modules, while progressively implementing an ethical economic model centered around a gift economy, internal "WishCredits," a fair transaction tax, and Universal Basic Income (UBI).
+This roadmap outlines the key phases and milestones for developing the Wishonia platform. It aims for **Pareto optimal resource allocation** through AI and specialized modules, while progressively implementing an economic model centered around a gift economy (utility-maximizing contributions), internal "WishCredits" (for utility exchange), a fair transaction tax (funding UBI & public goods), and Universal Basic Income (UBI) – all designed to achieve **maximum aggregate preference satisfaction (universal wish fulfillment)**.
 
 This is an ambitious, iterative journey. Feedback and adjustments are welcome.
 
 ## Phase 0: Vision, Community, and Seed Resources
 
-- [ ] **1. Manifesto & Core Principles Definition**
-    *   **Goal**: Clearly articulate and document the vision for Wishonia's ethical economy (gift economy principles, goals of UBI, fair tax, avoidance of harmful system subsidization).
-    *   **Impact**: Provides a guiding star for all development and community building.
+- [ ] **1. Manifesto & Core Principles Definition (Utilitarian & Pareto Optimal Framework)**
+    *   **Goal**: Clearly articulate and document the vision for Wishonia's economy based on **utilitarian principles** and the pursuit of **Pareto optimality**. Define how the gift economy, "WishCredits," fair tax, and UBI contribute to **maximum preference satisfaction** and avoid activities that reduce aggregate well-being.
+    *   **Impact**: Provides a precise philosophical and economic guiding framework for all development and community building.
 - [ ] **2. Seed Community & Values-Aligned Funding/Bootstrapping**
     *   **Goal**: Attract a foundational community that believes in the vision. Secure initial resources (grants, philanthropic contributions, or team bootstrapping) explicitly to build *this specific vision*.
-    *   **Impact**: Ensures resource alignment with core ethical principles from day one.
+    *   **Impact**: Ensures resource alignment with core principles from day one.
 
 ## Phase 1: Foundational Platform & Gift Economy MVP
 

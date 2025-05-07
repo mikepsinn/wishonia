@@ -2,25 +2,23 @@
 
 ## Vision
 
-Wishonia aims to be a dynamic platform connecting needs with innovative solutions, primarily driven by AI agents and human expertise. It fosters a collaborative ecosystem where individuals, organizations (including businesses, non-profits, and government entities) can articulate challenges or wishes, and providers can offer services, AI agents, or direct fulfillment. The platform is designed to empower providers to optimize their efforts, particularly their revenue per hour, while enabling efficient problem-solving, seamless task outsourcing, and effective recruitment.
+Wishonia aims to be a dynamic platform connecting needs and wishes with innovative solutions, primarily driven by AI agents and human expertise. It fosters a collaborative ecosystem where individuals and organizations can articulate preferences, and providers can offer services, AI agents, or direct fulfillment. Wishonia is designed to operate on an economic model that strives for **Pareto optimal resource allocation** to achieve **maximum aggregate preference satisfaction (universal wish fulfillment)**. This model is centered around a gift economy, internal "$WISH," a fair transaction tax funding a Universal Basic Income (UBI) and public goods, all while empowering providers and enabling efficient problem-solving.
 
 ## Core Goals
 
-*   **Efficient Problem Solving**: Enable users to define needs (from personal wishes to complex organizational challenges) and receive diverse solution proposals.
-*   **AI-Driven Solutions**: Leverage AI agents to assist in generating solution ideas, breaking down complex projects into actionable tasks, and matching needs with providers.
-*   **Marketplace for Services & Solutions**: Create a vibrant marketplace where:
-    *   "Wishers" can post their needs/desires (`WishingWells`).
-    *   "Genies" (`GenieDAO`s or individual `User`s) can offer their services or pre-defined AI agent solutions (`GenieServiceOffering`) and submit proposals (`WishFulfillmentProposal`).
-    *   Tasks derived from accepted proposals can be further outsourced (`GlobalTask`s via `TaskBid`s).
-*   **Provider Empowerment**: Help solution providers (Genies) to:
-    *   Generate leads for their services.
-    *   Optimize their revenue per hour through efficient proposal and fulfillment processes.
-    *   Manage their service offerings and track their success.
-*   **Streamlined Recruitment**: Facilitate a recruitment module where:
-    *   Organizations can post job opportunities (as a type of `WishingWell`).
-    *   Candidates (`Person`) can showcase their profiles and apply for roles (`JobApplication`).
-*   **Collaborative Task Management**: Allow for detailed task breakdown (`GlobalTask`) and assignment (`UserTask`) for accepted projects.
-*   **Reputation and Feedback**: Implement systems for reviews and feedback (`FulfillmentReview`, `GenieDAOFeedback`) to build trust and quality.
+*   **Maximize Universal Wish Fulfillment**: Enable users to define needs/wishes and receive diverse solution proposals within an economic framework designed for utilitarian outcomes and Pareto improvements, aiming to maximize aggregate preference satisfaction.
+*   **AI-Driven Solutions for Optimal Utility**: Leverage AI agents to assist in generating solutions, breaking down projects, and matching needs with providers, guided by the goal of increasing overall preference satisfaction.
+*   **Marketplace for Utility Exchange**:
+    *   Users post needs/wishes (`WishingWells`).
+    *   Providers (`GenieDAO`s or `User`s) offer services (`GenieServiceOffering`) and proposals (`WishFulfillmentProposal`), operating within both gift economy principles (utility-maximizing contributions) and an optional "$WISH" exchange system (for utility exchange).
+    *   Tasks (`GlobalTask`s) can be outsourced (`TaskBid`s), potentially using $WISH.
+*   **Provider Empowerment for a Paretopia**: Help solution providers (Genies) to:
+    *   Find opportunities to contribute to wish fulfillment.
+    *   Be fairly recognized or compensated (via reputation or $WISH) within the platform's utilitarian economy.
+    *   Manage their offerings and track their impact on aggregate preference satisfaction.
+*   **Streamlined Recruitment for Utility Contribution**: Facilitate recruitment focused on matching skills with opportunities that contribute to overall platform utility and wish fulfillment.
+*   **Support for a Circular Utilitarian Economy**: Implement a fair transaction tax on $WISH exchanges to fund a Universal Basic Income (UBI) for platform members and provide for public goods. This aims to ensure a baseline of preference satisfaction and support contributions to the gift economy.
+*   **Reputation and Feedback for Trust & Efficiency**: Maintain robust systems for reviews and feedback (`FulfillmentReview`, `GenieDAOFeedback`) to build trust and improve the efficiency of achieving a Paretopia.
 
 ## Platform Structure Overview
 
