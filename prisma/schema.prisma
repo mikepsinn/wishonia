@@ -167,6 +167,15 @@ model User {
   newsletterEmails                      Boolean                               @default(false)
   unsubscribeFromAll                    Boolean                               @default(false)
   callSchedulesCreated                  CallSchedule[]
+
+  // Marketplace Enhancements
+  fulfillmentReviewsWritten             FulfillmentReview[]                   @relation("UserWrittenReviews")
+  taskBidsMade                          TaskBid[]                             @relation("UserTaskBids")
+  serviceOfferingsCreated               GenieServiceOffering[]                @relation("UserCreatedServiceOfferings")
+
+  // Add to User model
+  // ... existing User fields ...
+  jobApplications                       JobApplication[]                      @relation("UserSubmittedApplications")
 }
 
 // Need this to create digital twins for people that are not users
@@ -211,6 +220,18 @@ model Person {
   @@index([name])
   @@index([email])
   @@index([phoneNumber])
+
+  // Add to Person model
+  // ... existing Person fields ...
+  cvResumeUrl                   String?
+  linkedinProfileUrl            String?
+  portfolioUrl                  String?
+  availabilityForWork           AvailabilityStatus? // Revert to optional
+  desiredEmploymentTypes        EmploymentType[]
+  targetRoles                   String[] // Corrected: A list of strings, can be empty. No '?' after [].
+  workExperienceSummary         String?                                 @db.Text
+  educationSummary              String?                                 @db.Text
+  jobApplicationsAsCandidate    JobApplication[]                      @relation("CandidateApplications")
 }
 
 model Education {
@@ -511,8 +532,13 @@ model GlobalTask {
   childTasks          GlobalTaskRelation[]   @relation("ParentTasks")
   userTasks           UserTask[]
 
-  attachments GlobalTaskAttachment[]
-  contextUrls GlobalTaskContextUrl[]
+  attachments         GlobalTaskAttachment[]
+  contextUrls         GlobalTaskContextUrl[]
+
+  // Marketplace Enhancements for Outsourcing
+  requestForOutsourcing Boolean? @default(false)
+  outsourcingBudget     Float?
+  taskBidsReceived      TaskBid[] // Bids received for this task if outsourced
 }
 
 model GlobalTaskRelation {
@@ -643,6 +669,27 @@ model WishingWell {
   wishingWellContributions   WishingWellContribution[]
   thatWishingWellAllocations WishingWellPairAllocation[] @relation("ThatWishingWellRelation")
   thisWishingWellAllocations WishingWellPairAllocation[] @relation("ThisWishingWellRelation")
+
+  // Marketplace Enhancements
+  sectorId                   String?
+  sector                     Sector?                     @relation(fields: [sectorId], references: [id])
+  budgetInfo                 String?                     // e.g., "Fixed: $5000", "Hourly: $50-$100/hr, max 20 hrs"
+  desiredOutcome             String?                     // Clear success criteria for the wish
+  timescale                  String?                     // e.g., "Urgent - 1 week", "Within 3 months"
+  status                     WishingWellStatus           @default(OPEN)
+
+  @@index([sectorId])
+
+  // Add to WishingWell model
+  // ... existing WishingWell fields ...
+  organizationId                String?                                 // For Job Postings
+  organization                  Organization?                           @relation(name: "HiringOrganizationForJob", fields: [organizationId], references: [id])
+  jobLocation                   String?
+  employmentType                EmploymentType?
+  salaryRange                   String?
+  experienceLevelRequired       String?
+  skillsRequiredText            String[]
+  jobApplications               JobApplication[] @relation("JobApplicationsForPosting") // Add this back-relation
 }
 
 model WishingWellPairAllocation {
@@ -681,6 +728,10 @@ model GenieDAO {
   proposals      WishFulfillmentProposal[]
   members        User[]                    @relation("JoinedGenieDAOs")
   collaborations WishFulfillmentProposal[] @relation("ProposalCollaborators")
+
+  // Marketplace Enhancements
+  serviceOfferings GenieServiceOffering[]    @relation("DaoServiceOfferings")
+  taskBidsMade     TaskBid[]                 @relation("DaoTaskBids")
 }
 
 model WishFulfillmentProposal {
@@ -699,6 +750,15 @@ model WishFulfillmentProposal {
   genieDAO      GenieDAO                 @relation(fields: [genieDAOId], references: [id])
   wishingWell   WishingWell              @relation(fields: [wishingWellId], references: [id])
   collaborators GenieDAO[]               @relation("ProposalCollaborators")
+
+  // Marketplace Enhancements
+  proposedPrice             Float?
+  priceCurrency             String?                  @default("USD")
+  estimatedHoursForProposal Float?
+  basedOnServiceOfferingId  String?
+  basedOnServiceOffering    GenieServiceOffering?    @relation(fields: [basedOnServiceOfferingId], references: [id])
+  status                    ProposalStatus           @default(DRAFT)
+  fulfillmentReviews        FulfillmentReview[]      // Reviews received for this proposal
 }
 
 model ProposalProgressReport {
@@ -1055,6 +1115,10 @@ model Organization {
   globalSolutions OrganizationGlobalSolution[]
 
   @@unique([name, foundedYear])
+
+  // Add to Organization model
+  // ... existing Organization fields ...
+  jobPostings                   WishingWell[]                           @relation(name: "HiringOrganizationForJob")
 }
 
 enum CompanySize {
@@ -1777,9 +1841,13 @@ model GrantProposal {
 enum ProposalStatus {
   DRAFT
   SUBMITTED
-  UNDER_REVIEW
-  APPROVED
-  REJECTED
+  VIEWED_BY_WISHER
+  DISCUSSION
+  ACCEPTED
+  REJECTED_BY_WISHER
+  WITHDRAWN_BY_GENIE
+  WORK_STARTED
+  WORK_COMPLETED
 }
 
 model Product {
@@ -2227,4 +2295,154 @@ enum NotifyMethod {
   EMAIL
   SMS
   PUSH
+}
+
+// --- START OF NEW MODELS AND ENUMS FOR MARKETPLACE ---
+
+model Sector {
+  id           String        @id @default(cuid())
+  name         String        @unique
+  description  String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  wishingWells WishingWell[]
+}
+
+model ServiceCategory {
+  id               String                 @id @default(cuid())
+  name             String                 @unique // e.g., "AI Development", "Marketing Automation"
+  description      String?
+  serviceOfferings GenieServiceOffering[]
+  createdAt        DateTime               @default(now())
+  updatedAt        DateTime               @updatedAt
+}
+
+model GenieServiceOffering {
+  id                       String                    @id @default(cuid())
+  genieDAOId               String?                   // Can be offered by a DAO
+  genieDAO                 GenieDAO?                 @relation("DaoServiceOfferings", fields: [genieDAOId], references: [id])
+  offeredByUserId          String?                   // Or by an individual user not in a DAO
+  offeredByUser            User?                     @relation("UserCreatedServiceOfferings", fields: [offeredByUserId], references: [id])
+  name                     String                    // e.g., "AI Chatbot Development"
+  description              String?                   @db.Text
+  basePriceInfo            String?                   // e.g., "Starts at $X", "$Y/hour"
+  estimatedBaseHours       Float?
+  serviceCategoryId        String?
+  serviceCategory          ServiceCategory?          @relation(fields: [serviceCategoryId], references: [id])
+  createdAt                DateTime                  @default(now())
+  updatedAt                DateTime                  @updatedAt
+  proposalsBasedOnThis     WishFulfillmentProposal[] // Proposals that used this as a template
+
+  // Ensure unique offering name per provider (either DAO or User)
+  @@unique([genieDAOId, name])
+  @@unique([offeredByUserId, name])
+  // Application-level check needed: either genieDAOId or offeredByUserId must be present, not both.
+}
+
+model FulfillmentReview {
+  id                        String                  @id @default(cuid())
+  wishFulfillmentProposalId String                  // The accepted proposal being reviewed
+  wishFulfillmentProposal   WishFulfillmentProposal @relation(fields: [wishFulfillmentProposalId], references: [id])
+  reviewerUserId            String                  // The Wisher (User who posted the WishingWell)
+  reviewerUser              User                    @relation("UserWrittenReviews", fields: [reviewerUserId], references: [id])
+  rating                    Int                     // e.g., 1-5
+  comment                   String?                 @db.Text
+  respondedToBudget         Boolean?
+  deliveredOnTime           Boolean?
+  createdAt                 DateTime                @default(now())
+  updatedAt                 DateTime                @updatedAt
+
+  @@unique([wishFulfillmentProposalId, reviewerUserId]) // User can review a specific proposal once
+  @@index([reviewerUserId])
+}
+
+model TaskBid {
+  id               String        @id @default(cuid())
+  globalTaskId     String
+  globalTask       GlobalTask    @relation(fields: [globalTaskId], references: [id])
+  bidderGenieDAOId String?       // GenieDAO bidding for the task
+  bidderGenieDAO   GenieDAO?     @relation("DaoTaskBids", fields: [bidderGenieDAOId], references: [id])
+  bidderUserId     String?       // Individual user bidding for the task
+  bidderUser       User?         @relation("UserTaskBids", fields: [bidderUserId], references: [id])
+  bidPrice         Float?
+  bidHours         Float?
+  proposalNotes    String?       @db.Text
+  status           TaskBidStatus @default(SUBMITTED)
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  @@index([globalTaskId])
+  @@index([bidderGenieDAOId])
+  @@index([bidderUserId])
+  // Application-level check needed: either bidderGenieDAOId or bidderUserId must be present, not both.
+}
+
+enum WishingWellStatus {
+  OPEN
+  AWAITING_PROPOSALS
+  PROPOSALS_UNDER_REVIEW
+  FULFILLMENT_IN_PROGRESS
+  COMPLETED
+  CANCELLED
+}
+
+enum TaskBidStatus {
+  SUBMITTED
+  ACCEPTED
+  REJECTED
+  WITHDRAWN
+}
+
+// --- END OF NEW MODELS AND ENUMS FOR MARKETPLACE ---
+
+// New Model JobApplication
+model JobApplication {
+  id                            String                 @id @default(cuid())
+  jobPostingId                  String
+  jobPosting                    WishingWell            @relation(name: "JobApplicationsForPosting", fields: [jobPostingId], references: [id])
+  candidatePersonId             String
+  candidate                     Person                 @relation(name: "CandidateApplications", fields: [candidatePersonId], references: [id])
+  applicantUserId               String
+  applicantUser                 User                   @relation(name: "UserSubmittedApplications", fields: [applicantUserId], references: [id])
+  coverLetter                   String?                @db.Text
+  applicationDate               DateTime               @default(now())
+  status                        JobApplicationStatus   @default(SUBMITTED)
+  notesInternal                 String?                @db.Text // For hiring team
+  feedbackToCandidate           String?                @db.Text
+  lastUpdatedAt                 DateTime               @updatedAt
+
+  @@unique([jobPostingId, applicantUserId])
+  @@index([candidatePersonId])
+  @@index([jobPostingId])
+}
+
+// New Enums
+enum EmploymentType {
+  FULL_TIME
+  PART_TIME
+  CONTRACT
+  INTERNSHIP
+  TEMPORARY
+}
+
+enum AvailabilityStatus {
+  IMMEDIATELY_AVAILABLE
+  OPEN_TO_OFFERS
+  LOOKING_IN_1_MONTH
+  LOOKING_IN_3_MONTHS
+  NOT_LOOKING
+}
+
+enum JobApplicationStatus {
+  SUBMITTED
+  REVIEWED
+  SCREENING
+  INTERVIEW_SCHEDULED
+  INTERVIEW_COMPLETED
+  OFFER_EXTENDED
+  OFFER_ACCEPTED
+  OFFER_DECLINED
+  HIRED
+  REJECTED
+  WITHDRAWN_BY_CANDIDATE
 }
