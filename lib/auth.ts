@@ -4,7 +4,6 @@ import { getServerSession } from "next-auth/next"
 import EmailProvider from "next-auth/providers/email"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
-import type { OAuthConfig } from "next-auth/providers/oauth"
 
 import { env } from "@/env.mjs"
 import { prisma as db } from "@/lib/db"

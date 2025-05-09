@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
-import { text2measurements } from '@/lib/text2measurements'
 import { emailer } from '@/lib/email/emailer'
 import { wrapEmailContent } from '@/lib/emails/template'
 
@@ -61,7 +60,6 @@ function getCallSummaryEmail(params: {
   callDate: Date
   baseUrl: string
   userId: string
-  measurements: any[]
 }) {
   const content = `
     <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
@@ -73,10 +71,6 @@ function getCallSummaryEmail(params: {
         <pre style="white-space: pre-wrap; font-family: inherit;">${params.transcript}</pre>
       </div>
 
-      ${params.measurements.length > 0 ? `
-        <h2 style="color: #2563eb; margin: 24px 0 16px;">Measurements Recorded</h2>
-        ${formatMeasurementsTable(params.measurements)}
-      ` : ''}
     </div>
   `
 
@@ -140,12 +134,7 @@ export async function POST(request: Request) {
       })
     }
 
-    // Process transcript with text2measurements
-    const measurements = await text2measurements(
-      data.call.transcript,
-      new Date(data.call.end_timestamp).toISOString(),
-      0 // Default to UTC if no timezone info available
-    )
+
 
     // Send email summaries to recipients
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL!
@@ -162,16 +151,14 @@ export async function POST(request: Request) {
             callerName,
             callDate,
             baseUrl,
-            userId: recipient.person.id,
-            measurements
+            userId: recipient.person.id
           })
         })
       }
     }
 
     return NextResponse.json({ 
-      message: 'Measurements processed successfully',
-      measurements
+      message: 'Measurements processed successfully'
     })
 
   } catch (error) {
