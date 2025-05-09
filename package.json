@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "type-check": "tsc --noEmit",
+    "check": "tsc --noEmit && pnpm lint",
     "turbo": "next dev --turbo",
     "start": "next start",
     "lint": "next lint",
@@ -32,7 +32,7 @@
     "deps:check:size": "npm-check",
     "deps:check:comprehensive": "cost-of-modules",
     "deps:unused-exports": "ts-prune",
-    "generate-routes": "ts-node scripts/generateRouteTree.ts"
+    "generate-routes": "ts-node -r tsconfig-paths/register scripts/generateRouteTree.ts"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
@@ -229,6 +229,7 @@
     "tailwindcss": "^3.4.1",
     "ts-jest": "^29.1.4",
     "ts-node": "latest",
+    "tsconfig-paths": "^4.2.0",
     "ts-prune": "^0.10.3",
     "tsx": "^4.19.2",
     "typescript": "5.3.3"

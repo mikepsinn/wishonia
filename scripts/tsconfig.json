@@ -11,9 +11,11 @@
     "tsBuildInfoFile": "./lib/.tsbuildinfo",
     "incremental": true,
     "composite": true,
+    "baseUrl": "..",
     "paths": {
-      "@/*": ["../*"]
+      "@/*": ["*"]
     },
+    "rootDir": "..",
     "noEmit": true
   },
   "ts-node": {
@@ -22,5 +24,5 @@
       "module": "commonjs"
     }
   },
-  "include": ["./**/*.ts"]
+  "include": ["./**/*.ts", "../lib/**/*.ts"]
 }
