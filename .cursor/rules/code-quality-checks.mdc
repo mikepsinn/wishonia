@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Code Quality Checks
+
+After making code changes during development, please perform the following checks:
+
+1.  **Run `pnpm check`**: This command likely includes linting, type checking, and other static analysis. It's important to run this regularly to catch issues early.
+    ```bash
+    pnpm check
+    ```
+2.  **Address Errors**: If `pnpm check` reports any errors, please attempt to fix them promptly.
+
+This helps maintain code quality and prevent issues from accumulating.
+
