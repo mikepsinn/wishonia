@@ -8,7 +8,7 @@ import { UserAccountNav } from "./user-account-nav"
 interface UserNavDisplayProps extends React.HTMLAttributes<HTMLDivElement> {
   user: Pick<User, "name" | "image" | "email">
   avatarNavItems?: NavItem[]
-  buttonVariant?: "outline" | "neobrutalist"
+  buttonVariant?: "outline" | "default"
 }
 
 export function UserNavDisplay({

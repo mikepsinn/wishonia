@@ -17,7 +17,7 @@ import { NeoBrutalMarkdown } from "./neo-brutal-markdown"
 
 interface MarkdownRendererProps {
   url: string
-  variant?: "default" | "neobrutalist"
+  variant?: "default" | "outline"
 }
 
 interface Metadata {
@@ -135,7 +135,7 @@ const MarkdownFileRenderer: FC<MarkdownRendererProps> = ({
           )}
 
           {/* Conditional rendering based on variant */}
-          {variant === "neobrutalist" ? (
+          {variant === "outline" ? (
             <NeoBrutalMarkdown>{content}</NeoBrutalMarkdown>
           ) : (
             <ReactMarkdown
@@ -174,7 +174,7 @@ const MarkdownFileRenderer: FC<MarkdownRendererProps> = ({
 
           <div className="flex items-center justify-end gap-x-2">
             <Link href={githubEditUrl} target={"_blank"}>
-              <Button variant={variant}>
+              <Button variant={variant === "outline" ? "outline" : "default"}>
                 <Github className="mr-2"></Github>
                 Edit Me on GitHub
               </Button>

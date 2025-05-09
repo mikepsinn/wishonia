@@ -90,7 +90,7 @@ export function PetitionShareButtons({
             <Tooltip key={index}>
               <TooltipTrigger asChild>
                 <Button
-                  variant="neobrutalist"
+                  variant="outline"
                   size="sm"
                   onClick={button.onClick}
                 >

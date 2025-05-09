@@ -15,7 +15,7 @@ import { UserAuthForm } from "@/components/user/user-auth-form"
 
 interface LoginPromptProps {
   buttonText?: string
-  buttonVariant?: "outline" | "default" | "neobrutalist"
+  buttonVariant?: "outline" | "default"
   buttonSize?: "default" | "sm" | "lg" | "icon"
 }
 
