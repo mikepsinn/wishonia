@@ -81,12 +81,23 @@ This is an ambitious, iterative journey. Feedback and adjustments are welcome.
     *   **Goal**: Employ AI agents and human input to comprehensively list problems and solutions, leveraging the now active internal economy to potentially reward these contributions.
 - [ ] **15. "ToDo List for Humanity" (AI-Driven Decomposition)**
     *   **Goal**: AI agents decompose solutions into `GlobalTask`s, potentially creating internal "$WISH" bounties for their completion.
-- [ ] **16. [Digital Twin Safe](digital-twin-safe/README.md)** & **[Positron Agents & Network](positron-network/positron-network.md)**
-    *   **Goal**: Develop advanced, personalized, and decentralized AI capabilities, potentially interacting with or utilizing the "$WISH" economy for resource allocation or service exchange within the network.
+- [ ] **16. AI-Powered Predictive Impact Estimation**
+    *   **Goal**: Develop and integrate AI models to forecast the potential impact of proposed projects and solutions, using metrics like QALYs, DALYs averted, carbon footprint reduction, or other relevant econometric, social, or environmental indicators.
+    *   **Impact**: Provides users and the system with quantitative and qualitative insights to assess and compare the potential benefits of different initiatives before resource allocation.
+- [ ] **17. Randomized Pairwise Preference Allocation System**
+    *   **Goal**: Implement and refine a system for aggregating community preferences through randomized pairwise comparisons of projects/solutions. This system will leverage existing data structures (e.g., `PairAllocation`) and integrate with AI-predicted impact estimations to inform users during the selection process. Explore gamification by awarding points/rewards (e.g., "$WISH") for participation and for contributions that lead to high-impact project selections.
+    *   **Impact**: Facilitates a democratic, scalable, and engaging method for capturing collective intelligence on societal priorities, guiding resource allocation towards widely valued and impactful outcomes.
+- [ ] **18. Long-Term Impact Tracking & Retrospective Analysis**
+    *   **Goal**: Establish a framework and tools for tracking the actual long-term outcomes and impacts of funded/implemented projects. This includes collecting data, comparing it against initial AI predictions, and feeding insights back into the predictive models and preference allocation system.
+    *   **Impact**: Creates a crucial learning loop for the entire platform, continuously improving the accuracy of impact predictions, refining resource allocation strategies over time, and ensuring accountability for achieving desired societal benefits.
+- [ ] **19. [Digital Twin Safe](digital-twin-safe/README.md)** & **[Positron Agents & Network](positron-network/positron-network.md)**
+    *   **Goal**: Develop advanced, personalized, and decentralized AI capabilities, informed by impact data and aggregated preferences, potentially interacting with or utilizing the "$WISH" economy for resource allocation or service exchange within the network.
+    *   **Impact**: Enhances individual agency and optimizes resource distribution through intelligent, personalized AI.
 
 ## Ultimate Vision Milestone
 
-- [ ] **17. [Wishonia - The Virtual World of Ethical Collaboration](wishonian-government/wishonian-government.md)**
-    *   **Goal**: A virtual environment where AI agents and humans, supported by the "$WISH" UBI and gift economy, collaborate to optimize resource allocation for societal well-being, as defined and governed by the community.
+- [ ] **20. [Wishonia - The Virtual World of Pareto Optimal Coordination](wishonian-government/wishonian-government.md)**
+    *   **Goal**: A virtual environment where AI agents and humans—supported by the "$WISH" UBI, gift economy, AI-powered impact predictions, robust preference aggregation, and transparent long-term impact tracking—collaborate to optimize resource allocation for societal well-being, as defined and governed by the community.
+    *   **Impact**: Realization of a dynamic, self-improving system for maximizing collective preference satisfaction and achieving Pareto optimality.
 
 This roadmap emphasizes building core utility first, then layering the unique economic model. It's a complex endeavor requiring dedication to both the technological build and the socio-economic principles.
