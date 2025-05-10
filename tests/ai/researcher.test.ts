@@ -52,4 +52,4 @@ describe("Research Agent tests", () => {
   afterAll(async () => {
     await prisma.$disconnect()
   })
-})
+}) 

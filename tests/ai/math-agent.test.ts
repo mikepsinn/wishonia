@@ -13,4 +13,4 @@ describe("Math Agent", () => {
     const response = await doMath(problem)
     expect(response).toBe(9461 * 12 - 12 * 12 * 134)
   })
-})
+}) 

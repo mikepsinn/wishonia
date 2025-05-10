@@ -35,4 +35,4 @@ describe("Generate Object tests", () => {
     expect(result.object.rating).toBeGreaterThanOrEqual(0);
     expect(result.object.rating).toBeLessThanOrEqual(5);
   });
-});
+}); 

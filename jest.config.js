@@ -5,12 +5,13 @@ const createJestConfig = nextJest({
 })
 
 const customJestConfig = {
+  testMatch: ['<rootDir>/tests/**/*.[jt]s?(x)'],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1",
   },
   setupFiles: ["./jest.polyfills.js"],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
-  testEnvironment: "jest-environment-jsdom",
+  testEnvironment: "node",
 }
 
 module.exports = createJestConfig(customJestConfig)

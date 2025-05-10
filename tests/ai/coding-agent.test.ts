@@ -30,4 +30,4 @@ function getInputProjectDirectory() {
     throw new Error("process.env.INPUT_PYTHON_PROJECT_DIRECTORY not provided")
   }
   return pythonProjectDirectory
-}
+} 

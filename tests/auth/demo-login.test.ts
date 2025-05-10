@@ -1,4 +1,5 @@
-import { demoLoginAuthorize } from '@/lib/auth'
+/** @jest-environment node */
+import { demoLoginAuthorize } from '@/lib/demoLoginAuthorize'
 
 describe('demoLoginAuthorize', () => {
   it('should authorize with valid demo session data', async () => {

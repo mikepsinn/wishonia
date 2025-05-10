@@ -80,4 +80,4 @@ describe("IssueManager tests", () => {
   afterAll(async () => {
     await prisma.$disconnect();
   });
-});
+}); 
