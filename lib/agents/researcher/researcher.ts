@@ -234,8 +234,11 @@ export async function writeArticle(
   report.generationOptions = options
 
   // Calculate token usage and costs
-  const modelName = options.modelName || DEFAULT_MODEL_NAME
-  const pricing = MODEL_PRICING[modelName] || { input: 0, output: 0 }
+  const modelName = options.modelName || DEFAULT_MODEL_NAME;
+  const pricingInfo = MODEL_PRICING[modelName];
+  // Default to zero cost if pricing info is somehow missing, to avoid crashes.
+  const defaultPricing = { inputCostPer1MTokens: 0, outputCostPer1MTokens: 0, contextWindowTokens: 0 };
+  const pricing = pricingInfo || defaultPricing;
   
   const tokenUsage = {
     completionTokens: result.usage?.completionTokens || 0,
@@ -245,8 +248,8 @@ export async function writeArticle(
 
   // Calculate cost in USD
   const estimatedCost = 
-    (tokenUsage.promptTokens / 1000 * pricing.input) +
-    (tokenUsage.completionTokens / 1000 * pricing.output)
+    (tokenUsage.promptTokens / 1000000 * pricing.inputCostPer1MTokens) +
+    (tokenUsage.completionTokens / 1000000 * pricing.outputCostPer1MTokens);
 
   // Find or create category
   let category = await prisma.articleCategory.findFirst({

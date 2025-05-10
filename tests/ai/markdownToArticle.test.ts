@@ -12,7 +12,7 @@ import { PrismaClient } from '@prisma/client';
 import { slugify } from '@/lib/utils/slugify';
 import { WordPressClient } from '@/lib/wordpress/wordpressClient';
 import { WordPressPost } from '@/lib/wordpress/wordpressTypes';
-import { getOrCreateTestUser } from './test-helpers';
+import { getOrCreateTestUser } from '../test-helpers';
 
 const prisma = new PrismaClient();
 

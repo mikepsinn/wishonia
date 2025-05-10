@@ -32,7 +32,9 @@
     "deps:check:size": "npm-check",
     "deps:check:comprehensive": "cost-of-modules",
     "deps:unused-exports": "ts-prune",
-    "generate-routes": "ts-node -r tsconfig-paths/register scripts/generateRouteTree.ts"
+    "generate-routes": "ts-node -r tsconfig-paths/register scripts/generateRouteTree.ts",
+    "self-improve": "ts-node scripts/self-improving-agent.ts",
+    "agent:roadmap-issues": "tsx scripts/roadmap-issue-agent.ts"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
