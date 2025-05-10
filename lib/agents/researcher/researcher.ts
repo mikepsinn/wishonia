@@ -5,9 +5,8 @@ import { RegularSearchOptions, SearchResult } from "exa-js";
 import { z } from "zod";
 import { getSearchResults, getSearchResultsByUrl } from "@/lib/agents/researcher/getSearchResults";
 import { generateSearchQueries } from "@/lib/agents/researcher/searchQueryGenerator";
-import { DEFAULT_MODEL_NAME, getModel, ModelName } from "@/lib/utils/modelUtils";
+import { DEFAULT_MODEL_NAME, getModel, ModelName, MODEL_PRICING } from "@/lib/utils/modelUtils";
 import { slugify } from "@/lib/utils/slugify";
-import { MODEL_PRICING } from "@/lib/constants/llmModelPricing";
 const prisma = new PrismaClient()
 
 const GeneratedReportSchema = z.object({
