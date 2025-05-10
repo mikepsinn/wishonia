@@ -11,6 +11,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/app/providers"; // Import Providers
+import { SessionNavBar } from "@/components/ui/sidebar"; // Added import
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -85,7 +86,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
               vaul-drawer-wrapper=""
               className="flex min-h-screen flex-col bg-background"
             >
-              {children}
+              <SessionNavBar /> {/* Added SessionNavBar */}
+              <main 
+                className="flex-1 pl-[3.05rem]" 
+                style={{ paddingLeft: 'var(--sidebar-width)' }} /* Added style for dynamic padding */
+              >
+                {children}
+              </main>
             </div>
             <Toaster />
           </CopilotKit>

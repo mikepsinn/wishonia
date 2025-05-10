@@ -1119,6 +1119,9 @@ model Organization {
   // Add to Organization model
   // ... existing Organization fields ...
   jobPostings                   WishingWell[]                           @relation(name: "HiringOrganizationForJob")
+  // Add settings and navigationMenus relations
+  settings                      OrganizationSetting[]
+  navigationMenus               NavigationMenu[]
 }
 
 enum CompanySize {
@@ -2446,3 +2449,60 @@ enum JobApplicationStatus {
   REJECTED
   WITHDRAWN_BY_CANDIDATE
 }
+
+// --- CONFIGURATION STORED IN DATABASE ---
+
+model OrganizationSetting {
+  id             String       @id @default(cuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  key            String       // e.g., "siteName", "logoUrl", "themePrimaryColor", "featureXEnabled"
+  value          String       // Store value as string, parse as needed in application
+  description    String?      // Optional description of the setting
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@unique([organizationId, key])
+  @@index([organizationId])
+}
+
+model NavigationMenu {
+  id             String              @id @default(cuid())
+  organizationId String
+  organization   Organization        @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  name           String              // e.g., "sidebarNav", "avatarNav", "mainNav"
+  description    String?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  items          NavigationMenuItem[]
+
+  @@unique([organizationId, name])
+  @@index([organizationId])
+}
+
+model NavigationMenuItem {
+  id             String    @id @default(cuid())
+  menuId         String
+  menu           NavigationMenu @relation(fields: [menuId], references: [id], onDelete: Cascade)
+  title          String
+  href           String?         // Optional: some items might be non-links (e.g., section headers, dividers)
+  icon           String?         // Store icon name (e.g., "home", "settings") - map to actual icons in frontend
+  tooltip        String?
+  target         String?         // e.g., "_blank" for new tab
+  badgeText      String?         // For badges like "New" or "Beta"
+  badgeVariant   String?         // e.g., "default", "destructive" (Tailwind/shadcn variants)
+  parentId       String?         // For sub-menus/hierarchical navigation
+  parent         NavigationMenuItem? @relation("SubMenuItems", fields: [parentId], references: [id], onDelete:NoAction, onUpdate: NoAction)
+  children       NavigationMenuItem[] @relation("SubMenuItems")
+  itemOrder      Int             // To control the display order
+  isDivider      Boolean         @default(false) // Special flag for dividers
+  rolesAllowed   String[]        // Optional: array of role names that can see this item
+  featureFlag    String?         // Optional: link to an OrganizationSetting key for feature-gated display
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  @@index([menuId])
+  @@index([parentId])
+}
+
+// --- END OF CONFIGURATION STORED IN DATABASE ---

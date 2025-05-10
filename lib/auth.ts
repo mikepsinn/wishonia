@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth/next"
 import EmailProvider from "next-auth/providers/email"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
+import CredentialsProvider from "next-auth/providers/credentials"
 
 import { env } from "@/env.mjs"
 import { prisma as db } from "@/lib/db"
@@ -74,6 +75,28 @@ export const authOptions: NextAuthOptions = {
       },
     }),
     // DFDAProvider,
+    CredentialsProvider({
+      id: "credentials",
+      name: "Demo Login",
+      credentials: {
+        session: { type: "text" },
+      },
+      async authorize(credentials) {
+        if (!credentials?.session) return null
+        try {
+          const sessionData = JSON.parse(credentials.session)
+          return {
+            id: sessionData.user.id,
+            name: sessionData.user.name,
+            email: sessionData.user.email,
+            image: null,
+          }
+        } catch (error) {
+          console.error("Demo login error:", error)
+          return null
+        }
+      },
+    }),
   ],
   callbacks: {
     async session({ token, session }) {

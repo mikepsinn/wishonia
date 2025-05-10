@@ -1,11 +1,13 @@
 "use client"
 
 import * as React from "react"
-import { signIn } from "next-auth/react"
+import { signIn, signIn as nextAuthSignIn } from "next-auth/react"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
+import { User } from "lucide-react"
+
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {
   callbackUrl?: string
@@ -47,6 +49,7 @@ export function UserAuthForm({
 
   const [emailSent, setEmailSent] = React.useState<boolean>(false)
   const [showSocialLogins, setShowSocialLogins] = React.useState<boolean>(false)
+  const isDevelopment = process.env.NEXT_PUBLIC_APP_URL?.includes('localhost')
 
   const handleEmailSignIn = async () => {
     setIsEmailLoading(true)
@@ -169,6 +172,46 @@ export function UserAuthForm({
               </button>
             </div>
           </div>
+
+          {isDevelopment && (
+            <button
+              type="button"
+              className={cn(buttonVariants({ variant: "secondary" }), "w-full mt-2 bg-yellow-100 hover:bg-yellow-200 text-yellow-900")}
+              onClick={async () => {
+                try {
+                  setIsLoading(true)
+                  const response = await fetch('/api/auth/demo', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                  })
+                  const result = await response.json()
+                  
+                  if (result.success && result.session) {
+                    // Use the custom credential provider to sign in with the demo session
+                    await nextAuthSignIn("credentials", {
+                      session: JSON.stringify(result.session),
+                      redirect: false,
+                      callbackUrl: finalCallbackUrl,
+                    })
+                  } else {
+                    console.error("Demo login failed:", result.error)
+                  }
+                } catch (error) {
+                  console.error("Demo login error:", error)
+                } finally {
+                  setIsLoading(false)
+                }
+              }}
+              disabled={isLoading}
+            >
+              {isLoading ? (
+                <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+              ) : (
+                <User className="mr-2 h-4 w-4" />
+              )}{" "}
+              Demo Login (Development Only)
+            </button>
+          )}
         </>
       )}
     </div>

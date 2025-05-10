@@ -21,7 +21,7 @@
     "prisma:format": "prisma format",
     "prisma:pull": "prisma db pull",
     "db:up": "docker-compose up -d",
-    "test": "jest --watch",
+    "test": "jest",
     "test:ci": "jest --ci",
     "format": "pnpm prettier . --write",
     "format:check": "pnpm prettier . --check",

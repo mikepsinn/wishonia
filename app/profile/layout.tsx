@@ -1,8 +1,6 @@
-import { generalSidebarNav } from "@/config/navigation/general-nav"
 import { getCurrentUser } from "@/lib/session"
 import Footer from "@/components/layout/footer"
 import TopNavbar from "@/components/layout/topNavbar"
-import { SidebarNav } from "@/components/sidebar-nav"
 
 interface DashboardLayoutProps {
   children: React.ReactNode
@@ -24,7 +22,7 @@ export default async function DashboardLayout({
       />
       <div className="container grid flex-1 gap-12 md:grid-cols-[200px_1fr]">
         <aside className="hidden w-[200px] flex-col md:flex">
-          <SidebarNav items={generalSidebarNav.data} />
+          {/* <SidebarNav items={generalSidebarNav.data} /> */}
         </aside>
         <main className="flex w-full flex-1 flex-col">{children}</main>
       </div>
