@@ -35,15 +35,15 @@ interface RoadmapItem {
 }
 
 // Helper function to generate a random hex color (without #)
-function generateRandomHexColor(): string {
-  return Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
-}
+// function generateRandomHexColor(): string { // No longer needed if AI doesn't suggest new label colors
+//   return Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+// }
 
 // Zod Schemas for GitHub Issue Data
-const GitHubLabelSchema = z.object({
+const GitHubLabelSchema = z.object({ // This schema is still useful for getExistingLabelsAndMilestones
   name: z.string().describe("Name of the GitHub label. This is always required."),
-  color: z.string().optional().describe("Hex color code for the label (e.g., 'f29513'), without the #. Provide if suggesting a NEW label, otherwise omit to use existing label's color."),
-  description: z.string().optional().describe("Description of the label. Provide if suggesting a NEW label, otherwise omit.")
+  color: z.string().optional().describe("Hex color code for the label (e.g., 'f29513'), without the #."),
+  description: z.string().optional().describe("Description of the label.")
 });
 type GitHubLabel = z.infer<typeof GitHubLabelSchema>;
 
@@ -54,12 +54,31 @@ const GitHubMilestoneSchema = z.object({
 });
 type GitHubMilestone = z.infer<typeof GitHubMilestoneSchema>;
 
+const PREDEFINED_ALLOWED_LABELS = [
+  // Phase Labels
+  "phase:0", "phase:1", "phase:2", "phase:3", "phase:4", "phase:paretotopia",
+  // Type Labels
+  "type:development", "type:documentation", "type:research", "type:planning",
+  "type:design", "type:refactor", "type:testing", "type:community",
+  "type:operational", "type:content", "type:legal", "type:funding",
+  "type:data-modeling", "type:ai-agent",
+  // Practical/Status/Priority/Kind Labels
+  "priority:high", "priority:medium", "priority:low",
+  "status:needs-triage", "status:ready-for-dev", "status:in-progress",
+  "status:needs-review", "status:blocked",
+  "good first issue", "help wanted",
+  "effort:small", "effort:medium", "effort:large",
+  "kind:bug", "kind:enhancement", "kind:question",
+  "blocker", "needs-discussion"
+] as const; // Important for z.enum
+
 const IssueCreationDataSchema = z.object({
   originalRoadmapTitle: z.string().describe("The exact title of the roadmap item this issue corresponds to. This MUST be identical to the input roadmap item title."),
   originalRoadmapItemStatus: z.enum(['open', 'closed']).describe("The status ('open' or 'closed') of the original roadmap item, based DIRECTLY on AI's parsing of the roadmap checkbox ('[ ]' for open, '[x]' for closed). This is CRITICAL for logic."),
   title: z.string().describe("A concise, descriptive title for the GitHub issue. This can be a refined version of the roadmap item."),
   body: z.string().describe("A detailed description of the issue. Include an assessment of the current status (Not Started, Partially Implemented, Implemented, Needs Review) based on analysis of the evidence, and a plan or next steps. Reference the original roadmap item text if helpful."),
-  labels: z.array(GitHubLabelSchema).describe("An array of GitHub label objects to apply to the issue. Prefer existing labels if suitable. If suggesting a new label, provide its name, and optionally color and description."),
+  labels: z.array(z.enum(PREDEFINED_ALLOWED_LABELS))
+    .describe("An array of GitHub label NAMES selected EXCLUSIVELY from the PREDEFINED_ALLOWED_LABELS list. Choose all that apply."),
   milestoneTitle: z.string().optional().describe("The title of an existing or new GitHub milestone to associate this issue with. If suggesting a new milestone, also provide its description and optional due_on date if appropriate via the milestone object structure."),
   suggestedSubTasks: z.array(z.string()).optional().describe("If the roadmap item is complex, suggest a list of sub-task titles that could be broken down into separate smaller issues or a checklist within this issue."),
   relevantFilePaths: z.array(z.string()).optional().describe("A list of file paths relevant to this roadmap item, if any.")
@@ -199,19 +218,15 @@ async function getAllIssues(): Promise<{ [title: string]: any }> {
 async function aiAssessRoadmapBatch(
   fullRoadmapContent: string,
   codeEvidence: string,
-  existingLabels: GitHubLabel[],
+  existingLabels: GitHubLabel[], // Still useful to show AI what's already on GitHub
   existingMilestones: GitHubMilestone[]
 ): Promise<BatchIssueCreationOutput> {
   const model = getModel(DEFAULT_AI_MODEL);
 
-  const standardTypeLabels = [
-    "type:development", "type:documentation", "type:research", "type:planning", 
-    "type:design", "type:refactor", "type:testing", "type:community", 
-    "type:operational", "type:content", "type:legal", "type:funding",
-    "type:data-modeling", "type:ai-agent"
-  ];
+  // const standardTypeLabels = [ // No longer needed as separate list, merged into PREDEFINED_ALLOWED_LABELS
+  // ];
 
-  const roadmapPhaseTitles = [
+  const roadmapPhaseTitles = [ // Still useful for guiding milestone title suggestions
     "Phase 0: Inception",
     "Phase 1: Foundation",
     "Phase 2: Internal Gift Economy",
@@ -233,13 +248,13 @@ You are an expert project manager and software engineer. Your task is to process
     \`\`\`
     ${codeEvidence}
     \`\`\`
-*   **Existing GitHub Labels:**
+*   **Existing GitHub Labels (Names, Colors, Descriptions):**
     ${JSON.stringify(existingLabels, null, 2)}
-*   **Existing GitHub Milestones:**
+*   **Existing GitHub Milestones (Titles, Descriptions, Due Dates):**
     ${JSON.stringify(existingMilestones, null, 2)}
-*   **Standard Issue Type Labels (Choose one per issue):**
-    ${JSON.stringify(standardTypeLabels, null, 2)}
-*   **Roadmap Phase Titles (Use these for Milestone suggestions):**
+*   **PREDEFINED ALLOWED LABELS (You MUST choose from this list for the 'labels' field):**
+    ${JSON.stringify(PREDEFINED_ALLOWED_LABELS, null, 2)}
+*   **Roadmap Phase Titles (Use these for Milestone title suggestions):**
     ${JSON.stringify(roadmapPhaseTitles, null, 2)}
 
 **Instructions for EACH roadmap item you identify in the Full Roadmap Content:**
@@ -251,15 +266,14 @@ You are an expert project manager and software engineer. Your task is to process
     *   State the item's **current implementation status** (e.g., Not Started, Partially Implemented, Fully Implemented, Needs Review) based on your analysis of the evidence (including the prisma.schema for data model tasks). This is separate from the direct checkbox status.
     *   Provide a brief **assessment**, citing evidence from the codebase if applicable.
     *   Outline a **plan or next steps**.
-5.  **Labels:**
-    *   Suggest appropriate labels.
-    *   **Type Label:** You MUST include exactly one 'type' label from the provided "Standard Issue Type Labels" list.
-    *   **Phase Label:** Determine which roadmap phase the item belongs to (e.g., Phase 0, Phase 1, Phase 2, Phase 3, Phase 4, Ultimate Vision). Create a label like 'phase:0', 'phase:1', 'phase:ultimate'.
-    *   **Crucially, if an existing label (name, color, description) on GitHub is suitable (including potentially your derived type/phase labels if they already exist), use its exact existing name and OMIT its color and description in your output for that label to avoid trying to re-create/update it.**
-    *   If suggesting a COMPLETELY NEW label (that is not a type/phase label or doesn't match an existing one), provide its name, and optionally a hex color (no '#') and a description.
+5.  **Labels (Array of strings):**
+    *   You MUST select ALL relevant label names for the issue EXCLUSIVELY from the "PREDEFINED ALLOWED LABELS" list provided above.
+    *   Ensure you include at least one 'type:X' label and one 'phase:X' label.
+    *   Also include any relevant 'priority:X', 'status:X', 'effort:X', 'kind:X', 'good first issue', 'blocker', etc., labels from the predefined list.
+    *   Do NOT invent new labels. Do NOT provide color or description for labels.
 6.  **Milestone:**
     *   Suggest an appropriate GitHub milestone title. **This title SHOULD generally be one of the "Roadmap Phase Titles" provided in the context.**
-    *   **If an existing milestone on GitHub matches one of these Roadmap Phase Titles, use its exact title.**
+    *   If an existing milestone on GitHub matches one of these Roadmap Phase Titles, use its exact title.
     *   If suggesting a new milestone (e.g., if one of the Roadmap Phase Titles isn't yet a milestone on GitHub), provide its title. For description, you can use the phase title again. Due dates are optional.
 7.  **Sub-Tasks:** If the item is complex, break it down into a list of suggested sub-task titles.
 8.  **Relevant Files:** List any relevant file paths from the codebase evidence (e.g. README.md, package.json, prisma/schema.prisma, specific script files).
@@ -338,18 +352,13 @@ async function main() {
       continue;
     }
     
-    // The rest of the loop will use `aiIssueData` and the matched `roadmapItem`
-    // This part needs to be filled in with the logic from the old loop, adapted for `aiIssueData`
-
     const issueTitleFromAI = aiIssueData.title;
     const issueBodyFromAI = aiIssueData.body;
-    const suggestedLabelsFromAI = aiIssueData.labels; // Array of GitHubLabel objects
+    // Labels are now just an array of strings (names) from the predefined list
+    const suggestedLabelNamesFromAI = aiIssueData.labels; 
     const suggestedMilestoneFromAI = aiIssueData.milestoneTitle ? 
-      { title: aiIssueData.milestoneTitle } as Partial<GitHubMilestone> : // Reconstruct to match expected structure
+      { title: aiIssueData.milestoneTitle } as Partial<GitHubMilestone> : 
       undefined; 
-    // Note: If new milestones need description/due_on, the AI prompt and schema need to support returning a full milestone object
-    // For now, assuming it mostly suggests existing or simple new milestone titles via `milestoneTitle`
-    // And new label suggestions include color/description directly in `suggestedLabelsFromAI`
 
     const suggestedSubTasks = aiIssueData.suggestedSubTasks || [];
     const relevantFilePaths = aiIssueData.relevantFilePaths || [];
@@ -375,17 +384,37 @@ async function main() {
     let existingIssue = existingIssuesByTitle[roadmapItem.title] || existingIssuesByTitle[issueTitleFromAI];
     
     // GitHub Issue Creation/Update Logic
-    const targetLabels = suggestedLabelsFromAI.map(l => l.name); // Get just the names for the issue
-    let milestoneIdForGitHub: number | undefined = undefined; // Actual ID for GitHub API
+    // targetLabels is now directly suggestedLabelNamesFromAI
+    // let milestoneIdForGitHub: number | undefined = undefined; // Keep for potential future use with actual API
 
     if (suggestedMilestoneFromAI?.title) {
         const ms = existingMilestones.find(m => m.title.toLowerCase() === suggestedMilestoneFromAI.title!.toLowerCase());
-        // In a real run, if 'ms' is undefined here and it was a new suggestion, it should have been created in the simulation block above.
-        // milestoneIdForGitHub = ms?.id; // Or ms.number, depending on what GitHub API returns and expects. For now, just logging title.
+        // milestoneIdForGitHub = ms?.id; // Or ms.number
         console.log(`DRY RUN: Milestone to be associated (by title): ${suggestedMilestoneFromAI.title}`);
     }
     
-    const desiredStatusFromAI = aiIssueData.originalRoadmapItemStatus; // This should exist on IssueCreationData
+    const desiredStatusFromAI = aiIssueData.originalRoadmapItemStatus; 
+
+    // --- REMOVE SIMULATION OF CREATING NEW LABELS ---
+    // The old block for iterating suggestedLabelsFromAI and simulating new label creation is removed.
+    // We now assume all labels in suggestedLabelNamesFromAI are from the predefined list
+    // and should exist on GitHub or be created manually in a one-time setup.
+
+    console.log(`DRY RUN: (Simulating GitHub operations for "${issueTitleFromAI}")`);
+    console.log(`DRY RUN: Body (first 200 chars):\n${finalIssueBody.substring(0, 200)}...`);
+    console.log(`DRY RUN: Labels to apply: ${suggestedLabelNamesFromAI.join(', ')}`);
+    if (suggestedMilestoneFromAI?.title) {
+      const existingMilestone = existingMilestones.find(m => m.title.toLowerCase() === suggestedMilestoneFromAI.title!.toLowerCase());
+      if (!existingMilestone && CREATE_ISSUES_FLAG) {
+          // In a real run, we might create the milestone here if it's from roadmapPhaseTitles but doesn't exist
+          // For now, dry run assumes it exists or would be picked up by title.
+          console.log(`DRY RUN: Milestone "${suggestedMilestoneFromAI.title}" does not exist. In a live run, it might be created if it's a defined roadmap phase.`);
+      } else if (!existingMilestone) {
+          console.log(`DRY RUN: Milestone "${suggestedMilestoneFromAI.title}" does not exist.`);
+      }
+    }
+    // --- END OF REMOVED/SIMPLIFIED LABEL/MILESTONE CREATION SIMULATION ---
+
 
     if (existingIssue) {
       // Issue EXISTS on GitHub
@@ -394,7 +423,7 @@ async function main() {
       // TODO: Add logic to update title, body, labels, milestone if they differ significantly
       // Example: if (existingIssue.title !== issueTitleFromAI || /* other conditions */ ) {
       //   console.log(`DRY RUN: Would update issue #${existingIssue.number} with new title, body, labels, milestone.`);
-      //   if (CREATE_ISSUES_FLAG) { /* octokit.issues.update(...) */ }
+      //   if (CREATE_ISSUES_FLAG) { /* octokit.issues.update({ owner: REPO_OWNER, repo: REPO_NAME, issue_number: existingIssue.number, title: issueTitleFromAI, body: finalIssueBody, labels: suggestedLabelNamesFromAI, milestone: milestoneIdForGitHub }); */ }
       // }
 
       if (desiredStatusFromAI === "closed" && existingIssue.state === "open") {
