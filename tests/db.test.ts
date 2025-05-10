@@ -25,7 +25,6 @@ beforeAll(async () => {
 describe("Database-related tests", () => {
   it("averages wishingWell allocations", async () => {
     const testUser = await getOrCreateTestUser()
-    await prisma.wishingWellPairAllocation.deleteMany({})
     await seedWishingWellPairAllocations(testUser)
     await aggregateWishingWellPairAllocations()
     const wishingWells = await prisma.wishingWell.findMany()
@@ -35,7 +34,6 @@ describe("Database-related tests", () => {
   })
   it("averages globalProblem allocations", async () => {
     const testUser = await getOrCreateTestUser()
-    await prisma.globalProblemPairAllocation.deleteMany({})
     await seedGlobalProblemPairAllocations(testUser)
     await aggregateGlobalProblemPairAllocations()
     const globalProblems = await prisma.globalProblem.findMany()

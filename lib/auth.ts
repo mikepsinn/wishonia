@@ -46,6 +46,22 @@ interface DFDAProfile {
 //   clientSecret: process.env.DFDA_CLIENT_SECRET,
 // } satisfies OAuthConfig<DFDAProfile>
 
+export async function demoLoginAuthorize(credentials?: { session?: string }) {
+  if (!credentials?.session) return null
+  try {
+    const sessionData = JSON.parse(credentials.session)
+    return {
+      id: sessionData.user.id,
+      name: sessionData.user.name,
+      email: sessionData.user.email,
+      image: null,
+    }
+  } catch (error) {
+    console.error('Demo login error:', error)
+    return null
+  }
+}
+
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(db),
   session: {
@@ -81,21 +97,7 @@ export const authOptions: NextAuthOptions = {
       credentials: {
         session: { type: "text" },
       },
-      async authorize(credentials) {
-        if (!credentials?.session) return null
-        try {
-          const sessionData = JSON.parse(credentials.session)
-          return {
-            id: sessionData.user.id,
-            name: sessionData.user.name,
-            email: sessionData.user.email,
-            image: null,
-          }
-        } catch (error) {
-          console.error("Demo login error:", error)
-          return null
-        }
-      },
+      authorize: demoLoginAuthorize,
     }),
   ],
   callbacks: {
@@ -224,5 +226,3 @@ export const authOptions: NextAuthOptions = {
     },
   },
 }
-
-

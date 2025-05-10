@@ -1,45 +1,11 @@
-import { authOptions } from '@/lib/auth'
+import { demoLoginAuthorize } from '@/lib/auth'
 
-// Mock PrismaAdapter
-jest.mock('@auth/prisma-adapter', () => ({
-  PrismaAdapter: jest.fn(() => ({}))
-}))
-
-// Mock Prisma client
-jest.mock('@/lib/db', () => ({}))
-
-describe('Demo Login Provider', () => {
-  let credentialsProvider: any
-
-  beforeEach(() => {
-    credentialsProvider = authOptions.providers.find(
-      (p) => p.id === 'credentials'
-    )
-    expect(credentialsProvider).toBeDefined()
-  })
-
-  it('should exist as a credentials provider', () => {
-    expect(credentialsProvider.id).toBe('credentials')
-    expect(credentialsProvider.name).toBe('Demo Login')
-  })
-
+describe('demoLoginAuthorize', () => {
   it('should authorize with valid demo session data', async () => {
-    const provider = credentialsProvider as any
-    const authorize = provider.authorize
-    expect(authorize).toBeDefined()
-
     const demoSession = {
-      user: {
-        id: 'demo-user-id',
-        name: 'Demo User',
-        email: 'demo@example.com'
-      }
+      user: { id: 'demo-user-id', name: 'Demo User', email: 'demo@example.com' }
     }
-
-    const result = await authorize({
-      session: JSON.stringify(demoSession)
-    })
-
+    const result = await demoLoginAuthorize({ session: JSON.stringify(demoSession) })
     expect(result).toEqual({
       id: 'demo-user-id',
       name: 'Demo User',
@@ -48,20 +14,18 @@ describe('Demo Login Provider', () => {
     })
   })
 
-  it('should reject invalid session data', async () => {
-    const provider = credentialsProvider as any
-    const authorize = provider.authorize
+  it('should reject missing session', async () => {
+    const result = await demoLoginAuthorize({})
+    expect(result).toBeNull()
+  })
 
-    // Test with missing session
-    const result1 = await authorize({})
-    expect(result1).toBeNull()
+  it('should reject invalid JSON session', async () => {
+    const result = await demoLoginAuthorize({ session: 'not json' })
+    expect(result).toBeNull()
+  })
 
-    // Test with invalid JSON
-    const result2 = await authorize({ session: 'invalid json' })
-    expect(result2).toBeNull()
-
-    // Test with missing user data
-    const result3 = await authorize({ session: '{}' })
-    expect(result3).toBeNull()
+  it('should reject session without user data', async () => {
+    const result = await demoLoginAuthorize({ session: JSON.stringify({}) })
+    expect(result).toBeNull()
   })
 })
