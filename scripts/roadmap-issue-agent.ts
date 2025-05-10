@@ -56,8 +56,9 @@ type GitHubMilestone = z.infer<typeof GitHubMilestoneSchema>;
 
 const IssueCreationDataSchema = z.object({
   originalRoadmapTitle: z.string().describe("The exact title of the roadmap item this issue corresponds to. This MUST be identical to the input roadmap item title."),
+  originalRoadmapItemStatus: z.enum(['open', 'closed']).describe("The status ('open' or 'closed') of the original roadmap item, based DIRECTLY on AI's parsing of the roadmap checkbox ('[ ]' for open, '[x]' for closed). This is CRITICAL for logic."),
   title: z.string().describe("A concise, descriptive title for the GitHub issue. This can be a refined version of the roadmap item."),
-  body: z.string().describe("A detailed description of the issue. Include an assessment of the current status (Not Started, Partially Implemented, Implemented, Needs Review), evidence from the codebase (if any), and a plan or next steps. Reference the original roadmap item text if helpful."),
+  body: z.string().describe("A detailed description of the issue. Include an assessment of the current status (Not Started, Partially Implemented, Implemented, Needs Review) based on analysis of the evidence, and a plan or next steps. Reference the original roadmap item text if helpful."),
   labels: z.array(GitHubLabelSchema).describe("An array of GitHub label objects to apply to the issue. Prefer existing labels if suitable. If suggesting a new label, provide its name, and optionally color and description."),
   milestoneTitle: z.string().optional().describe("The title of an existing or new GitHub milestone to associate this issue with. If suggesting a new milestone, also provide its description and optional due_on date if appropriate via the milestone object structure."),
   suggestedSubTasks: z.array(z.string()).optional().describe("If the roadmap item is complex, suggest a list of sub-task titles that could be broken down into separate smaller issues or a checklist within this issue."),
@@ -203,6 +204,22 @@ async function aiAssessRoadmapBatch(
 ): Promise<BatchIssueCreationOutput> {
   const model = getModel(DEFAULT_AI_MODEL);
 
+  const standardTypeLabels = [
+    "type:development", "type:documentation", "type:research", "type:planning", 
+    "type:design", "type:refactor", "type:testing", "type:community", 
+    "type:operational", "type:content", "type:legal", "type:funding",
+    "type:data-modeling", "type:ai-agent"
+  ];
+
+  const roadmapPhaseTitles = [
+    "Phase 0: Inception",
+    "Phase 1: Foundation",
+    "Phase 2: Internal Gift Economy",
+    "Phase 3: Fair Tax & UBI",
+    "Phase 4: Sustainability, Governance & Advanced AI",
+    "Phase X: Paretotopia"
+  ];
+
   const prompt = `
 You are an expert project manager and software engineer. Your task is to process roadmap items for the Wishonia project and generate detailed GitHub issue specifications for each.
 
@@ -220,27 +237,32 @@ You are an expert project manager and software engineer. Your task is to process
     ${JSON.stringify(existingLabels, null, 2)}
 *   **Existing GitHub Milestones:**
     ${JSON.stringify(existingMilestones, null, 2)}
+*   **Standard Issue Type Labels (Choose one per issue):**
+    ${JSON.stringify(standardTypeLabels, null, 2)}
+*   **Roadmap Phase Titles (Use these for Milestone suggestions):**
+    ${JSON.stringify(roadmapPhaseTitles, null, 2)}
 
 **Instructions for EACH roadmap item you identify in the Full Roadmap Content:**
 
 1.  **Original Roadmap Title:** You MUST extract and include the exact 'originalRoadmapTitle' as it appears between the asterisks in the roadmap. This is critical for matching.
-2.  **Refined Issue Title:** Create a concise, descriptive GitHub issue title.
-3.  **Detailed Body:**
-    *   State the item's **current implementation status** (e.g., Not Started, Partially Implemented, Fully Implemented, Needs Review) based on the roadmap's checkbox status (\`[ ]\` vs \`[x]\`) and your analysis of the evidence (including the prisma.schema for data model tasks).
+2.  **Original Roadmap Item Status:** You MUST determine and include the 'originalRoadmapItemStatus'. This should be 'open' if the roadmap item has a '[ ]' checkbox and 'closed' if it has a '[x]' checkbox. This field is CRITICAL.
+3.  **Refined Issue Title:** Create a concise, descriptive GitHub issue title.
+4.  **Detailed Body:**
+    *   State the item's **current implementation status** (e.g., Not Started, Partially Implemented, Fully Implemented, Needs Review) based on your analysis of the evidence (including the prisma.schema for data model tasks). This is separate from the direct checkbox status.
     *   Provide a brief **assessment**, citing evidence from the codebase if applicable.
     *   Outline a **plan or next steps**.
-4.  **Labels:**
+5.  **Labels:**
     *   Suggest appropriate labels.
-    *   **Crucially, if an existing label (name, color, description) is suitable, use its exact existing name and OMIT its color and description in your output for that label to avoid trying to re-create/update it.**
-    *   If suggesting a COMPLETELY NEW label, provide its name, and optionally a hex color (no '#') and a description.
-    *   Include a 'type' label (e.g., type:development, type:documentation, type:research, type:community).
-    *   Include a 'phase' label corresponding to its roadmap phase (e.g., phase:0, phase:1, phase:1.5) if discernible.
-5.  **Milestone:**
-    *   Suggest an appropriate GitHub milestone title.
-    *   **If an existing milestone title is suitable, use its exact title.**
-    *   If suggesting a COMPLETELY NEW milestone, provide its title, and optionally a description and a due_on date (YYYY-MM-DDTHH:MM:SSZ).
-6.  **Sub-Tasks:** If the item is complex, break it down into a list of suggested sub-task titles.
-7.  **Relevant Files:** List any relevant file paths from the codebase evidence (e.g. README.md, package.json, prisma/schema.prisma, specific script files).
+    *   **Type Label:** You MUST include exactly one 'type' label from the provided "Standard Issue Type Labels" list.
+    *   **Phase Label:** Determine which roadmap phase the item belongs to (e.g., Phase 0, Phase 1, Phase 2, Phase 3, Phase 4, Ultimate Vision). Create a label like 'phase:0', 'phase:1', 'phase:ultimate'.
+    *   **Crucially, if an existing label (name, color, description) on GitHub is suitable (including potentially your derived type/phase labels if they already exist), use its exact existing name and OMIT its color and description in your output for that label to avoid trying to re-create/update it.**
+    *   If suggesting a COMPLETELY NEW label (that is not a type/phase label or doesn't match an existing one), provide its name, and optionally a hex color (no '#') and a description.
+6.  **Milestone:**
+    *   Suggest an appropriate GitHub milestone title. **This title SHOULD generally be one of the "Roadmap Phase Titles" provided in the context.**
+    *   **If an existing milestone on GitHub matches one of these Roadmap Phase Titles, use its exact title.**
+    *   If suggesting a new milestone (e.g., if one of the Roadmap Phase Titles isn't yet a milestone on GitHub), provide its title. For description, you can use the phase title again. Due dates are optional.
+7.  **Sub-Tasks:** If the item is complex, break it down into a list of suggested sub-task titles.
+8.  **Relevant Files:** List any relevant file paths from the codebase evidence (e.g. README.md, package.json, prisma/schema.prisma, specific script files).
 
 Process ALL roadmap items you identify and provide your output as a single JSON object conforming to the BatchIssueCreationOutputSchema.
 The output array of issues should contain one entry for each roadmap item identified.
@@ -352,92 +374,52 @@ async function main() {
     // Try to find an existing issue by the original roadmap title first, then by AI refined title
     let existingIssue = existingIssuesByTitle[roadmapItem.title] || existingIssuesByTitle[issueTitleFromAI];
     
-    // ... (The rest of the logic for creating/updating labels, milestones, and issues will go here)
-    // This includes handling existingIssue, creating/updating labels, milestones, and the issue itself.
-    // It will be very similar to the previous loop's content but using aiIssueData.
-
-    // Placeholder for the rest of the issue processing logic:
-    console.log(`DRY RUN: (Simulating GitHub operations for "${issueTitleFromAI}")`);
-    console.log(`DRY RUN: Body:\n${finalIssueBody.substring(0, 200)}...`);
-    console.log(`DRY RUN: Labels: ${suggestedLabelsFromAI.map(l => l.name).join(', ')}`);
-    if (suggestedMilestoneFromAI) {
-        console.log(`DRY RUN: Suggested Milestone Title: ${suggestedMilestoneFromAI.title}`);
-    }
-    console.log(`DRY RUN: Desired State (from roadmap): ${roadmapItem.status}`);
-
-
-    // Ensure we update existingLabels and existingMilestones if new ones are created (even in dry run for consistency in the loop)
-    for (const labelSuggestion of suggestedLabelsFromAI) {
-        const existingLabel = existingLabels.find(l => l.name.toLowerCase() === labelSuggestion.name.toLowerCase());
-        if (!existingLabel && labelSuggestion.name) { // If it's a new label suggestion
-            const newLabelForSim: GitHubLabel = {
-                name: labelSuggestion.name,
-                color: labelSuggestion.color || generateRandomHexColor().substring(1), // Use AI color or random
-                description: labelSuggestion.description || `AI Suggested Label: ${labelSuggestion.name}`
-            };
-            if (CREATE_ISSUES_FLAG) {
-                // Actual GitHub label creation logic would go here
-                // For now, just add to our simulation list
-                // const createdLabel = await octokit.issues.createLabel(...); existingLabels.push(createdLabel.data);
-            }
-            existingLabels.push(newLabelForSim); // Simulate addition for subsequent items in this run
-            console.log(`DRY RUN: Would create new label "${newLabelForSim.name}" (Color: ${newLabelForSim.color}, Desc: ${newLabelForSim.description})`);
-        }
-    }
-
-    if (suggestedMilestoneFromAI?.title) {
-        const milestoneTitle = suggestedMilestoneFromAI.title;
-        const existingMilestone = existingMilestones.find(m => m.title.toLowerCase() === milestoneTitle.toLowerCase());
-        if (!existingMilestone) {
-            // AI suggested a new milestone
-            const newMilestoneForSim: GitHubMilestone = {
-                title: milestoneTitle,
-                description: aiIssueData.milestoneTitle, // Assuming the schema/prompt needs to be richer if full details are needed here
-                due_on: undefined // Same as above
-            };
-             if (CREATE_ISSUES_FLAG) {
-                // Actual GitHub milestone creation logic
-                // const createdMilestone = await octokit.issues.createMilestone(...); existingMilestones.push(createdMilestone.data);
-            }
-            existingMilestones.push(newMilestoneForSim); // Simulate addition
-            console.log(`DRY RUN: Would create new milestone "${newMilestoneForSim.title}" (Desc: ${newMilestoneForSim.description}, Due: ${newMilestoneForSim.due_on})`);
-        }
-    }
-
-
-     // GitHub Issue Creation/Update Logic (adapted from previous loop)
+    // GitHub Issue Creation/Update Logic
     const targetLabels = suggestedLabelsFromAI.map(l => l.name); // Get just the names for the issue
-    let milestoneId: number | undefined = undefined;
+    let milestoneIdForGitHub: number | undefined = undefined; // Actual ID for GitHub API
 
     if (suggestedMilestoneFromAI?.title) {
         const ms = existingMilestones.find(m => m.title.toLowerCase() === suggestedMilestoneFromAI.title!.toLowerCase());
-        // In a real run, if 'ms' is undefined here and it was a new suggestion, we'd have created it above and fetched its ID.
-        // For dry run, we're just noting the title.
-        // milestoneId = ms?.number; // In real run, use ms.number if it exists or was just created.
+        // In a real run, if 'ms' is undefined here and it was a new suggestion, it should have been created in the simulation block above.
+        // milestoneIdForGitHub = ms?.id; // Or ms.number, depending on what GitHub API returns and expects. For now, just logging title.
         console.log(`DRY RUN: Milestone to be associated (by title): ${suggestedMilestoneFromAI.title}`);
     }
     
+    const desiredStatusFromAI = aiIssueData.originalRoadmapItemStatus; // This should exist on IssueCreationData
+
     if (existingIssue) {
-      // Update existing issue
-      console.log(`DRY RUN: Would update existing issue #${existingIssue.number} ("${existingIssue.title}")`);
-      console.log(`DRY RUN: New Title: "${issueTitleFromAI}"`);
-      // ... (update logic)
-      if (roadmapItem.status === "closed" && existingIssue.state === "open") {
-        console.log(`DRY RUN: Would close issue #${existingIssue.number}.`);
-      } else if (roadmapItem.status === "open" && existingIssue.state === "closed") {
-        console.log(`DRY RUN: Would reopen issue #${existingIssue.number}.`);
+      // Issue EXISTS on GitHub
+      console.log(`DRY RUN: Existing issue found: #${existingIssue.number} ("${existingIssue.title}"), Current state: ${existingIssue.state}`);
+      
+      // TODO: Add logic to update title, body, labels, milestone if they differ significantly
+      // Example: if (existingIssue.title !== issueTitleFromAI || /* other conditions */ ) {
+      //   console.log(`DRY RUN: Would update issue #${existingIssue.number} with new title, body, labels, milestone.`);
+      //   if (CREATE_ISSUES_FLAG) { /* octokit.issues.update(...) */ }
+      // }
+
+      if (desiredStatusFromAI === "closed" && existingIssue.state === "open") {
+        console.log(`DRY RUN: Roadmap item is DONE, GitHub issue is OPEN. Would CLOSE issue #${existingIssue.number}.`);
+        // if (CREATE_ISSUES_FLAG) { /* octokit.issues.update({ state: "closed" }) */ }
+      } else if (desiredStatusFromAI === "open" && existingIssue.state === "closed") {
+        console.log(`DRY RUN: Roadmap item is OPEN, GitHub issue is CLOSED. Would REOPEN issue #${existingIssue.number}.`);
+        // if (CREATE_ISSUES_FLAG) { /* octokit.issues.update({ state: "open" }) */ }
+      } else {
+        console.log(`DRY RUN: Issue #${existingIssue.number} state (${existingIssue.state}) matches desired state (${desiredStatusFromAI}). No state change needed.`);
       }
     } else {
-      // Create new issue
-      console.log(`DRY RUN: Would create issue with Title: "${issueTitleFromAI}"`);
-      // ... (creation logic)
-      if (roadmapItem.status === "closed") {
-         console.log(`DRY RUN: Would close issue #${existingIssue.number}.`);
-      } else if (roadmapItem.status === "open" && existingIssue.state === "closed") {
-        console.log(`DRY RUN: Would reopen issue #${existingIssue.number}.`);
+      // Issue DOES NOT EXIST on GitHub
+      if (desiredStatusFromAI === "open") {
+        console.log(`DRY RUN: Roadmap item is OPEN, no existing GitHub issue. Would CREATE new issue: "${issueTitleFromAI}"`);
+        // if (CREATE_ISSUES_FLAG) { 
+        //   /* const newIssue = await octokit.issues.create({ owner: REPO_OWNER, ..., title: issueTitleFromAI, ... }); */ 
+        //   /* console.log(\`LIVE RUN: Created issue #${newIssue.data.number}\`); */
+        // }
+      } else {
+        // desiredStatusFromAI is "closed" and no issue exists on GitHub.
+        console.log(`DRY RUN: Roadmap item "${originalRoadmapTitle}" is DONE and no corresponding GitHub issue found. No action needed.`);
       }
     }
   }
 }
 
-main();
+main().catch(console.error);
