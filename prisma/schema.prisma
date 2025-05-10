@@ -104,6 +104,7 @@ model User {
   web3Wallet                            String?
   website                               String?
   admin                                 Boolean?                              @default(false)
+  wishTokens                            Int?                                  @default(0) // Added for $WISH balance
   activities                            Activity[]
   agents                                Agent[]
   apiKeys                               ApiKey[]
@@ -176,6 +177,8 @@ model User {
   // Add to User model
   // ... existing User fields ...
   jobApplications                       JobApplication[]                      @relation("UserSubmittedApplications")
+  sentPlatformTransactions              PlatformTransaction[]                   @relation("SentPlatformTransactions")
+  receivedPlatformTransactions          PlatformTransaction[]                   @relation("ReceivedPlatformTransactions")
 }
 
 // Need this to create digital twins for people that are not users
@@ -507,7 +510,7 @@ model GlobalTask {
   userId              String
   name                String                 @unique
   description         String?                @unique
-  content             String?
+  content             String? 
   featuredImage       String?
   createdAt           DateTime               @default(now())
   updatedAt           DateTime               @updatedAt
@@ -539,6 +542,7 @@ model GlobalTask {
   requestForOutsourcing Boolean? @default(false)
   outsourcingBudget     Float?
   taskBidsReceived      TaskBid[] // Bids received for this task if outsourced
+  platformTransactions  PlatformTransaction[]
 }
 
 model GlobalTaskRelation {
@@ -690,6 +694,7 @@ model WishingWell {
   experienceLevelRequired       String?
   skillsRequiredText            String[]
   jobApplications               JobApplication[] @relation("JobApplicationsForPosting") // Add this back-relation
+  platformTransactions          PlatformTransaction[]
 }
 
 model WishingWellPairAllocation {
@@ -759,6 +764,7 @@ model WishFulfillmentProposal {
   basedOnServiceOffering    GenieServiceOffering?    @relation(fields: [basedOnServiceOfferingId], references: [id])
   status                    ProposalStatus           @default(DRAFT)
   fulfillmentReviews        FulfillmentReview[]      // Reviews received for this proposal
+  platformTransactions      PlatformTransaction[]
 }
 
 model ProposalProgressReport {
@@ -1987,6 +1993,7 @@ model Petition {
   targetLocation    String? // e.g., "state", "federal"
   messageTemplate   String?                @db.Text // Default message template
   callScript        String?                @db.Text // Default call script
+  platformTransactions PlatformTransaction[]
 }
 
 model PetitionSignature {
@@ -2506,3 +2513,52 @@ model NavigationMenuItem {
 }
 
 // --- END OF CONFIGURATION STORED IN DATABASE ---
+
+// New model for $WISH transactions
+model PlatformTransaction {
+  id             String                    @id @default(cuid())
+  description    String?                   // e.g., "UBI Distribution", "Marketplace Purchase", "Community Fund Contribution"
+  amount         Int                       // Amount of $WISH transacted (can be positive or negative from perspective of fromUser)
+  currency       String                    @default("$WISH") // Should always be $WISH
+  type           PlatformTransactionType   // Type of transaction (UBI, TAX, TRANSFER, REWARD, etc.)
+  createdAt      DateTime                  @default(now())
+  updatedAt      DateTime                  @updatedAt
+
+  fromUserId     String?                   // User initiating or losing $WISH (optional, e.g., for UBI Pool -> User)
+  fromUser       User?                     @relation("SentPlatformTransactions", fields: [fromUserId], references: [id])
+  toUserId       String?                   // User receiving $WISH (optional, e.g., for User -> Tax Pool)
+  toUser         User?                     @relation("ReceivedPlatformTransactions", fields: [toUserId], references: [id])
+
+  // Related entities - helps trace the origin/purpose of the transaction
+  relatedWishingWellId        String?
+  relatedWishingWell          WishingWell?             @relation(fields: [relatedWishingWellId], references: [id])
+  relatedWishFulfillmentProposalId String?
+  relatedWishFulfillmentProposal WishFulfillmentProposal? @relation(fields: [relatedWishFulfillmentProposalId], references: [id])
+  relatedGlobalTaskId         String?
+  relatedGlobalTask           GlobalTask?              @relation(fields: [relatedGlobalTaskId], references: [id])
+  relatedPetitionId           String?
+  relatedPetition             Petition?                @relation(fields: [relatedPetitionId], references: [id])
+
+  // Metadata for more complex transactions
+  metadata Json?
+
+  @@index([fromUserId])
+  @@index([toUserId])
+  @@index([type])
+  @@index([relatedWishingWellId])
+  @@index([relatedWishFulfillmentProposalId])
+  @@index([relatedGlobalTaskId])
+}
+
+enum PlatformTransactionType {
+  UBI_DISTRIBUTION    // $WISH from UBI Pool to User
+  TAX_COLLECTION      // $WISH from User/Transaction to Tax Pool
+  WISHING_WELL_PLEDGE // $WISH pledge from User to WishingWell (or its creator)
+  WISH_FULFILLMENT    // $WISH payment for a fulfilled wish
+  REWARD_ALLOCATION   // $WISH reward for platform participation (e.g., preference allocation, completing tasks)
+  TIP_CONTRIBUTION    // $WISH tip from one User to another
+  PLATFORM_BOUNTY     // $WISH from Platform/Community Fund for specific tasks/contributions
+  MANUAL_ADJUSTMENT   // Admin adjustment of $WISH balance
+  COMMUNITY_FUND_SPENDING // $WISH spent from Community fund for public goods/platform dev
+  OTHER               // For other types of transactions
+}
