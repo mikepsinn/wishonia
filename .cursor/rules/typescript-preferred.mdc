@@ -1,0 +1,18 @@
+# TypeScript Usage Guidelines
+
+This project prefers TypeScript (`.ts` or `.tsx`) over JavaScript (`.js` or `.jsx`) for all new code, including components, utility functions, API handlers, and scripts.
+
+**Key Benefits:**
+- Enhanced type safety and reduced runtime errors.
+- Improved code readability and maintainability.
+- Better developer experience with autocompletion and refactoring.
+
+**When creating new files, please use `.ts` for logic and `.tsx` for React components.**
+
+For examples of TypeScript usage, refer to existing files throughout the codebase, such as:
+- Components: [components/ui/button.tsx](mdc:components/ui/button.tsx)
+- Library functions: [lib/utils.ts](mdc:lib/utils.ts)
+- API routes: [app/api/auth/[...nextauth]/route.ts](mdc:app/api/auth/[...nextauth]/route.ts)
+- Scripts: [scripts/refactor-app-folders.ts](mdc:scripts/refactor-app-folders.ts)
+
+If there's a compelling reason to use JavaScript for a specific new file, please document it.
