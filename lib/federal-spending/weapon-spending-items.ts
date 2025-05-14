@@ -1,0 +1,15 @@
+export const weaponSpendingProgramNames: string[] = [
+  "Military Aid to Ukraine",
+  "Support for Operations in Yemen",
+  "Global Counter-terrorism Operations",
+  "Next-Gen Drone Development",
+  "Naval Fleet Modernization",
+  "NATO Joint Defense Funding",
+  "Foreign Military Sales Program",
+  "US Embassy Security Upgrades",
+  "Peacekeeping Operations Support",
+  "National Cybersecurity Protection",
+  "Ukraine Security Assistance (DoD/State Supplementals)",
+  "F-35 Joint Strike Fighter Program (Procurement & RDT&E)",
+  "Littoral Combat Ship (LCS) Program Operations & Retirements",
+]; 

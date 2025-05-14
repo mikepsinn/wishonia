@@ -1,0 +1,331 @@
+[
+  {
+    "id": "alzheimer-s-disease",
+    "name": "Alzheimer's Disease",
+    "slug": "alzheimer-s-disease",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "alzheimer-s-disease-treatments",
+    "name": "Alzheimer's Disease Treatments",
+    "slug": "alzheimer-s-disease-treatments",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "animal-welfare",
+    "name": "Animal Welfare",
+    "slug": "animal-welfare",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "business-contact-information",
+    "name": "Business Contact Information",
+    "slug": "business-contact-information",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "cardiology",
+    "name": "Cardiology",
+    "slug": "cardiology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "cardiovascular-medicine",
+    "name": "Cardiovascular Medicine",
+    "slug": "cardiovascular-medicine",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "dementia-treatment",
+    "name": "Dementia Treatment",
+    "slug": "dementia-treatment",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "slug": "economics",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "education",
+    "name": "Education",
+    "slug": "education",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "environmental-conservation",
+    "name": "Environmental Conservation",
+    "slug": "environmental-conservation",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "environmental-organizations",
+    "name": "Environmental Organizations",
+    "slug": "environmental-organizations",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "foresight-and-forecasting",
+    "name": "Foresight and Forecasting",
+    "slug": "foresight-and-forecasting",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "genetics",
+    "name": "Genetics",
+    "slug": "genetics",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "github-imports",
+    "name": "GitHub Imports",
+    "slug": "github-imports",
+    "description": "Articles imported from GitHub repositories",
+    "deletedAt": null
+  },
+  {
+    "id": "health",
+    "name": "Health",
+    "slug": "health",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "health-and-aging",
+    "name": "Health and Aging",
+    "slug": "health-and-aging",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "health-and-fitness",
+    "name": "Health and Fitness",
+    "slug": "health-and-fitness",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "health-and-medicine",
+    "name": "Health and Medicine",
+    "slug": "health-and-medicine",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "health-economics",
+    "name": "Health Economics",
+    "slug": "health-economics",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "health-technology",
+    "name": "Health Technology",
+    "slug": "health-technology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare",
+    "slug": "healthcare",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "healthcare-economics",
+    "name": "Healthcare Economics",
+    "slug": "healthcare-economics",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "human-rights",
+    "name": "Human Rights",
+    "slug": "human-rights",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "marine-biology",
+    "name": "Marine Biology",
+    "slug": "marine-biology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "media",
+    "name": "Media",
+    "slug": "media",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "medical",
+    "name": "Medical",
+    "slug": "medical",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "medical-research",
+    "name": "Medical Research",
+    "slug": "medical-research",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "medical-treatment",
+    "name": "Medical Treatment",
+    "slug": "medical-treatment",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "medication-review",
+    "name": "Medication Review",
+    "slug": "medication-review",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "medications",
+    "name": "Medications",
+    "slug": "medications",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "mental-health",
+    "name": "Mental Health",
+    "slug": "mental-health",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "neurology",
+    "name": "Neurology",
+    "slug": "neurology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "neuroscience",
+    "name": "Neuroscience",
+    "slug": "neuroscience",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "non-governmental-organizations",
+    "name": "Non-Governmental Organizations",
+    "slug": "non-governmental-organizations",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "non-profit-organizations",
+    "name": "Non-Profit Organizations",
+    "slug": "non-profit-organizations",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "nonprofit-organizations",
+    "name": "Nonprofit Organizations",
+    "slug": "nonprofit-organizations",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "nutrition",
+    "name": "Nutrition",
+    "slug": "nutrition",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "pharmaceutical-manufacturing",
+    "name": "Pharmaceutical Manufacturing",
+    "slug": "pharmaceutical-manufacturing",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "pharmaceutical-research",
+    "name": "Pharmaceutical Research",
+    "slug": "pharmaceutical-research",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "pharmaceutical-safety-and-efficacy",
+    "name": "Pharmaceutical Safety and Efficacy",
+    "slug": "pharmaceutical-safety-and-efficacy",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "pharmaceuticals",
+    "name": "Pharmaceuticals",
+    "slug": "pharmaceuticals",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "pharmacology",
+    "name": "Pharmacology",
+    "slug": "pharmacology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "psychiatry",
+    "name": "Psychiatry",
+    "slug": "psychiatry",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "public-health",
+    "name": "Public Health",
+    "slug": "public-health",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "technology",
+    "name": "Technology",
+    "slug": "technology",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "technology-and-innovation",
+    "name": "Technology and Innovation",
+    "slug": "technology-and-innovation",
+    "description": null,
+    "deletedAt": null
+  },
+  {
+    "id": "transportation",
+    "name": "Transportation",
+    "slug": "transportation",
+    "description": null,
+    "deletedAt": null
+  }
+]

@@ -1,0 +1,7661 @@
+[
+  {
+    "id": "abdominal-pain",
+    "name": "abdominal pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "abdominal-swelling",
+    "name": "abdominal swelling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "abnormal-dreams",
+    "name": "abnormal dreams",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "abnormal-thinking",
+    "name": "abnormal thinking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "abnormally-happy-or-abnormally-sad-mood",
+    "name": "abnormally happy or abnormally sad mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "absence-of-menstrual-periods-in-women",
+    "name": "absence of menstrual periods in women",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "acid-reflux",
+    "name": "acid reflux",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "acne",
+    "name": "Acne",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "acne-flare-up",
+    "name": "Acne flare-up",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "actually-i-now-take-nuvigil-which-is-the-same-medicine-with-just-a-variant-of-the-same-chemical",
+    "name": "Actually I now take Nuvigil which is the same medicine with just a variant of the same  chemical",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "addiction",
+    "name": "Addiction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "affect-kidney-function",
+    "name": "Affect kidney function",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "affected-kidney-function",
+    "name": "affected kidney function",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "aggression-increase",
+    "name": "Aggression increase",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "aggressive-behavior",
+    "name": "aggressive behavior",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "aggressiveness",
+    "name": "aggressiveness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "agitation",
+    "name": "agitation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "agitation-feeling-jittery",
+    "name": "Agitation (feeling jittery)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "allergic",
+    "name": "allergic",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "allergic-rash",
+    "name": "allergic rash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "allergic-reaction",
+    "name": "allergic reaction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "allergic-to-cymbalta",
+    "name": "Allergic to Cymbalta",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "altered-thyroid-function",
+    "name": "altered thyroid function",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "amnesia",
+    "name": "amnesia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "anger",
+    "name": "anger",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "anger-temper-outbursts",
+    "name": "anger/temper outbursts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "angioedema",
+    "name": "angioedema",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "angioedema-allergic-reaction",
+    "name": "angioedema, allergic reaction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "antibiotics-were-cream-only-for-my-skin-outbreaks",
+    "name": "Antibiotics were cream only for my skin outbreaks",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "anxiety",
+    "name": "anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "21"
+  },
+  {
+    "id": "anxiety-attacks",
+    "name": "Anxiety attacks",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "anxiety-or-nervousness",
+    "name": "anxiety or nervousness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "anxious",
+    "name": "anxious",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "anxiousness",
+    "name": "anxiousness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "arms-and-legs-tingle-and-feel-creepy-crawly",
+    "name": "arms and legs tingle and feel creepy crawly",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "as-you-age-less-is-better-had-blackouts-from-halcion-triazolam-when-i-was-younger-learned",
+    "name": "as you age less is better.....had blackouts from halcion (triazolam) when I was younger.....learned ",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "0"
+  },
+  {
+    "id": "avascular-necrosis",
+    "name": "Avascular necrosis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "back-muscle-or-bone-pain",
+    "name": "back, muscle, or bone pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "back-or-joint-pain",
+    "name": "back or joint pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "back-pain",
+    "name": "back pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "bacterial-infection",
+    "name": "Bacterial infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bad-taste-in-mouth",
+    "name": "Bad taste in mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "being-energetic",
+    "name": "being energetic",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "belching",
+    "name": "belching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "better-sleep",
+    "name": "Better sleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "beware-of-counterfeit-drugs-and-do-not-mix-medications",
+    "name": "beware of counterfeit drugs and do not mix medications....",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "birth-control-pills-irritability",
+    "name": "birth control pills: irritability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bitter-taste-in-mouth",
+    "name": "bitter taste in mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "black-thoughts",
+    "name": "black thoughts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "bleeding",
+    "name": "Bleeding",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bleeding-bruising-burning-pain-pressure-itching-swelling-or-redness-at-the-place-where-the-im",
+    "name": "bleeding, bruising, burning, pain, pressure, itching, swelling, or redness at the place where the im",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bleeding-duodenum-to-rectum",
+    "name": "Bleeding: duodenum to rectum.",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bleeding-nose",
+    "name": "bleeding nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "bleeding-or-spotting-between-periods",
+    "name": "Bleeding or spotting between periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bloating",
+    "name": "bloating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "blocked-thyroid-medication",
+    "name": "Blocked Thyroid Medication",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "blood-in-urine",
+    "name": "Blood in urine",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "blood-in-vains-feels-like-bowling",
+    "name": "Blood in vains feels like bowling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bloody-mucus-in-nose",
+    "name": "bloody mucus in nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "blotchy-vision",
+    "name": "blotchy vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "blurred-or-double-vision",
+    "name": "blurred or double vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "blurred-vision",
+    "name": "blurred vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "16"
+  },
+  {
+    "id": "body-aches",
+    "name": "body aches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "brain",
+    "name": "Brain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "brain-fog",
+    "name": "brain fog",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "brain-storms",
+    "name": "\\'brain storms\\'",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "brain-zaps",
+    "name": "\\\"Brain Zaps\\\"",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "brain-zaps",
+    "name": "brain zaps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "brain-zaps",
+    "name": "brain \\\"zaps\\\"",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breast-enlargement-and-or-pain",
+    "name": "breast enlargement and/or pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breast-enlargement-in-males",
+    "name": "breast enlargement in males",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "breast-pain-or-tenderness",
+    "name": "breast pain or tenderness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breast-pain-swelling-or-tenderness",
+    "name": "breast pain, swelling, or tenderness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breast-tenderness-or-change-in-breast-size-in-both-men-and-women",
+    "name": "breast tenderness or change in breast size in both men and women",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breast-tenderness-or-pain",
+    "name": "breast tenderness or pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "breasts-that-are-large-tender-or-produce-a-liquid",
+    "name": "breasts that are large, tender, or produce a liquid",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bronchial-infection",
+    "name": "Bronchial infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bronchitus",
+    "name": "Bronchitus",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "bronchospasm-angioedema",
+    "name": "bronchospasm, angioedema",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bruised-feeling-when-skin-is-touched",
+    "name": "Bruised feeling when skin is touched",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bruising",
+    "name": "Bruising",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "bruising-pain-redness-swelling-bleeding-or-irritation-at-the-injection-spot",
+    "name": "bruising, pain, redness, swelling, bleeding, or irritation at the injection spot",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "bulging-eyes",
+    "name": "bulging eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "burning-or-discomfort",
+    "name": "burning or discomfort",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "burning-or-irritation-in-the-nose",
+    "name": "burning or irritation in the nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "burning-or-tingling-feeling",
+    "name": "burning or tingling feeling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "burning-or-tingling-in-the-arms-or-legs",
+    "name": "burning or tingling in the arms or legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "burning-or-tingling-in-the-hands-arms-feet-or-legs",
+    "name": "burning or tingling in the hands, arms, feet, or legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "burning-tingling-or-numbness-of-the-skin",
+    "name": "burning, tingling, or numbness of the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "burping",
+    "name": "burping",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "calmness",
+    "name": "Calmness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "can-t-slow-down",
+    "name": "Can\\'t slow down",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "cataracts-or-glaucoma",
+    "name": "Cataracts or glaucoma",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "cellcept",
+    "name": "cellcept",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "change-in-ability-to-taste-food",
+    "name": "change in ability to taste food",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "change-in-the-ability-to-taste-food",
+    "name": "change in the ability to taste food",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "change-in-weight",
+    "name": "change in weight",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changed-sleep-patterns",
+    "name": "changed sleep patterns",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-ability-to-smell-or-taste",
+    "name": "changes in ability to smell or taste",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-ability-to-taste-food",
+    "name": "changes in ability to taste food",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "changes-in-appetite",
+    "name": "changes in appetite",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "changes-in-appetite-or-weight",
+    "name": "changes in appetite or weight",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "changes-in-menstrual-cycle",
+    "name": "changes in menstrual cycle",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "changes-in-menstrual-periods-see-special-precautions",
+    "name": "changes in menstrual periods (See SPECIAL PRECAUTIONS)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-mood",
+    "name": "changes in mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "changes-in-personality",
+    "name": "changes in personality",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-sex-drive-or-ability",
+    "name": "changes in sex drive or ability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "13"
+  },
+  {
+    "id": "changes-in-sexual-desire",
+    "name": "changes in sexual desire",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "changes-in-sexual-desire-or-ability",
+    "name": "changes in sexual desire or ability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "changes-in-skin-color",
+    "name": "changes in skin color",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-taste",
+    "name": "changes in taste",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "changes-in-the-way-fat-is-spread-around-the-body",
+    "name": "changes in the way fat is spread around the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "chest-pain",
+    "name": "Chest pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "chest-pain-heart-attack",
+    "name": "chest pain/heart attack",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "chest-pains",
+    "name": "chest pains",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "chest-pressure",
+    "name": "chest pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "chest-tightness-or-pressure",
+    "name": "Chest tightness or pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "chills",
+    "name": "chills",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "chills-sweats-on-first-night",
+    "name": "Chills sweats on first night",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "clumsy-or-jerky-movements",
+    "name": "clumsy or jerky movements",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "codones-hallucinations",
+    "name": "codones-hallucinations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "cold-extremities",
+    "name": "Cold extremities",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "cold-nose",
+    "name": "cold nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "cold-or-flu-symptoms",
+    "name": "cold or flu symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "cold-painful-numb-fingers",
+    "name": "cold painful numb fingers",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "cold-sweats",
+    "name": "cold sweats",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "cold-symptoms",
+    "name": "cold symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "complement-fixation",
+    "name": "Complement Fixation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "confusion",
+    "name": "confusion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "18"
+  },
+  {
+    "id": "congestion",
+    "name": "congestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "constant-feeling-of-the-need-to-empty-the-bowel",
+    "name": "constant feeling of the need to empty the bowel",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "constipation",
+    "name": "constipation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "64"
+  },
+  {
+    "id": "convex-spots-on-lower-arms",
+    "name": "convex spots on lower arms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "convulsion",
+    "name": "Convulsion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "cough",
+    "name": "cough",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "cough-fatigue-bronch-inf-nausea-s-b-under-methotrexate-but-showed-up-here",
+    "name": "cough, fatigue, bronch inf, nausea s/b under Methotrexate but showed up here",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "crazy-dreams",
+    "name": "Crazy dreams",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "crossed-eyes",
+    "name": "crossed eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dandruff",
+    "name": "dandruff",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "daytime-drowsiness",
+    "name": "daytime drowsiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decrease-in-pupil-dark-circle-in-eye-size",
+    "name": "decrease in pupil (dark circle in eye) size",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "decrease-in-sexual-desire-in-men-and-women-or-ability-to-perform-in-men",
+    "name": "decrease in sexual desire in men and women or ability to perform in men",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decrease-in-size-of-testicles",
+    "name": "decrease in size of testicles",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-ability-to-concentrate-or-remember-things",
+    "name": "decreased ability to concentrate or remember things",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-acne",
+    "name": "Decreased acne",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-alertness-and-concentration",
+    "name": "decreased alertness and concentration",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-appetite",
+    "name": "decreased appetite",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "6"
+  },
+  {
+    "id": "decreased-inhibitions",
+    "name": "Decreased inhibitions",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "decreased-kinesia",
+    "name": "Decreased kinesia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-libido",
+    "name": "decreased libido",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-productivity",
+    "name": "Decreased productivity",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-salivation",
+    "name": "Decreased salivation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "decreased-sex-drive",
+    "name": "Decreased sex drive",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "decreased-sexual-desire",
+    "name": "decreased sexual desire",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "decreased-sexual-desire-or-ability",
+    "name": "decreased sexual desire or ability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "dehydration",
+    "name": "dehydration",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "delirium",
+    "name": "delirium",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "delusions-of-power",
+    "name": "delusions of power",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "depression",
+    "name": "depression",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "17"
+  },
+  {
+    "id": "derealization",
+    "name": "Derealization",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dialated-eyes",
+    "name": "Dialated eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "diarhea",
+    "name": "diarhea",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "diarhoea",
+    "name": "diarhoea",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "diarrhea",
+    "name": "diarrhea",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "81"
+  },
+  {
+    "id": "did-not-make-any-difference-to-fm-symptoms",
+    "name": "did not make any difference to FM symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "did-not-relieve-pain",
+    "name": "did not relieve pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-closing-the-eyes",
+    "name": "difficulty closing the eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-concentrating",
+    "name": "difficulty concentrating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "difficulty-concentrating-or-paying-attention",
+    "name": "difficulty  concentrating  or paying attention",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "difficulty-concentrating-or-paying-attention",
+    "name": "difficulty concentrating or paying attention",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "difficulty-controlling-impulses",
+    "name": "difficulty controlling impulses",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-falling-asleep-or-staying-asleep",
+    "name": "difficulty falling asleep or staying asleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "18"
+  },
+  {
+    "id": "difficulty-falling-or-staying-asleep",
+    "name": "difficulty falling or staying asleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-keeping-balance",
+    "name": "difficulty keeping balance",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-remembering-or-forgetfulness",
+    "name": "difficulty remembering or forgetfulness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "difficulty-seeing-or-eye-pain",
+    "name": "difficulty seeing or eye pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "difficulty-sleeping",
+    "name": "difficulty sleeping",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "difficulty-speaking",
+    "name": "difficulty speaking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "difficulty-speaking-or-using-language",
+    "name": "difficulty speaking or using language",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "difficulty-swallowing",
+    "name": "Difficulty swallowing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-thinking-or-concentrating",
+    "name": "difficulty thinking or concentrating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "difficulty-thinking-or-remembering",
+    "name": "difficulty thinking or remembering",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "difficulty-urinating",
+    "name": "difficulty urinating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "difficulty-urinating-or-pain-when-urinating",
+    "name": "difficulty urinating or pain when urinating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "difficulty-wearing-contact-lenses",
+    "name": "difficulty wearing contact lenses",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "difficulty-with-memory",
+    "name": "difficulty with memory",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "digestive-bleed",
+    "name": "digestive bleed",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dilated-pupils",
+    "name": "dilated pupils",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "disassociation",
+    "name": "disassociation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "disassociative-episodes",
+    "name": "disassociative episodes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "discharge-from-the-breasts",
+    "name": "discharge from the breasts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "discomfort-in-chest-and-overall-unease",
+    "name": "Discomfort in chest and overall unease",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "disorientation",
+    "name": "Disorientation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dissociation",
+    "name": "Dissociation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "dizziness",
+    "name": "dizziness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "87"
+  },
+  {
+    "id": "dizziness-on-standing",
+    "name": "dizziness on standing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dizziness-or-a-spinning-sensation-vertigo",
+    "name": "Dizziness or a spinning sensation (vertigo)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dizziness-or-lightheadedness",
+    "name": "dizziness or lightheadedness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "dizzy",
+    "name": "dizzy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dizzyness-upon-standing",
+    "name": "Dizzyness upon standing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "double-gastric-ulcer",
+    "name": "double gastric ulcer",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "double-or-blurred-vision",
+    "name": "double or blurred vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "double-vision",
+    "name": "double vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "8"
+  },
+  {
+    "id": "drop-in-blood-pressure",
+    "name": "drop in blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "drowsiness",
+    "name": "drowsiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "71"
+  },
+  {
+    "id": "drugged-feeling",
+    "name": "'drugged feeling'",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dry-mouth",
+    "name": "dry mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "65"
+  },
+  {
+    "id": "dry-mouth-causes-cavity",
+    "name": "dry mouth causes cavity",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dry-mouth-nose-and-throat",
+    "name": "dry mouth, nose, and throat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "dry-mouth-or-throat",
+    "name": "dry mouth or throat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dry-or-irritated-eyes",
+    "name": "dry or irritated eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "dry-skin",
+    "name": "Dry skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "dry-throat",
+    "name": "dry throat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ear-nose-or-throat-discomfort",
+    "name": "Ear, nose, or throat discomfort",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ear-pain",
+    "name": "ear pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "easily-angered",
+    "name": "Easily Angered",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "easily-overheated",
+    "name": "easily overheated",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "easy-bruising",
+    "name": "Easy bruising",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "elevated-hematocrit",
+    "name": "elevated hematocrit",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "elevated-intracranial-pressure",
+    "name": "elevated intracranial pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "emotional-distress",
+    "name": "emotional distress",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "enlarged-pupils-black-circles-in-the-middle-of-the-eyes",
+    "name": "enlarged pupils (black circles in the middle of the eyes)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "euphoria",
+    "name": "Euphoria",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "exacerbates-osteoporosis",
+    "name": "Exacerbates Osteoporosis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-menstrual-bleeding",
+    "name": "excessive menstrual bleeding",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-movement",
+    "name": "excessive movement",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-saliva-in-the-mouth",
+    "name": "excessive saliva in the mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-sleepiness",
+    "name": "excessive sleepiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-sleeping",
+    "name": "Excessive sleeping",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-stomach-acid",
+    "name": "excessive stomach acid",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-sudoku-solving",
+    "name": "excessive sudoku solving",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-sweating",
+    "name": "excessive sweating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "excessive-thirst",
+    "name": "excessive thirst",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "excessive-tiredness",
+    "name": "excessive tiredness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "10"
+  },
+  {
+    "id": "excessive-urination",
+    "name": "excessive urination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-weight-gain",
+    "name": "excessive weight gain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "excessive-worrying",
+    "name": "excessive worrying",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excessive-yawning",
+    "name": "Excessive yawning",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "excitement",
+    "name": "excitement",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "excitement-especially-in-children",
+    "name": "excitement (especially in children)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "excitement-or-anxiety",
+    "name": "excitement or anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "extreme-anxiety",
+    "name": "extreme anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-changes-in-mood",
+    "name": "extreme changes in mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-dizziness",
+    "name": "extreme dizziness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-fatigue",
+    "name": "Extreme fatigue",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-irritability",
+    "name": "extreme irritability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-itchiness",
+    "name": "Extreme itchiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "extreme-neck-weakness",
+    "name": "extreme neck weakness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-thirst",
+    "name": "extreme thirst",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "extreme-tiredness",
+    "name": "extreme tiredness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "eye-movements-that-you-cannot-control",
+    "name": "eye movements that you cannot control",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "eye-problems",
+    "name": "eye problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "eye-redness",
+    "name": "eye redness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "eye-twitches",
+    "name": "Eye twitches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "eye-twitching",
+    "name": "Eye twitching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "eyelid-spasm",
+    "name": "Eyelid spasm",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "facial-myofacial-pain",
+    "name": "facial myofacial pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "facial-numbness",
+    "name": "facial numbness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "facial-welts-swelling",
+    "name": "facial welts/swelling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "fall-asleep-within-15-minutes-of-taking",
+    "name": "fall asleep within 15 minutes of taking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "fast-heart-rate",
+    "name": "fast heart rate",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "fatigue",
+    "name": "fatigue",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "feel-suicidal-with-tramadol",
+    "name": "feel suicidal with tramadol",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-an-urgent-need-to-urinate",
+    "name": "feeling an urgent need to urinate",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-confident",
+    "name": "feeling confident",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-disconnected-or-fuzzy-headed",
+    "name": "Feeling disconnected or fuzzy-headed",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-happy",
+    "name": "feeling happy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-hungover",
+    "name": "feeling hungover",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-irritable",
+    "name": "Feeling irritable",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-sensitive-to-light",
+    "name": "Feeling sensitive to light",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-spacey",
+    "name": "Feeling spacey",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-suicidal",
+    "name": "feeling suicidal",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-very-tired",
+    "name": "Feeling very tired",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-warm-or-cold",
+    "name": "feeling warm or cold",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "feeling-wide-awake-and-alert",
+    "name": "feeling wide awake and alert",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "fell-asleep-kicked-out-of-group-snored",
+    "name": "fell asleep, kicked out of group - snored",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "felt-jittery",
+    "name": "Felt jittery",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "felt-like-i-was-poisoned",
+    "name": "felt like I was poisoned",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "fever",
+    "name": "fever",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "fever-reduced-ability-to-sweat",
+    "name": "Fever, reduced ability to sweat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "fine-hand-movements-that-are-difficult-to-control",
+    "name": "fine hand movements that are difficult to control",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "firmness-or-hardness-at-subcutaneous-injection-spot",
+    "name": "firmness or hardness at subcutaneous injection spot",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "flat-affect",
+    "name": "Flat affect",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "flatulence",
+    "name": "Flatulence",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "flu-like-symptoms",
+    "name": "flu-like symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "flu-symptoms",
+    "name": "flu symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "fluid-retention",
+    "name": "Fluid retention",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "flushing",
+    "name": "flushing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "8"
+  },
+  {
+    "id": "flushing-feeling-of-warmth",
+    "name": "flushing (feeling of warmth)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "flushing-redness-in-face-and-other-ares-of-skin",
+    "name": "flushing (redness in face and other ares of skin)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "flushing-redness-of-the-skin-especially-the-face",
+    "name": "Flushing (redness of the skin, especially the face)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "focused",
+    "name": "focused",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "forgetfulness",
+    "name": "Forgetfulness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "frequent-urination",
+    "name": "frequent urination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "fuzzy-thinking",
+    "name": "fuzzy thinking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "gas",
+    "name": "gas",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "19"
+  },
+  {
+    "id": "gas-and-bloating",
+    "name": "Gas and bloating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "gas-or-bloating",
+    "name": "gas or bloating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "6"
+  },
+  {
+    "id": "gastroenteritis",
+    "name": "Gastroenteritis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "generalized-increase-in-pain",
+    "name": "generalized increase in pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "got-a-severe-red-rashy-bumps-especially-on-upper-body-around-neck-and-arms-and-face",
+    "name": "got a severe red rashy bumps especially on upper body around neck and arms and face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "greater-self-awareness",
+    "name": "Greater self-awareness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "group-b-strep",
+    "name": "Group B Strep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "growth-of-hair-in-unusual-places",
+    "name": "growth of hair in unusual places",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "growth-of-hair-on-face",
+    "name": "growth of hair on face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "haemphilia",
+    "name": "haemphilia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hair-loss",
+    "name": "hair loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "hallucinations",
+    "name": "hallucinations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "happier",
+    "name": "happier",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "having-difficulty-sleeping",
+    "name": "Having difficulty sleeping",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "head-zaps",
+    "name": "Head zaps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "headache",
+    "name": "headache",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "90"
+  },
+  {
+    "id": "headache-first-night",
+    "name": "headache first night",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "headache-or-heaviness-in-head",
+    "name": "headache or heaviness in head",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "headaches",
+    "name": "headaches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "6"
+  },
+  {
+    "id": "hearing-problems",
+    "name": "hearing problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "heart-palpitations",
+    "name": "heart palpitations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "heart-racing",
+    "name": "heart racing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "heart-rate-felt-slower",
+    "name": "heart rate felt slower",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "heart-rate-slowed",
+    "name": "Heart rate slowed",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "heartburn",
+    "name": "heartburn",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "38"
+  },
+  {
+    "id": "heartburn-or-indigestion",
+    "name": "heartburn or indigestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "heartburns",
+    "name": "Heartburns",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "heaviness-in-chest",
+    "name": "Heaviness in chest",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "heavy-head-feeling",
+    "name": "\"heavy-head\" feeling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "heavy-menstrual-bleeding",
+    "name": "heavy menstrual bleeding",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hemorrhoids",
+    "name": "hemorrhoids",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hepatitis-b",
+    "name": "Hepatitis B",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "high-blood-pressure",
+    "name": "High blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "high-or-elevated-mood",
+    "name": "\\\"high\\\" or elevated mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "high-or-elevated-mood",
+    "name": "''high'' or elevated mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "higher-awareness-of-dust-and-desire-to-clean",
+    "name": "higher awareness of dust and desire to clean",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hip-problem",
+    "name": "Hip problem",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hives",
+    "name": "hives",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "hot-flashes",
+    "name": "hot flashes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hot-flashes-a-sudden-wave-of-mild-or-intense-body-heat",
+    "name": "hot flashes (a sudden wave of mild or intense body heat)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hot-flashes-or-flushing",
+    "name": "hot flashes or flushing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hot-flashes-when-dosage-increased",
+    "name": "Hot Flashes when dosage increased",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "hot-flushes",
+    "name": "hot flushes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hot-or-cold-feeling",
+    "name": "hot or cold feeling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hunger",
+    "name": "hunger",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "hyperactivity",
+    "name": "Hyperactivity",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "hypersensitive-tastebuds",
+    "name": "Hypersensitive tastebuds",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hypertension",
+    "name": "Hypertension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hypomania",
+    "name": "Hypomania",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hypotension",
+    "name": "hypotension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hypotention-lowered-overall-blood-pressure",
+    "name": "hypotention - lowered overall blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "hypothyroidism",
+    "name": "Hypothyroidism",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "i-have-taken-zoloft-several-times-through-the-years-and-never-had-any-trouble-unfortunately-my-dr",
+    "name": "I have taken Zoloft several times through the years and never had any trouble. Unfortunately my dr. ",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ibuprofen-stomach-pain",
+    "name": "ibuprofen: stomach pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ideopathic-intracranial-hypertension",
+    "name": "Ideopathic Intracranial Hypertension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "immediate-post-injection-reaction",
+    "name": "immediate post injection reaction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "impotence",
+    "name": "impotence",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "improved-breathing",
+    "name": "improved breathing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "improved-mood",
+    "name": "improved mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "improved-sense-of-smell",
+    "name": "improved sense of smell",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "improved-sleep",
+    "name": "improved sleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "inability-to-orgasm",
+    "name": "inability to orgasm",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "inappropriate-happiness",
+    "name": "inappropriate happiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increase-blood-sugars-diabetes",
+    "name": "Increase Blood Sugars (Diabetes)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increase-in-acne-sores",
+    "name": "increase in acne sores",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increase-in-appetite",
+    "name": "increase in appetite",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-acne",
+    "name": "Increased acne",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-anxiety",
+    "name": "increased anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-appetite",
+    "name": "increased appetite",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "11"
+  },
+  {
+    "id": "increased-appetite-weight-gain",
+    "name": "Increased appetite, weight gain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-bleeding",
+    "name": "increased bleeding",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-blood-pressure",
+    "name": "increased blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-blood-pressure-leading-to-migraine",
+    "name": "Increased Blood Pressure Leading to Migraine",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-chest-congestion",
+    "name": "increased chest congestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-concentration",
+    "name": "increased concentration",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-cramping",
+    "name": "Increased Cramping",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-cranial-pressure",
+    "name": "increased cranial pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-growth-of-body-hair",
+    "name": "Increased growth of body hair",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-hair-growth",
+    "name": "increased hair growth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-head-pain",
+    "name": "Increased head pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-heart-rate",
+    "name": "increased heart rate",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-muscle-spasms",
+    "name": "increased muscle spasms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "increased-need-to-urinate-especially-at-night",
+    "name": "increased need to urinate, especially at night",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-pain",
+    "name": "increased pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-psychological-flexibility",
+    "name": "Increased psychological flexibility",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-saliva",
+    "name": "increased saliva",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "increased-self-confidence",
+    "name": "increased self-confidence",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-sensation-of-sunburned-skin",
+    "name": "increased sensation of sunburned skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-sense-of-well-being",
+    "name": "increased sense of well-being",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-sex-drive",
+    "name": "increased sex drive",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "increased-sexual-pleasure",
+    "name": "Increased sexual pleasure.",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "increased-sweating",
+    "name": "increased sweating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "increased-urination",
+    "name": "increased urination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "indigestion",
+    "name": "indigestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "infections",
+    "name": "infections",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "initial-gastric-distress",
+    "name": "initial gastric distress",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "13"
+  },
+  {
+    "id": "intense-anger-rage",
+    "name": "Intense Anger / Rage",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "intolerance-allergy",
+    "name": "Intolerance/Allergy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "involuntary-body-movements",
+    "name": "involuntary body movements",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "irregular-or-absent-menstrual-periods",
+    "name": "irregular or absent menstrual periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "irritability",
+    "name": "Irritability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "15"
+  },
+  {
+    "id": "irritability-or-rapid-changes-in-mood",
+    "name": "irritability or rapid changes in mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "irritation-burning-stinging-pain-or-dryness-inside-nose",
+    "name": "irritation, burning, stinging, pain, or dryness inside nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "irritation-of-the-rectum",
+    "name": "irritation of the rectum",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "it-was-appalling-to-get-off-this-drug",
+    "name": "It was appalling to get off this drug.",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "itchiness",
+    "name": "Itchiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "itching",
+    "name": "itching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "itching-of-lips",
+    "name": "itching of lips",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "itching-of-nose",
+    "name": "itching of nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "itching-of-the-rectum-or-vagina",
+    "name": "itching of the rectum or vagina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "itching-swelling-burning-stinging-pain-bruising-redness-or-development-of-a-sore-at-injection",
+    "name": "itching, swelling, burning, stinging, pain, bruising, redness, or development of a sore at injection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "itchy-skin",
+    "name": "itchy skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "jaundice",
+    "name": "Jaundice",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "jaw-clenching",
+    "name": "Jaw clenching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "jaw-or-neck-tightness-or-pain",
+    "name": "Jaw or neck tightness or pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "jitters",
+    "name": "jitters",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "jittery",
+    "name": "jittery",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "joint-aches",
+    "name": "joint aches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "joint-back-or-neck-pain",
+    "name": "joint, back, or neck pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "joint-or-muscle-pain",
+    "name": "joint or muscle pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "joint-pain",
+    "name": "joint pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "jumpy-legs",
+    "name": "jumpy legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "k-side-effect",
+    "name": "K Side Effect",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "kidney-dis-function",
+    "name": "kidney dis-function",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "kidney-stones",
+    "name": "kidney stones",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lack-of-coordination",
+    "name": "lack of coordination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "lack-of-stamina",
+    "name": "lack of stamina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lapse-in-short-term-memory",
+    "name": "lapse in short-term memory",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "leg-cramps",
+    "name": "leg cramps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "leg-sleeps",
+    "name": "leg sleeps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "less-concerned-about-cronic-lateness",
+    "name": "less concerned about cronic lateness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "less-creative",
+    "name": "less creative",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "light-headedness",
+    "name": "Light-headedness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "light-sensitivity",
+    "name": "light sensitivity",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lightening-or-darkening-of-the-skin",
+    "name": "lightening or darkening of the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "lighter-periods",
+    "name": "Lighter periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lightheadedness",
+    "name": "lightheadedness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "10"
+  },
+  {
+    "id": "loose-stools",
+    "name": "loose stools",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "loss-of-appetite",
+    "name": "loss of appetite",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "22"
+  },
+  {
+    "id": "loss-of-balance-or-coordination",
+    "name": "loss of balance or coordination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "loss-of-balance-or-unsteadiness",
+    "name": "loss of balance or unsteadiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "loss-of-coordination",
+    "name": "loss of coordination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "loss-of-hair-on-scalp",
+    "name": "loss of hair on scalp",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "loss-of-interest-in-sex",
+    "name": "loss of interest in sex",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "loss-of-libido",
+    "name": "loss of libido",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "low-blood-pressure",
+    "name": "Low blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "low-bloodpressure",
+    "name": "Low bloodpressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "low-energy",
+    "name": "Low energy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "low-levels-of-energy-always",
+    "name": "Low levels of energy - always",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lower-blood-pressure",
+    "name": "lower blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lower-resistance-to-infection",
+    "name": "Lower resistance to infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lowered-libido",
+    "name": "lowered libido",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lucid-dreaming",
+    "name": "lucid dreaming",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "lump-or-tightness-in-throat",
+    "name": "lump or tightness in throat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "made-migraine-throbbing-much-worse",
+    "name": "Made migraine throbbing much worse",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "made-the-room-spin-around-worse-than-the-migraine",
+    "name": "Made the room spin around!! Worse than the migraine!",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "making-strange-sounds",
+    "name": "making strange sounds",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "mania",
+    "name": "Mania",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "maxalt-and-all-triptans-jaw-pain-the-first-bite-after-taking-maxalt-or-any-triptan-but-then-jaw-i",
+    "name": "Maxalt and all triptans - Jaw pain the first bite after taking Maxalt or any triptan, but then jaw i",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "memory-loss",
+    "name": "Memory loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "memory-problems",
+    "name": "memory problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "mental-slowness",
+    "name": "mental slowness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "metabolic-acidosis",
+    "name": "metabolic acidosis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "migraine-relief",
+    "name": "migraine relief",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "migraines",
+    "name": "Migraines",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "missed-menstrual-periods",
+    "name": "missed menstrual periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "missed-or-painful-menstrual-periods",
+    "name": "missed or painful menstrual periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "mood-changes",
+    "name": "mood changes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "mood-swing",
+    "name": "mood swing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "mood-swings",
+    "name": "mood swings",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "more-balanced-mood",
+    "name": "More balanced mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "more-energy",
+    "name": "more energy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "more-powerful-erections",
+    "name": "more powerful erections",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "more-tired",
+    "name": "More tired",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "more-vivid-eyesight",
+    "name": "more vivid eyesight",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "mouth-sores",
+    "name": "mouth sores",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "mouth-ulcers",
+    "name": "Mouth ulcers",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "muscle-ache",
+    "name": "Muscle ache",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-aches",
+    "name": "muscle aches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "muscle-aches-or-cramps",
+    "name": "muscle aches or cramps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-fatigue",
+    "name": "muscle fatigue",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-fatigue-trembling",
+    "name": "Muscle fatigue/trembling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-joint-or-bone-pain",
+    "name": "muscle, joint, or bone pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-or-joint-pain",
+    "name": "muscle or joint pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "muscle-or-joint-pain-aching-tightness-or-stiffness",
+    "name": "muscle or joint pain, aching, tightness or stiffness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "muscle-pain",
+    "name": "muscle pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "muscle-pain-or-cramps",
+    "name": "muscle pain or cramps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "muscle-spasms",
+    "name": "Muscle Spasms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "muscle-tightness",
+    "name": "muscle tightness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "muscle-twitching",
+    "name": "muscle twitching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "muscle-weakness",
+    "name": "Muscle weakness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "8"
+  },
+  {
+    "id": "muscle-weakness-or-tightness",
+    "name": "muscle weakness or tightness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "narrow-angle-glaucoma",
+    "name": "narrow angle glaucoma",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "narrowing-of-the-pupils-black-circles-in-the-center-of-the-eyes",
+    "name": "narrowing of the pupils (black circles in the center of the eyes)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nasal-congestion",
+    "name": "nasal congestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nausea",
+    "name": "nausea",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "84"
+  },
+  {
+    "id": "nausea-relief",
+    "name": "Nausea relief",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nausia",
+    "name": "Nausia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "nerve-injury",
+    "name": "Nerve injury",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nervousness",
+    "name": "nervousness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "30"
+  },
+  {
+    "id": "nervousness-anxiety",
+    "name": "nervousness / anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nervousness-or-irritability",
+    "name": "nervousness or irritability",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nervousness-restlessness",
+    "name": "Nervousness, restlessness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "night-sweats",
+    "name": "night sweats",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "night-time-hallucinations",
+    "name": "night time hallucinations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nightmares",
+    "name": "nightmares",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "no-effect-whatsoever",
+    "name": "no effect whatsoever",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "no-relief-of-migraine-symptoms",
+    "name": "no relief of migraine symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "no-relief-of-symptoms",
+    "name": "No relief of symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nose-and-throat-discomfort",
+    "name": "nose and throat discomfort",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "nosebleed",
+    "name": "nosebleed",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "8"
+  },
+  {
+    "id": "nosebleeds",
+    "name": "nosebleeds",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "numb-face-lips",
+    "name": "Numb face/lips",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "numbing-emotionally",
+    "name": "numbing (emotionally)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "numbness-burning-or-tingling-in-the-arms-or-legs",
+    "name": "numbness, burning, or tingling in the arms or legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "numbness-burning-or-tingling-in-the-hands-or-feet",
+    "name": "numbness, burning, or tingling in the hands or feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "numbness-burning-tingling-or-pain-in-hands-or-feet",
+    "name": "numbness, burning, tingling, or pain in hands or feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "numbness-or-tingling-around-the-mouth",
+    "name": "numbness or tingling around the mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "off-label-used-for-stage-fright",
+    "name": "off label used for stage fright",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "orange-urine",
+    "name": "Orange urine",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "orthostatic-hypotension",
+    "name": "orthostatic hypotension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "osteoporosis-bone-weakening-disease",
+    "name": "Osteoporosis (bone weakening disease)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ostereporosis",
+    "name": "ostereporosis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "over-stimulated-leading-to-crash",
+    "name": "Over-stimulated leading to crash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "overeating",
+    "name": "overeating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "overgrowth-of-the-gums",
+    "name": "overgrowth of the gums",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain",
+    "name": "pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "pain-burning-numbness-or-tingling-in-part-of-the-body",
+    "name": "pain, burning, numbness, or tingling in part of the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-burning-numbness-or-tingling-in-the-hands-or-feet",
+    "name": "pain, burning, numbness, or tingling in the hands or feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-burning-or-tingling-in-the-hands-or-feet",
+    "name": "pain, burning, or tingling in the hands or feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "pain-during-menstrual-period",
+    "name": "pain during menstrual period",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-gi-tract",
+    "name": "Pain in GI tract",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-joints-or-bones",
+    "name": "pain in joints or bones",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-the-arms-legs-or-back",
+    "name": "pain in the arms, legs, or back",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-the-back-muscles-joints-or-anywhere-in-the-body",
+    "name": "pain in the back, muscles, joints, or anywhere in the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "pain-in-the-back-neck-or-any-other-part-of-the-body",
+    "name": "pain in the back, neck, or any other part of the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-the-joints-back-neck-or-ears",
+    "name": "pain in the joints, back, neck, or ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "pain-in-the-rectum",
+    "name": "pain in the rectum",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-in-the-upper-part-of-the-abdomen",
+    "name": "Pain in the upper part of the abdomen",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-irritation-lumps-redness-or-scarring-in-the-place-where-the-medication-was-injected",
+    "name": "pain, irritation, lumps, redness or scarring in the place where the medication was injected",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-or-tightness-in-the-face",
+    "name": "pain or tightness in the face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-redness-swelling-itching-or-lump-in-the-place-where-you-injected-glatiramer",
+    "name": "pain, redness, swelling, itching, or lump in the place where you injected glatiramer",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-reduction",
+    "name": "pain reduction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-relief",
+    "name": "Pain relief",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-tenderness-or-bruising-in-the-place-where-you-received-the-injection",
+    "name": "pain, tenderness, or bruising in the place where you received the injection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pain-when-urinating",
+    "name": "pain when urinating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "painful-legs",
+    "name": "painful legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "painful-menstrual-periods",
+    "name": "painful menstrual periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "painful-menstruation",
+    "name": "painful menstruation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "painful-or-changed-menstrual-periods",
+    "name": "painful or changed menstrual periods",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "painful-or-difficult-urination",
+    "name": "painful or difficult urination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "painful-or-irregular-menstruation",
+    "name": "painful or irregular menstruation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "pale-skin",
+    "name": "pale skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "palipitations",
+    "name": "palipitations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "palpitations",
+    "name": "palpitations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "panic-attack",
+    "name": "Panic Attack",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "panic-attacks",
+    "name": "panic attacks",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "paranoia",
+    "name": "paranoia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "parinoia-increased-anxiety-and-depression",
+    "name": "parinoia, increased anxiety and depression",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "passing-out",
+    "name": "Passing out",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "peptic-ulcer",
+    "name": "peptic ulcer",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "persistent-cough",
+    "name": "persistent cough",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "plugged-ears",
+    "name": "Plugged ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pneumothorax",
+    "name": "Pneumothorax",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "polycythemia",
+    "name": "polycythemia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "pounding-heart",
+    "name": "Pounding heart",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "problems-urinating",
+    "name": "problems urinating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "problems-with-coordination",
+    "name": "problems with coordination",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "prozac-hyperstimulated-causing-crash",
+    "name": "Prozac; Hyperstimulated causing crash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "psoriasis",
+    "name": "Psoriasis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "psychosis",
+    "name": "psychosis",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "purple-patches-on-skin",
+    "name": "purple patches on skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "racing-thoughts",
+    "name": "racing thoughts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "raised-blood-pressure",
+    "name": "raised blood pressure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rapid-breathing",
+    "name": "rapid breathing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rapid-heart-beat",
+    "name": "rapid heart beat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rapid-heart-rate",
+    "name": "rapid heart rate",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "rapid-heartbeat",
+    "name": "rapid heartbeat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "rash",
+    "name": "rash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "rash-everywhere",
+    "name": "Rash everywhere",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rashes",
+    "name": "Rashes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rebound-anxiety",
+    "name": "rebound anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rebound-headaches",
+    "name": "Rebound headaches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rebound-migraines",
+    "name": "Rebound Migraines",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "red-eyes",
+    "name": "red eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "red-itchy-eyes-sometimes-with-swelling-or-discharge",
+    "name": "red, itchy eyes (sometimes with swelling or discharge)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "red-or-itchy-eyes",
+    "name": "red or itchy eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "red-or-purple-blotches-or-lines-under-the-skin",
+    "name": "red or purple blotches or lines under the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "red-scaling-skin",
+    "name": "red, scaling skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "red-splatches-on-areas-of-skin-where-clothing-was-tight",
+    "name": "red splatches on areas of skin where clothing was tight",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reddened-eyes",
+    "name": "reddened eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "redness-of-the-skin-sunburn",
+    "name": "redness of the skin (sunburn)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "redness-or-swelling-of-the-skin",
+    "name": "redness or swelling of the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reduced-anxiety",
+    "name": "Reduced anxiety",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "reduced-mania",
+    "name": "Reduced mania",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reduced-pain",
+    "name": "reduced pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "reduced-panic",
+    "name": "Reduced panic",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "reduced-sex-drive",
+    "name": "Reduced sex drive",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reduced-stress",
+    "name": "reduced stress",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reduction-in-pain-levels",
+    "name": "reduction in pain levels",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "reflux",
+    "name": "Reflux",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "relaxed",
+    "name": "relaxed",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "relief-calmness",
+    "name": "Relief, calmness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "rem-sleep-behavior-disorder",
+    "name": "REM Sleep Behavior Disorder",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "renal-failure",
+    "name": "renal failure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "repetitive-involuntary-movements-e-g-grimacing-tongue-protrusion-lip-smacking-puckering-lip-p",
+    "name": "repetitive, involuntary movements (e.g. grimacing, tongue protrusion, lip smacking, puckering, lip p",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "restlessness",
+    "name": "restlessness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "restlessness-or-excitement",
+    "name": "restlessness or excitement",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ringing-ears",
+    "name": "ringing ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "ringing-in-ears",
+    "name": "ringing in ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "ringing-in-the-ears",
+    "name": "ringing in the ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "ringing-is-ears",
+    "name": "ringing is ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ringing-pain-or-itching-in-the-ears",
+    "name": "ringing, pain, or itching in the ears",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "room-spinning-around-was-from-stadol",
+    "name": "Room spinning around was from Stadol",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "rosacea",
+    "name": "Rosacea",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "rough-on-stomach",
+    "name": "rough on stomach",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "running-vo2-max-declined",
+    "name": "Running VO2 max declined",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "runny-nose",
+    "name": "runny nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "13"
+  },
+  {
+    "id": "runny-nose-or-congestion",
+    "name": "runny nose or congestion",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "runny-nose-sneezing-cough-sore-throat-or-flu-like-symptoms",
+    "name": "runny nose, sneezing, cough, sore throat, or flu-like symptoms",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sedation",
+    "name": "Sedation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "seeing-stars",
+    "name": "seeing stars",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "seizure",
+    "name": "seizure",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "7"
+  },
+  {
+    "id": "seizures",
+    "name": "seizures",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sensations-of-tingling-warmth-pressure-under-skin",
+    "name": "Sensations of tingling, warmth, pressure under skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sensitiviity-to-water-burning-sensation",
+    "name": "sensitiviity to water (burning sensation)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sensitivity-to-heat",
+    "name": "sensitivity to heat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sensitivity-to-light",
+    "name": "sensitivity to light",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sensitivity-to-water-burning-sensation",
+    "name": "sensitivity to water(burning sensation)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "seratonin-storm",
+    "name": "seratonin storm",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "serotonin-storm",
+    "name": "serotonin storm",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "severe-bruising",
+    "name": "severe bruising",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "severe-headache",
+    "name": "severe headache",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "severe-joint-pain",
+    "name": "severe joint pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "severe-memory-loss-sharp-pains-in-legs",
+    "name": "severe memory loss, sharp pains in legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "severe-sleep-disturbances",
+    "name": "severe sleep disturbances",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "severe-stomach-pain",
+    "name": "severe stomach pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sexual-problems",
+    "name": "Sexual problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "shakiness",
+    "name": "shakiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "shaking-hands-that-you-cannot-control",
+    "name": "shaking hands that you cannot control",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "shaking-of-a-part-of-your-body-that-you-cannot-control",
+    "name": "shaking of a part of your body that you cannot control",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "short-term-memory-loss",
+    "name": "Short-term memory loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "shortness-of-breath",
+    "name": "shortness of breath",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "shortness-of-breath-with-exercise",
+    "name": "shortness of breath with exercise",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "shoulder-muscle-aching",
+    "name": "Shoulder muscle aching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "skin-extreme-light-sensitivity",
+    "name": "skin: extreme light sensitivity",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "skin-more-sensitive-to-sunlight-than-usual",
+    "name": "skin more sensitive to sunlight than usual",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "skin-problems-or-changes-in-skin-color",
+    "name": "skin problems or changes in skin color",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "skin-rash",
+    "name": "skin rash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "skin-rashes-or-hives",
+    "name": "skin rashes or hives",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sleep-driving",
+    "name": "sleep driving",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sleep-ironing",
+    "name": "sleep ironing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sleep-soundly-for-6-hrs-and-then-wide-awake-and-unable-to-go-back-asleep",
+    "name": "Sleep soundly for 6 hrs and then wide awake and unable to go back asleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sleep-walking",
+    "name": "sleep walking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sleepiness",
+    "name": "Sleepiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "9"
+  },
+  {
+    "id": "sleepiness-or-feeling-drugged",
+    "name": "sleepiness or feeling \"drugged\"",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sleeplessness-or-drowsiness",
+    "name": "Sleeplessness or drowsiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slight-hair-loss",
+    "name": "slight hair loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slightly-nauseous",
+    "name": "Slightly nauseous",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slow-reactions",
+    "name": "slow reactions",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slowed-healing-of-cuts-and-bruises",
+    "name": "slowed healing of cuts and bruises",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slowed-reactions",
+    "name": "slowed reactions",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "slurred-speach",
+    "name": "slurred speach",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "small-pupils-black-circles-in-the-middle-of-the-eyes",
+    "name": "small pupils (black circles in the middle of the eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "smelly-urine",
+    "name": "smelly urine",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "smerter-i-bihulene",
+    "name": "Smerter i bihulene",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sneezing",
+    "name": "sneezing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "6"
+  },
+  {
+    "id": "some-foods-smelled-and-tasted-rotten",
+    "name": "some foods smelled and tasted rotten",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sore-joints",
+    "name": "Sore Joints",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sore-mouth",
+    "name": "sore mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sore-or-swollen-breasts",
+    "name": "Sore or swollen breasts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sore-skin",
+    "name": "sore skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sore-teeth-and-gums",
+    "name": "sore teeth and gums",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "sore-throat",
+    "name": "sore throat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "15"
+  },
+  {
+    "id": "sore-throat-chills-or-other-signs-of-infection",
+    "name": "sore throat, chills, or other signs of infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sores-in-mouth",
+    "name": "sores in mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sores-in-nose-and-mouth",
+    "name": "sores in nose and mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sores-in-the-mouth",
+    "name": "sores in the mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "speech-problems",
+    "name": "speech problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "speech-problems-especially-difficulty-thinking-of-specific-words",
+    "name": "speech problems, especially difficulty thinking of specific words",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sphincter-of-oddi-dysfunction",
+    "name": "Sphincter of Oddi Dysfunction",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "spotting-light-vaginal-bleeding",
+    "name": "spotting (light vaginal bleeding)",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "spotty-darkening-of-the-skin-on-the-face",
+    "name": "spotty darkening of the skin on the face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ssri-sleepy",
+    "name": "SSRI - sleepy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stabbing-pain-in-abdomen",
+    "name": "Stabbing pain in abdomen",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stadol-made-the-room-spin-around-it-was-worse-than-the-migraine-another-woman-told-me-it-did-the",
+    "name": "Stadol made the room spin around!! It was worse than the migraine. Another woman told me it did the ",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stiff-muscles",
+    "name": "stiff muscles",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stiff-neck",
+    "name": "stiff neck",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-ache",
+    "name": "stomach ache",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "stomach-back-or-joint-pain",
+    "name": "stomach, back, or joint pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-cramps",
+    "name": "stomach cramps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "stomach-cramps-or-bloating",
+    "name": "stomach cramps or bloating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-discomfort",
+    "name": "stomach discomfort",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-irritation",
+    "name": "Stomach irritation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-or-abdominal-pain",
+    "name": "Stomach or abdominal pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stomach-pain",
+    "name": "stomach pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "39"
+  },
+  {
+    "id": "stomach-pain-or-bloating",
+    "name": "stomach pain or bloating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stomach-pain-or-cramps",
+    "name": "stomach pain or cramps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-pain-or-swelling",
+    "name": "stomach pain or swelling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stomach-pain-or-tenderness",
+    "name": "stomach pain or tenderness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stomach-polyps",
+    "name": "stomach polyps",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stomach-ulcer",
+    "name": "stomach ulcer",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stomach-ulcers",
+    "name": "stomach ulcers",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "strange-or-unusual-thoughts",
+    "name": "strange or unusual thoughts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stuffed-or-runny-nose",
+    "name": "stuffed or runny nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stuffy-head-or-runny-nose",
+    "name": "stuffy head or runny nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "stuffy-nose",
+    "name": "stuffy nose",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "stuttering",
+    "name": "stuttering",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "substituting-the-wrong-word",
+    "name": "substituting the wrong word",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sudden-changes-in-behavior-or-mood",
+    "name": "sudden changes in behavior or mood",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sudden-feelings-of-heat-or-sweating",
+    "name": "sudden feelings of heat or sweating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sudden-mood-swings",
+    "name": "Sudden mood swings",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "suicidal",
+    "name": "Suicidal",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "suicidal-ideation",
+    "name": "suicidal ideation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "suicidal-ideations",
+    "name": "suicidal ideations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "suicidal-thoughts",
+    "name": "Suicidal Thoughts",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "suicidality",
+    "name": "Suicidality",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sunburn-feeling-on-top-of-head",
+    "name": "sunburn feeling on top of head",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "supposed-to-be-for-imitrex-heart-palpitations",
+    "name": "supposed to be for Imitrex - Heart Palpitations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "supposed-to-be-under-tramadol-makes-be-depressive",
+    "name": "supposed to be under Tramadol---makes be depressive",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sweating",
+    "name": "sweating",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "20"
+  },
+  {
+    "id": "sweating-from-parts-of-the-body-other-than-the-underarm",
+    "name": "sweating from parts of the body other than the underarm",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "sweating-or-night-sweats",
+    "name": "sweating or night sweats",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "swelling",
+    "name": "Swelling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-at-injection-site",
+    "name": "Swelling at injection site",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-blistering-or-crusting-of-the-skin",
+    "name": "swelling, blistering, or crusting of the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "swelling-itching-or-irritation-of-the-vagina",
+    "name": "swelling, itching, or irritation of the vagina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "swelling-of-feet",
+    "name": "swelling of feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-of-the-arms-hands-feet-ankles-or-lower-legs",
+    "name": "swelling of the arms, hands, feet, ankles, or lower legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "swelling-of-the-hands-arms-feet-ankles-or-lower-legs",
+    "name": "swelling of the hands, arms, feet, ankles, or lower legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-of-the-hands-feet-ankles-or-lower-legs",
+    "name": "swelling of the hands, feet, ankles, or lower legs",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "swelling-of-the-tongue",
+    "name": "swelling of the tongue",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-redness-burning-itching-or-irritation-of-the-vagina",
+    "name": "swelling, redness, burning, itching, or irritation of the vagina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-redness-irritation-burning-itching-or-infection-of-the-vagina",
+    "name": "swelling, redness, irritation, burning, itching, or infection of the vagina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swelling-redness-irritation-burning-or-itching-of-the-vagina",
+    "name": "swelling, redness, irritation, burning, or itching of the vagina",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swollen-lips",
+    "name": "swollen lips",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swollen-puffy-face",
+    "name": "Swollen, \"puffy\" face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "swollen-tender-gums",
+    "name": "swollen, tender gums",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tachycardia",
+    "name": "tachycardia",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "teary-eyes",
+    "name": "teary eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "teary-or-dry-eyes",
+    "name": "teary or dry eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "teeth-clenching",
+    "name": "teeth clenching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "temporary-hair-loss",
+    "name": "temporary hair loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "temporary-loss-of-vision",
+    "name": "temporary loss of vision",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "temporary-substantial-relief",
+    "name": "temporary substantial relief",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tendon-ligament-weakness-or-damage",
+    "name": "Tendon / Ligament Weakness or Damage",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tension",
+    "name": "tension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "thick-feat",
+    "name": "thick feat",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "thin-brittle-fingernails-or-hair",
+    "name": "thin, brittle fingernails or hair",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "thin-fragile-skin",
+    "name": "thin, fragile skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "thirsty",
+    "name": "thirsty",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "thrush",
+    "name": "thrush",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tic-exacerbation",
+    "name": "tic exacerbation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tight-muscles",
+    "name": "tight muscles",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "tight-muscles-or-difficulty-moving",
+    "name": "tight muscles or difficulty moving",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "tightness-in-muscles",
+    "name": "tightness in muscles",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "time-release-meds-can-be-dangerous-because-side-effects-persist",
+    "name": "Time release meds can be dangerous because side effects persist",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tingling-in-feet",
+    "name": "Tingling in feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tingling-or-numb-feeling",
+    "name": "tingling or numb feeling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "tingling-pain-in-feet",
+    "name": "Tingling/pain in feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tingling-sensation",
+    "name": "Tingling sensation",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tingling-sensation-in-the-arms-legs-hands-and-feet",
+    "name": "tingling sensation in the arms, legs, hands, and feet",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "tingling-sensations",
+    "name": "tingling sensations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tinitus",
+    "name": "tinitus",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tinnitus",
+    "name": "Tinnitus",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tired-red-or-itchy-eyes",
+    "name": "tired, red, or itchy eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tiredness",
+    "name": "tiredness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "13"
+  },
+  {
+    "id": "tiredness-fatigue",
+    "name": "Tiredness/fatigue",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tiredness-or-weakness",
+    "name": "tiredness or weakness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "tongue-pain",
+    "name": "tongue pain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "too-wired-to-sleep",
+    "name": "too wired to sleep",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "toothache",
+    "name": "toothache",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "topamax-kidney-stones",
+    "name": "Topamax - kidney stones",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "trembling",
+    "name": "trembling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "tremor",
+    "name": "Tremor",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "tremors",
+    "name": "tremors",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "trouble-breathing-asthma-attack",
+    "name": "Trouble breathing/asthma attack",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "trouble-swallowing",
+    "name": "trouble swallowing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "turned-into-emotional-zombie-dissasociated",
+    "name": "Turned into emotional zombie/ dissasociated",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "twitching",
+    "name": "twitching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "ulcer",
+    "name": "ulcer",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unable-to-cry",
+    "name": "unable to cry",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "uncontrollable-eye-movements",
+    "name": "uncontrollable eye movements",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "uncontrollable-facial-muscle-twitches",
+    "name": "uncontrollable facial muscle twitches",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "uncontrollable-movement-of-a-part-of-the-body",
+    "name": "uncontrollable movement of a part of the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "uncontrollable-movements-of-the-eyes",
+    "name": "uncontrollable movements of the eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "uncontrollable-shaking-of-a-part-of-the-body",
+    "name": "uncontrollable shaking of a part of the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "17"
+  },
+  {
+    "id": "uncontrollable-shaking-of-a-part-of-your-body",
+    "name": "uncontrollable shaking of a part of your body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "uncontrollable-shaking-or-jerking-of-a-part-of-the-body",
+    "name": "uncontrollable shaking or jerking of a part of the body",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "unexplained-rash",
+    "name": "Unexplained rash",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unpleasant-body-odor",
+    "name": "unpleasant body odor",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unpleasant-taste",
+    "name": "unpleasant taste",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unsteadiness",
+    "name": "unsteadiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "unsteady-walking",
+    "name": "unsteady walking",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unusual-discomfort-in-cold-temperatures",
+    "name": "unusual discomfort in cold temperatures",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "unusual-dreams",
+    "name": "unusual dreams",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "6"
+  },
+  {
+    "id": "unusual-tastes",
+    "name": "unusual tastes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "unwanted-eye-movements",
+    "name": "unwanted eye movements",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "unwanted-hair-growth",
+    "name": "unwanted hair growth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "upset-stomach",
+    "name": "Upset stomach",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "18"
+  },
+  {
+    "id": "urgent-need-to-urinate-or-defecate",
+    "name": "urgent need to urinate or defecate",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "urinary-hesitancy",
+    "name": "urinary hesitancy",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "urinary-incontinence",
+    "name": "urinary incontinence",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "urinary-retention",
+    "name": "urinary retention",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "urinary-urgency",
+    "name": "urinary urgency",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-bleeding-or-spotting-when-it-is-not-time-for-your-period-call-your-doctor-if-the-bleeding",
+    "name": "vaginal bleeding or spotting when it is not time for your period. (Call your doctor if the bleeding ",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-discharge",
+    "name": "vaginal discharge",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "vaginal-discharge-dryness-or-itching-in-women",
+    "name": "vaginal discharge, dryness, or itching in women",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-itching",
+    "name": "vaginal itching",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "vaginal-itching-and-discharge",
+    "name": "vaginal itching and discharge",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-itching-and-or-discharge",
+    "name": "vaginal itching and/or discharge",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-itching-burning-and-pain-or-other-signs-of-a-yeast-infection",
+    "name": "vaginal itching, burning, and pain or other signs of a yeast infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vaginal-odor",
+    "name": "VAGINAL ODOR",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "vertigo",
+    "name": "vertigo",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "very-cold-nose-and-face",
+    "name": "Very cold nose and face",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "very-dry-eyes",
+    "name": "very dry eyes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "very-heavy-periods-that-lasted-for-3-or-4-weeks-when-i-was-in-my-20s",
+    "name": "very heavy periods that lasted for 3 or 4 weeks when I was in my 20s",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "very-jittery",
+    "name": "very jittery",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "very-low-pulse",
+    "name": "Very low pulse",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vision-changes",
+    "name": "vision changes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vision-impairment",
+    "name": "vision impairment",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vision-problems",
+    "name": "vision problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vivid-dreams",
+    "name": "vivid dreams",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "voice-changes",
+    "name": "voice changes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "vomiting",
+    "name": "vomiting",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "74"
+  },
+  {
+    "id": "waking-up-too-early",
+    "name": "waking up too early",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "warm-or-cold-temperature-sensations",
+    "name": "warm or cold temperature sensations",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "warmth-or-slight-stinging-of-the-skin",
+    "name": "warmth or slight stinging of the skin",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "water-retension",
+    "name": "water retension",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "water-retention",
+    "name": "water retention",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "3"
+  },
+  {
+    "id": "water-retention-swelling",
+    "name": "Water retention, swelling",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "watery-mouth",
+    "name": "Watery mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "weak-muscles",
+    "name": "weak muscles",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "weakness",
+    "name": "weakness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "36"
+  },
+  {
+    "id": "weakness-or-tiredness",
+    "name": "weakness or tiredness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "5"
+  },
+  {
+    "id": "weepiness",
+    "name": "weepiness",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "weight-changes",
+    "name": "weight changes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "weight-gain",
+    "name": "weight gain",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "21"
+  },
+  {
+    "id": "weight-gain-or-loss",
+    "name": "weight gain or loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "weight-loss",
+    "name": "weight loss",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "15"
+  },
+  {
+    "id": "white-or-yellow-vaginal-discharge",
+    "name": "white or yellow vaginal discharge",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "white-patches-in-the-mouth",
+    "name": "white patches in the mouth",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "white-vaginal-discharge",
+    "name": "white vaginal discharge",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "wired",
+    "name": "wired",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "withdrawel",
+    "name": "withdrawel",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "word-recall-problems",
+    "name": "word recall problems",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "worsened-acne",
+    "name": "worsened acne",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "worsened-breathing",
+    "name": "worsened breathing",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "worsened-depression-horribly",
+    "name": "worsened depression horribly",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "worsening-of-diabetes",
+    "name": "Worsening of diabetes",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "1"
+  },
+  {
+    "id": "yawning",
+    "name": "yawning",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "4"
+  },
+  {
+    "id": "yeast-infection",
+    "name": "Yeast Infection",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  },
+  {
+    "id": "zoloft-shaking-lack-of-sexual-intrest-and-could-not-feel-my-clitoris-at-all",
+    "name": "Zoloft - shaking, lack of sexual intrest and could not feel my clitoris at all",
+    "description": null,
+    "content": null,
+    "featuredImage": null,
+    "deletedAt": null,
+    "numberOfTreatments": "2"
+  }
+]
