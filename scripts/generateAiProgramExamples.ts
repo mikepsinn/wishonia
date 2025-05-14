@@ -69,9 +69,9 @@ const PROGRAM_NAMES_TO_DETAIL = [...new Set(ALL_PROGRAM_NAMES_TO_DETAIL)];
 
 // Schema for the details AI needs to generate for a given program name
 const AiProgramDetailsSchema = z.object({
-  programDescription: z.string().describe("A brief (1-2 sentences) explanation of the program\'s specific purpose in simple terms."),
+  programDescription: z.string().describe("A brief (1-2 sentences) explanation of the program's specific purpose in simple terms."),
   programCategory: z.string().describe("A high-level category (e.g., Healthcare, Environment, Education, Infrastructure, Science/Tech, Public Safety, Energy, Social Services, Defense, Veterans Affairs, International Aid, General Government, Culture & Media)."),
-  estimatedAnnualBudgetMillions: z.number().positive().describe("A plausible estimated annual budget for this specific program in millions of USD. Be realistic for the program\'s scope."),
+  estimatedAnnualBudgetMillions: z.number().positive().describe("A plausible estimated annual budget for this specific program in millions of USD. Be realistic for the program's scope."),
 });
 
 // Type for the combined item including the provided name and AI-generated details
@@ -91,7 +91,7 @@ async function generateProgramDetails() {
       For the United States federal program named: \"${programName}\"
 
       Please provide the following details:
-      1. programDescription: A brief (1-2 sentences) explanation of this program\'s specific purpose and what it does, in simple terms for a citizen to understand.
+      1. programDescription: A brief (1-2 sentences) explanation of this program's specific purpose and what it does, in simple terms for a citizen to understand.
       2. programCategory: A relevant high-level category for this program (e.g., Healthcare, Environment, Education, Infrastructure, Science/Tech, Public Safety, Energy, Social Services, Defense, Veterans Affairs, International Aid, General Government, Culture & Media).
       3. estimatedAnnualBudgetMillions: A plausible estimated annual budget specifically for \"${programName}\" in millions of USD. Consider its likely scope and impact when estimating the budget.
 
@@ -113,9 +113,9 @@ async function generateProgramDetails() {
     } catch (error) {
       console.error(`❌ Failed to generate details for \"${programName}\".`);
       if (error instanceof Error) {
-        console.error(\'   Error message:\', error.message);
+        console.error('   Error message:', error.message);
       } else {
-        console.error(\'   Caught non-Error object:\', error);
+        console.error('   Caught non-Error object:', error);
       }
       allGeneratedPrograms.push({
         programName,
@@ -127,14 +127,14 @@ async function generateProgramDetails() {
   }
 
   if (allGeneratedPrograms.length === 0) {
-    console.error(\'No program details were successfully generated.\');
+    console.error('No program details were successfully generated.');
     process.exit(1); 
   }
 
   console.log(`\\nSuccessfully processed ${allGeneratedPrograms.length} program names.`);
 
   const wishingWellItems = allGeneratedPrograms.map((program, index) => ({
-    id: `prog-${program.programName.toLowerCase().replace(/\\W+/g, \'-\').substring(0, 50)}-${index}`,
+    id: `prog-${program.programName.toLowerCase().replace(/\\W+/g, '-').substring(0, 50)}-${index}`,
     userId: 'ai-curated-program-generator',
     name: program.programName,
     description: program.programDescription,
@@ -154,9 +154,9 @@ async function generateProgramDetails() {
     await fs.writeFile(OUTPUT_FILE, JSON.stringify(wishingWellItems, null, 2));
     console.log(`Successfully saved ${wishingWellItems.length} AI-detailed program examples to ${OUTPUT_FILE}`);
   } catch (saveError) {
-      console.error(\'Failed to save AI program examples to file. Script will terminate.\');
+      console.error('Failed to save AI program examples to file. Script will terminate.');
       if (saveError instanceof Error) {
-        console.error(\'Error message:\', saveError.message);
+        console.error('Error message:', saveError.message);
       }
       process.exit(1);
   }
