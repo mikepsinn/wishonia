@@ -2,6 +2,7 @@ import { anthropic } from "@ai-sdk/anthropic";
 import { google } from "@ai-sdk/google";
 import { openai } from "@ai-sdk/openai";
 import { LanguageModelV1 } from "@ai-sdk/provider";
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Moved from lib/constants/llmModelPricing.ts
 export type ModelPricingInfo = {
@@ -64,7 +65,7 @@ function isValidModelName(model: string): model is ModelName {
 
 function getDefaultModelName(): ModelName {
   const envModel = process.env.DEFAULT_AI_MODEL;
-  const defaultFallbackModel: ModelName = 'gemini-2.5-flash-preview-05-06';
+  const defaultFallbackModel: ModelName = 'gemini-1.5-flash-latest';
   
   if (!envModel) return defaultFallbackModel;
   
@@ -114,4 +115,62 @@ export function getModel(modelName: ModelName = DEFAULT_MODEL_NAME): LanguageMod
   
   // Ultimate fallback if DEFAULT_MODEL_NAME is somehow invalid (should not happen)
   return anthropic('claude-3-haiku-20240307'); 
+}
+
+export async function logAvailableGoogleModels(): Promise<void> {
+  console.log("\nAttempting to list available Google AI Models directly from API...");
+  try {
+    const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
+    if (!apiKey) {
+      console.error("GOOGLE_GENERATIVE_AI_API_KEY is not set. Cannot list models.");
+      return;
+    }
+    const genAI = new GoogleGenerativeAI(apiKey);
+    // const result = await genAI.listModels(); // Old attempt
+    // According to documentation and common patterns, listModels might be on a sub-property like .models
+    // However, the exact structure can vary. If this also fails, the SDK's specific API for listing needs to be confirmed.
+    // For now, let's assume it might be on a `models` property if the direct call failed.
+    // The @ai-sdk/google might wrap this differently, or this direct usage of @google/generative-ai isn't how @ai-sdk expects it.
+
+    // The most direct way to list models as per Google's REST API documentation is a GET request.
+    // However, since we are trying to use the installed SDK, let's try to find its method.
+    // The error was "Property 'listModels' does not exist on type 'GoogleGenerativeAI'"
+    // The new `@google/genai` SDK documentation shows `ai.models.generateContent`, suggesting listing might be `ai.models.list()`
+    // Let's try to adapt to that structure if such a sub-object exists and has listModels.
+    // This is speculative as the exact API of the version of @google/generative-ai used by @ai-sdk/google might differ.
+
+    // Given the previous error, it's likely the `GoogleGenerativeAI` instance itself doesn't have `listModels`.
+    // Let's try using the Fetch API directly to the REST endpoint as a more robust fallback for listing.
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error(`Failed to list models via REST API: ${response.status} - ${errorText}`);
+      return;
+    }
+    const data = await response.json();
+
+    console.log("Available Google Models (via REST API call):");
+    if (data.models && Array.isArray(data.models)) {
+      for (const m of data.models) {
+        console.log("--------------------------------------------------");
+        console.log(`  Name: ${m.name}`); // e.g., models/gemini-pro
+        console.log(`  Display Name: ${m.displayName}`);
+        console.log(`  Description: ${(m.description || '').substring(0, 150)}${(m.description || '').length > 150 ? '...' : ''}`);
+        console.log(`  Version: ${m.version}`);
+        console.log(`  Supported Generation Methods: ${m.supportedGenerationMethods?.join(', ') || 'N/A'}`);
+        if (m.inputTokenLimit) console.log(`  Input Token Limit: ${m.inputTokenLimit}`);
+        if (m.outputTokenLimit) console.log(`  Output Token Limit: ${m.outputTokenLimit}`);
+      }
+      console.log("--------------------------------------------------");
+      console.log("Note: Not all listed models may be suitable for 'generateContent' with the @ai-sdk. Check 'Supported Generation Methods'.");
+    } else {
+      console.log("No models array found in REST API response or response format unexpected.", data);
+    }
+
+  } catch (err) {
+    console.error("Failed to list Google AI Models:", err instanceof Error ? err.message : String(err));
+    if (err instanceof Error && err.stack) {
+        console.error(err.stack);
+    }
+  }
 }
