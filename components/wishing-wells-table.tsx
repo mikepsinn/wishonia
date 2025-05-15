@@ -12,7 +12,7 @@ interface PollProps {
   user?: User
 }
 
-export const WishingWellsList: React.FC<PollProps> = ({ user }) => {
+export const WishingWellsTable: React.FC<PollProps> = ({ user }) => {
   const [wishingWells, setWishingWells] = useState<WishingWell[]>([])
   const [loading, setLoading] = useState(false)
   const fetchWishingWells = async () => {

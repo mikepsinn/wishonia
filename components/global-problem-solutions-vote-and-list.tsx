@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import { GlobalProblem } from "@prisma/client"
 import { User } from "next-auth"
 
-import { GlobalProblemSolutionsList } from "@/components/global-problem-solutions-list"
+import { GlobalProblemSolutionsTable } from "@/components/global-problem-solutions-table"
 import { Shell } from "@/components/layout/shell"
 import { DashboardHeader } from "@/components/pages/dashboard/dashboard-header"
 import { PollRandomGlobalProblemSolutions } from "@/components/poll-random-global-problem-solutions"
@@ -47,10 +47,10 @@ export const GlobalProblemSolutionsVoteAndSolutionsList: React.FC<
         globalProblemId={globalProblemId}
         user={user}
       ></PollRandomGlobalProblemSolutions>
-      <GlobalProblemSolutionsList
+      <GlobalProblemSolutionsTable
         user={user}
         globalProblemId={globalProblemId}
-      ></GlobalProblemSolutionsList>
+      ></GlobalProblemSolutionsTable>
     </Shell>
   )
 }

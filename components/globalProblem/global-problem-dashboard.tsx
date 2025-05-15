@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Timeline, TimelineItem } from '@/components/ui/timeline';
 import { generateGlobalProblemDashboard, getGlobalProblemRelationshipsAction } from "@/app/actions/generate-global-problem-dashboard"
-import { GlobalProblemSolutionsList } from '../global-problem-solutions-list';
+import { GlobalProblemSolutionsTable } from '../global-problem-solutions-table';
 import GlobalCoordinationAgent from '../landingPage/global-coordination-agent';
 import { ExtendedUser } from '@/types/auth';
 import { PollRandomGlobalProblemSolutions } from '../poll-random-global-problem-solutions';
@@ -208,7 +208,7 @@ export default function GlobalProblemDashboard({ globalProblem, user }: GlobalPr
           <AccordionItem value="current-solutions">
             <AccordionTrigger className="justify-start">Current Solutions</AccordionTrigger>
             <AccordionContent>
-              <GlobalProblemSolutionsList
+              <GlobalProblemSolutionsTable
                 user={user}
                 globalProblemId={globalProblem.id}
               />

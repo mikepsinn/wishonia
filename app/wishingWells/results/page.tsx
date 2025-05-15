@@ -2,7 +2,7 @@ import { Metadata } from "next"
 
 import { Shell } from "@/components/layout/shell"
 import { DashboardHeader } from "@/components/pages/dashboard/dashboard-header"
-import { WishingWellsList } from "@/components/wishing-well-list"
+import { WishingWellsTable } from "@/components/wishing-wells-table"
 
 interface WishingWellsProps {}
 let heading = `Average Allocations to Each Wish`
@@ -21,7 +21,7 @@ export default async function WishingWells({}: WishingWellsProps) {
         heading={heading}
         text={metaDescription}
       ></DashboardHeader>
-      <WishingWellsList />
+      <WishingWellsTable />
     </Shell>
   )
 }

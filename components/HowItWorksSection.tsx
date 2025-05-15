@@ -4,7 +4,7 @@ import { User } from "next-auth"
 import HowItWorksItem from "./HowItWorksItem"
 import {PollRandomGlobalProblems} from "@/components/poll-random-global-problems";
 import {GlobalProblemsList} from "@/components/global-problems-list";
-import {GlobalProblemSolutionsList} from "@/components/global-problem-solutions-list";
+import {GlobalProblemSolutionsTable} from "@/components/global-problem-solutions-table";
 import {PollRandomGlobalProblemSolutions} from "@/components/poll-random-global-problem-solutions";
 import ActionableTaskStrategyVisualizer from "@/components/landingPage/TaskGalaxyVisualizerWithData";
 import TaskAllocationVisualizer from "@/components/landingPage/TaskAllocationVisualizer";
@@ -38,7 +38,7 @@ const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ user }) => {
             description:
                 `We use AI agents to research and list all possible solutions for each problem.
        Here are the current solutions for solving the specific problem of "${problemName}", for example.`,
-            visual: <GlobalProblemSolutionsList
+            visual: <GlobalProblemSolutionsTable
                 user={user}
                 globalProblemId={problemId} />,
         },

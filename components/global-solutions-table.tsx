@@ -90,7 +90,7 @@ const globalSolutionColumns: ColumnDef<GlobalSolution>[] = [
   },
 ]
 
-export const GlobalSolutionsList: React.FC<PollProps> = ({ user }) => {
+export const GlobalSolutionsTable: React.FC<PollProps> = ({ user }) => {
   const [globalSolutions, setGlobalSolutions] = useState<GlobalSolution[]>([])
   const [loading, setLoading] = useState(false)
   const fetchGlobalSolutions = async () => {

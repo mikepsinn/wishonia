@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 
-import { GlobalSolutionsList } from "@/components/global-solutions-list"
+import { GlobalSolutionsTable } from "@/components/global-solutions-table"
 import { Shell } from "@/components/layout/shell"
 import { DashboardHeader } from "@/components/pages/dashboard/dashboard-header"
 
@@ -21,7 +21,7 @@ export default async function GlobalSolutions({}: GlobalSolutionsProps) {
         heading={heading}
         text={metaDescription}
       ></DashboardHeader>
-      <GlobalSolutionsList />
+      <GlobalSolutionsTable />
     </Shell>
   )
 }

@@ -24,10 +24,15 @@ interface PollProps {
   user?: ExtendedUser
 }
 
-export const GlobalProblemSolutionsList: React.FC<PollProps> = ({
+export type GlobalProblemsTableProps = {
+  globalProblemId: string
+  user?: ExtendedUser
+}
+
+export default function GlobalProblemsTable({
   globalProblemId,
   user,
-}) => {
+}: GlobalProblemsTableProps) {
   const [globalProblemSolutions, setGlobalProblemSolutions] = useState<
     GlobalProblemSolution[]
   >([])

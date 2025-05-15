@@ -2,7 +2,7 @@ import { Metadata } from "next"
 
 import { getCurrentUser } from "@/lib/session"
 import { Shell } from "@/components/layout/shell"
-import { GlobalProblemSolutionsList } from "@/components/global-problem-solutions-list"
+import { GlobalProblemSolutionsTable } from "@/components/global-problem-solutions-table"
 
 interface GlobalProblemsProps {}
 let heading = `Solutions for the problem`
@@ -24,10 +24,10 @@ export default async function GlobalProblemSolutionsPage({
   const globalProblemId = params.globalProblemId
   return (
     <Shell>
-      <GlobalProblemSolutionsList
+      <GlobalProblemSolutionsTable
         user={user}
         globalProblemId={globalProblemId}
-      ></GlobalProblemSolutionsList>
+      ></GlobalProblemSolutionsTable>
     </Shell>
   )
 }

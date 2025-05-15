@@ -55,7 +55,7 @@ const globalTaskColumns: ColumnDef<GlobalTask>[] = [
   },
 ]
 
-export const GlobalTasksList: React.FC<GlobalTasksListProps> = ({
+export const GlobalTasksTable: React.FC<GlobalTasksListProps> = ({
   globalSolutionId,
 }) => {
   const [globalTasks, setGlobalTasks] = useState<GlobalTask[]>([])

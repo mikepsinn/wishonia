@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 import { getGlobalProblemSolutionById } from "@/lib/api/globalProblemSolutions"
-import { GlobalTasksList } from "@/components/global-tasks-list"
+import { GlobalTasksTable } from "@/components/global-tasks-table"
 import { Shell } from "@/components/layout/shell"
 import { DashboardHeader } from "@/components/pages/dashboard/dashboard-header"
 
@@ -40,7 +40,7 @@ export default async function GlobalTasks({
         heading={heading}
         text={metaDescription}
       ></DashboardHeader>
-      <GlobalTasksList globalSolutionId={globalSolutionId} />
+      <GlobalTasksTable globalSolutionId={globalSolutionId} />
     </Shell>
   )
 }
