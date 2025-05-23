@@ -17,6 +17,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
 import { Icons } from "../icons"
 import AddAgentDataSource from "./add-agent-data-source"
+import Chat from "../Chat"
 import DataSourceIcon from "./data-source-icon"
 import {
   AlertDialog,
@@ -363,16 +364,29 @@ export default function AgentForm({
         </form>
       </div>
       <div className="hidden w-1/2 bg-secondary p-8 md:block">
-        <div className="flex h-full flex-col justify-between">
-          <div className="flex h-full items-center justify-center">
-            <CuboidIcon className="h-12 w-12 text-gray-400" />
+        {agentData && agentData.id ? (
+          <Chat
+            id={agentData.id}
+            agentData={agentData}
+            initialMessages={
+              agentData.initialMessage
+                ? [{ id: "initial", role: "system", content: agentData.initialMessage }]
+                : []
+            }
+            missingKeys={[]}
+          />
+        ) : (
+          <div className="flex h-full flex-col justify-between">
+            <div className="flex h-full items-center justify-center">
+              <CuboidIcon className="h-12 w-12 text-gray-400" />
+            </div>
+            <div className="text-center">
+              <p className="text-sm text-gray-400">
+                Start by defining your Agent.
+              </p>
+            </div>
           </div>
-          <div className="text-center">
-            <p className="text-sm text-gray-400">
-              Start by defining your Agent.
-            </p>
-          </div>
-        </div>
+        )}
       </div>
     </div>
     <AlertDialog open={selectedDatasource!==null} >
