@@ -35,7 +35,7 @@
     "generate-routes": "ts-node scripts/generateRouteTree.ts"
   },
   "prisma": {
-    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@agentic/stdlib": "^6.1.5",

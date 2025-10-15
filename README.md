@@ -73,37 +73,60 @@ This can be done using [Randomized Aggregated Pairwise Preference Allocation (AP
 
 **Wishonia** is an imaginary magical kingdom meant to illustrate the concept of Wishocracy and test the idea in a simulated virtual world to see how it works.
 
-# Quick Start
+# Getting Started for Contributors
 
-1. **Install Dependencies**:
+Welcome! Follow these steps to get your local development environment up and running.
 
-   - [Node.js](https://nodejs.org/en/) v18 or higher (I'd recommend using [NVM](https://github.com/coreybutler/nvm-windows?tab=readme-ov-file) instead so you can easily switch nodejs versions as needed)
-   - [pnpm](https://pnpm.io/)
-   - [Docker](https://www.docker.com/)
+### 1. Prerequisites
 
-2. **Configure Environment Variables**:
+Make sure you have the following software installed on your system:
 
-   - Rename .env.example files to .env and configure the environment variables
+- [Node.js](https://nodejs.org/en/) v18 or higher (we recommend using [NVM](https://github.com/nvm-sh/nvm) to manage Node versions)
+- [pnpm](https://pnpm.io/installation)
+- [Docker](https://www.docker.com/products/docker-desktop/) and Docker Compose
 
-3. **Start the Database With Docker**:
+### 2. Configure Environment Variables
+
+Copy the example environment file to create your local configuration:
+
+```sh
+cp .env.example .env
+```
+You may need to update the variables in the new `.env` file, but the defaults should work for local development.
+
+### 3. Start the Database & Services
+
+This single command will start a PostgreSQL database and a Redis instance in the background. The first time you run this, Docker will also automatically create the necessary database extensions.
 
 ```sh
 docker-compose up -d
 ```
 
-4. **Install Dependencies**:
+### 4. Install Dependencies
+
+Install all the project's dependencies using pnpm:
 
 ```sh
 pnpm install
 ```
 
-5. **Seed the Database**:
+### 5. Run Migrations & Seed the Database
 
-Seed the database with default problems and wishes by running tests/seed.test.ts with the following command:
+This command will set up your database schema and populate it with initial seed data so you can start using the application.
 
 ```sh
-jest tests/seed.test.ts
+./scripts/seed.ps1
 ```
+
+### 6. Start the Development Server
+
+You're all set! Start the Next.js development server:
+
+```sh
+pnpm dev
+```
+
+The application should now be running at [http://localhost:3000](http://localhost:3000).
 
 # Why Are You Doing This?
 
