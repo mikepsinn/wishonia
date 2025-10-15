@@ -1,15 +1,10 @@
 generator client {
   provider = "prisma-client-js"
-  // Had to comment because I keep getting the error:
-  // Changed the `vector` extension. need to reset the "public" schema
-  // previewFeatures = ["postgresqlExtensions"]
-  // extensions      = ["(function)"]
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-  // extensions = [uuid_ossp(map: "uuid-ossp", schema: "public")]
 }
 
 model Account {
@@ -139,6 +134,7 @@ model User {
   likes                                 Like[]
   ownedOrganizations                    Organization[]
   organizationFollows                   OrganizationFollower[]
+  Person_Person_creatorUserIdToUser     Person[]                              @relation("Person_creatorUserIdToUser")
   person                                Person?
   createdPetitions                      Petition[]                            @relation("CreatedPetitions")
   petitionComments                      PetitionComment[]
@@ -170,41 +166,43 @@ model User {
 }
 
 model Person {
-  id                    String                   @id @default(cuid())
-  bio                   String?
-  birthday              DateTime?
-  blog                  String?
-  city                  String?
-  company               String?
-  createdAt             DateTime                 @default(now())
-  createdAtTwitter      DateTime?
-  email                 String?                  @unique
-  firstName             String?
-  gender                String?
-  githubUsername        String?                  @unique
-  hireable              Boolean?
-  image                 String?
-  jobTitle              String?
-  lastName              String?
-  location              String?
-  name                  String
-  phoneNumber           String?                  @unique
-  postalCode            String?
-  profileBannerUrl      String?
-  stateProvince         String?
-  telephone             String?
-  timeZone              String?
-  twitterHandle         String?                  @unique
-  updatedAt             DateTime                 @updatedAt
-  userId                String?                  @unique
-  web3Wallet            String?                  @unique
-  website               String?
-  callSchedules         CallSchedule[]
-  callSummaryRecipients CallSummaryRecipient[]
-  memberships           OrganizationMembership[]
-  user                  User?                    @relation(fields: [userId], references: [id])
-  globalProblems        PersonGlobalProblem[]
-  globalSolutions       PersonGlobalSolution[]
+  id                              String                   @id @default(cuid())
+  name                            String
+  email                           String?                  @unique
+  telephone                       String?
+  jobTitle                        String?
+  createdAt                       DateTime                 @default(now())
+  updatedAt                       DateTime                 @updatedAt
+  userId                          String?                  @unique
+  bio                             String?
+  birthday                        DateTime?
+  blog                            String?
+  city                            String?
+  company                         String?
+  createdAtTwitter                DateTime?
+  firstName                       String?
+  gender                          String?
+  githubUsername                  String?                  @unique
+  hireable                        Boolean?
+  image                           String?
+  lastName                        String?
+  location                        String?
+  phoneNumber                     String?                  @unique
+  postalCode                      String?
+  profileBannerUrl                String?
+  stateProvince                   String?
+  timeZone                        String?
+  twitterHandle                   String?                  @unique
+  web3Wallet                      String?                  @unique
+  website                         String?
+  creatorUserId                   String?
+  callSchedules                   CallSchedule[]
+  callSummaryRecipients           CallSummaryRecipient[]
+  memberships                     OrganizationMembership[]
+  User_Person_creatorUserIdToUser User?                    @relation("Person_creatorUserIdToUser", fields: [creatorUserId], references: [id])
+  user                            User?                    @relation(fields: [userId], references: [id])
+  globalProblems                  PersonGlobalProblem[]
+  globalSolutions                 PersonGlobalSolution[]
 
   @@index([name])
   @@index([email])
@@ -484,21 +482,21 @@ model GlobalTask {
   userId              String
   name                String                 @unique
   description         String?                @unique
-  content             String?
-  featuredImage       String?
   createdAt           DateTime               @default(now())
   updatedAt           DateTime               @updatedAt
-  priority            String?
-  status              TaskStatus             @default(NOT_STARTED)
-  dueDate             DateTime?
-  budget              Float?
-  embedding           Unsupported("vector")?
-  isAtomic            Boolean?
   complexity          TaskComplexity?
-  tags                String[]
-  estimatedHours      Float?
-  actualHours         Float?
+  isAtomic            Boolean?
+  budget              Float?
   deliverable         String?
+  dueDate             DateTime?
+  tags                String[]
+  actualHours         Float?
+  estimatedHours      Float?
+  status              TaskStatus             @default(NOT_STARTED)
+  content             String?
+  embedding           Unsupported("vector")?
+  featuredImage       String?
+  priority            String?
   globalSolutionTasks GlobalSolutionTask[]   @relation("GlobalTaskToSolution")
   creator             User                   @relation(fields: [userId], references: [id])
   attachments         GlobalTaskAttachment[]
@@ -752,9 +750,9 @@ model Agent {
   outputSchema         String?
   prompt               String?           @default("You are a helpful AI Assistant")
   type                 AgentType         @default(SUPERAGENT)
-  sharingLevel         SharingLevel      @default(PRIVATE)
   updatedAt            DateTime          @updatedAt
   conversationStarters String[]          @default(["What can you do?"])
+  sharingLevel         SharingLevel      @default(PRIVATE)
   user                 User              @relation(fields: [userId], references: [id])
   datasources          AgentDatasource[]
   llms                 AgentLLM[]
@@ -992,34 +990,34 @@ model Library {
 model Organization {
   id                      String                       @id @default(cuid())
   name                    String                       @unique
-  slug                    String                       @unique
   alternateName           String?
   description             String?
   url                     String?                      @unique
-  alternateUrls           String[]
   logo                    String?
   createdAt               DateTime                     @default(now())
   updatedAt               DateTime                     @updatedAt
   email                   String?                      @unique
   telephone               String?                      @unique
-  industry                String?
+  alternateUrls           String[]
+  ownerId                 String?
   companySize             CompanySize?
-  headquartersLocation    String?
-  foundedYear             Int?
-  specialties             String[]
-  tagline                 String?
-  linkedinUrl             String?                      @unique
-  twitterHandle           String?                      @unique
-  facebookPage            String?                      @unique
-  instagramHandle         String?                      @unique
-  youtubeChannel          String?                      @unique
   companyType             CompanyType?
-  stockSymbol             String?                      @unique
+  employeeCount           Int?
+  facebookPage            String?                      @unique
+  foundedYear             Int?
+  headquartersLocation    String?
+  industry                String?
+  instagramHandle         String?                      @unique
+  linkedinUrl             String?                      @unique
+  mission                 String?
   publiclyTraded          Boolean?                     @default(false)
   revenue                 String?
-  employeeCount           Int?
-  mission                 String?
-  ownerId                 String?
+  slug                    String                       @unique
+  specialties             String[]
+  stockSymbol             String?                      @unique
+  tagline                 String?
+  twitterHandle           String?                      @unique
+  youtubeChannel          String?                      @unique
   Event                   Event[]
   grantProposals          GrantProposal[]
   owner                   User?                        @relation(fields: [ownerId], references: [id])
@@ -1077,10 +1075,10 @@ model Chat {
   id        String        @id @default(uuid())
   title     String
   userId    String
-  agentId   String?
   createdAt DateTime      @default(now())
-  updatedAt DateTime      @updatedAt
   path      String
+  agentId   String?
+  updatedAt DateTime      @updatedAt
   agent     Agent?        @relation(fields: [agentId], references: [id])
   user      User          @relation(fields: [userId], references: [id])
   messages  ChatMessage[]
@@ -1091,7 +1089,6 @@ model ChatMessage {
   chatId        String
   tool_call_id  String?
   createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
   content       String
   ui            String?
   role          MessageRole
@@ -1100,6 +1097,7 @@ model ChatMessage {
   data          Json?
   tool_calls    String?
   annotations   Json?
+  updatedAt     DateTime    @updatedAt
   chat          Chat        @relation(fields: [chatId], references: [id])
 }
 
@@ -1457,28 +1455,28 @@ model ArticleGenerationOptions {
   maxCharactersOfSearchContentToUse Int
   tone                              String
   format                            String
-  modelName                         String?
-  temperature                       Float?
-  topP                              Float?
-  maxTokens                         Int?
-  presencePenalty                   Float?
-  frequencyPenalty                  Float?
-  generationTimeMs                  Int?
-  tokenCount                        Int?
-  estimatedCost                     Float?
-  qualityScore                      Float?
-  searchStrategy                    String?
-  dateRangeStart                    DateTime?
-  dateRangeEnd                      DateTime?
-  minSourceRank                     Int?
-  citationStyle                     String?
-  languageLevel                     String?
-  wordLimit                         Int?
-  includeSummary                    Boolean?
   articleId                         String    @unique
   updatedAt                         DateTime  @updatedAt
   createdAt                         DateTime  @default(now())
   deletedAt                         DateTime?
+  citationStyle                     String?
+  dateRangeEnd                      DateTime?
+  dateRangeStart                    DateTime?
+  estimatedCost                     Float?
+  frequencyPenalty                  Float?
+  generationTimeMs                  Int?
+  includeSummary                    Boolean?
+  languageLevel                     String?
+  maxTokens                         Int?
+  minSourceRank                     Int?
+  modelName                         String?
+  presencePenalty                   Float?
+  qualityScore                      Float?
+  searchStrategy                    String?
+  temperature                       Float?
+  tokenCount                        Int?
+  topP                              Float?
+  wordLimit                         Int?
   article                           Article   @relation(fields: [articleId], references: [id], onDelete: Cascade)
 }
 
@@ -1506,10 +1504,10 @@ model Grant {
   applicationProcess String?
   requirements       String[]
   url                String?         @unique
-  contactEmail       String?
   createdAt          DateTime        @default(now())
   updatedAt          DateTime        @updatedAt
   deletedAt          DateTime?
+  contactEmail       String?
   grantProposals     GrantProposal[]
   grantSkills        GrantSkill[]
 }
@@ -1527,11 +1525,11 @@ model GrantProposal {
   evaluation             String
   sustainability         String
   conclusion             String
-  status                 ProposalStatus @default(DRAFT)
   createdAt              DateTime       @default(now())
   updatedAt              DateTime       @updatedAt
   organizationId         String
   grantId                String?
+  status                 ProposalStatus @default(DRAFT)
   grant                  Grant?         @relation(fields: [grantId], references: [id])
   organization           Organization   @relation(fields: [organizationId], references: [id])
 
@@ -1619,17 +1617,17 @@ model ApiEndpointPricing {
   endpoint        String
   method          String
   pricePerRequest Float
-  active          Boolean  @default(true)
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
+  active          Boolean  @default(true)
 }
 
 model ApiEndpointUsage {
   endpointPricingId String
   subscriptionId    String
-  period            String
   requestCount      Int    @default(0)
   billableAmount    Float  @default(0)
+  period            String
 
   @@id([endpointPricingId, subscriptionId, period])
 }
@@ -1641,11 +1639,11 @@ model ApiRequest {
   method            String
   status            Int
   duration          Int
+  createdAt         DateTime @default(now())
+  billable          Boolean  @default(true)
+  error             String?
   endpointPricingId String?
   billedAmount      Float?
-  error             String?
-  billable          Boolean  @default(true)
-  createdAt         DateTime @default(now())
 }
 
 model Petition {
@@ -1662,9 +1660,9 @@ model Petition {
   notifyOnComment   Boolean                @default(true)
   notifyOnMilestone Boolean                @default(true)
   categoryId        String?
-  targetLocation    String?
-  messageTemplate   String?
   callScript        String?
+  messageTemplate   String?
+  targetLocation    String?
   category          PetitionCategory?      @relation(fields: [categoryId], references: [id])
   creator           User                   @relation("CreatedPetitions", fields: [creatorId], references: [id])
   comments          PetitionComment[]
@@ -1815,6 +1813,7 @@ model ScheduledCall {
   updatedAt             DateTime               @updatedAt
   completedAt           DateTime?
   callSummary           String?
+  transcript            String?
   callSummaryRecipients CallSummaryRecipient[]
   schedule              CallSchedule           @relation(fields: [scheduleId], references: [id])
 
@@ -2045,10 +2044,10 @@ enum DatasourceType {
 }
 
 enum DatasourceStatus {
-  QUEUED
   IN_PROGRESS
   DONE
   FAILED
+  QUEUED
 }
 
 enum VectorDbProvider {
@@ -2081,12 +2080,12 @@ enum DrugClassification {
 }
 
 enum Severity {
-  NONE
   MINIMAL
   MILD
   MODERATE
   SEVERE
   EXTREME
+  NONE
 }
 
 enum Effectiveness {
