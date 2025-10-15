@@ -171,40 +171,40 @@ model User {
 
 // Need this to create digital twins for people that are not users
 model Person {
-  id               String                   @id @default(cuid())
-  bio              String?
-  birthday         DateTime?
-  blog             String?
-  city             String?
-  company          String?
-  createdAt        DateTime                 @default(now())
-  createdAtTwitter DateTime?
-  email            String?                  @unique
-  firstName        String?
-  gender           String?
-  githubUsername   String?                  @unique
-  hireable         Boolean?
-  image            String?
-  jobTitle         String?
-  lastName         String?
-  location         String?
-  memberships      OrganizationMembership[]
-  name             String
-  phoneNumber      String?                  @unique
-  postalCode       String?
-  profileBannerUrl String?
-  stateProvince    String?
-  telephone        String?
-  timeZone         String?
-  twitterHandle    String?                  @unique
-  updatedAt        DateTime                 @updatedAt
-  user             User?                    @relation(fields: [userId], references: [id])
-  userId           String?                  @unique
-  web3Wallet       String?                  @unique
-  website          String?
-  callSchedules    CallSchedule[]
-  globalProblems   PersonGlobalProblem[]
-  globalSolutions  PersonGlobalSolution[]
+  id                    String                   @id @default(cuid())
+  bio                   String?
+  birthday              DateTime?
+  blog                  String?
+  city                  String?
+  company               String?
+  createdAt             DateTime                 @default(now())
+  createdAtTwitter      DateTime?
+  email                 String?                  @unique
+  firstName             String?
+  gender                String?
+  githubUsername        String?                  @unique
+  hireable              Boolean?
+  image                 String?
+  jobTitle              String?
+  lastName              String?
+  location              String?
+  memberships           OrganizationMembership[]
+  name                  String
+  phoneNumber           String?                  @unique
+  postalCode            String?
+  profileBannerUrl      String?
+  stateProvince         String?
+  telephone             String?
+  timeZone              String?
+  twitterHandle         String?                  @unique
+  updatedAt             DateTime                 @updatedAt
+  user                  User?                    @relation(fields: [userId], references: [id])
+  userId                String?                  @unique
+  web3Wallet            String?                  @unique
+  website               String?
+  callSchedules         CallSchedule[]
+  globalProblems        PersonGlobalProblem[]
+  globalSolutions       PersonGlobalSolution[]
   callSummaryRecipients CallSummaryRecipient[]
 
   // Add index for common queries
@@ -2082,16 +2082,16 @@ model ScheduledCall {
   id           String       @id @default(cuid())
   scheduleId   String
   schedule     CallSchedule @relation(fields: [scheduleId], references: [id])
-  scheduledFor DateTime     // When the call was scheduled for
+  scheduledFor DateTime // When the call was scheduled for
   status       CallStatus   @default(SCHEDULED)
-  retellCallId String?     // ID returned by Retell API
-  errorMessage String?     // If the call failed
-  createdAt    DateTime    @default(now())
-  updatedAt    DateTime    @updatedAt
-  completedAt  DateTime?   // When call was completed/failed/cancelled
+  retellCallId String? // ID returned by Retell API
+  errorMessage String? // If the call failed
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  completedAt  DateTime? // When call was completed/failed/cancelled
 
   // Add fields for call summary and notifications
-  callSummary  String?    @db.Text  // AI-generated summary of the call
+  callSummary String? @db.Text // AI-generated summary of the call
 
   // Many-to-many relation with Person for notifications
   callSummaryRecipients CallSummaryRecipient[]
@@ -2104,14 +2104,14 @@ model ScheduledCall {
 
 // New model to handle notification preferences
 model CallSummaryRecipient {
-  id             String        @id @default(cuid())
-  personId       String
+  id              String         @id @default(cuid())
+  personId        String
   scheduledCallId String
-  person         Person        @relation(fields: [personId], references: [id])
-  scheduledCall  ScheduledCall @relation(fields: [scheduledCallId], references: [id])
-  notifyBy       NotifyMethod[]
-  createdAt      DateTime      @default(now())
-  updatedAt      DateTime      @updatedAt
+  person          Person         @relation(fields: [personId], references: [id])
+  scheduledCall   ScheduledCall  @relation(fields: [scheduledCallId], references: [id])
+  notifyBy        NotifyMethod[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
 
   @@unique([personId, scheduledCallId])
   @@index([personId])
