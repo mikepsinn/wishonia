@@ -11,6 +11,7 @@ const customJestConfig = {
   setupFiles: ["./jest.polyfills.js"],
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testEnvironment: "jest-environment-jsdom",
+  runner: "jest-runner-groups",
 }
 
 module.exports = createJestConfig(customJestConfig)

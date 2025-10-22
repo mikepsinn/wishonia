@@ -1,5 +1,6 @@
 /**
  * @jest-environment node
+ * @group local
  */
 import fs from "fs"
 
@@ -17,5 +18,5 @@ describe("Prisma Editor", () => {
   })
   it("Adds models to prisma file using AI to maintain proper formatting", async () => {
     await addModelsToPrismaSchema()
-  })
+  }, 30000)
 })

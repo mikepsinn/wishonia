@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@agentic/stdlib':
         specifier: ^6.1.5
-        version: 6.6.1(@e2b/code-interpreter@0.0.7(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@langchain/core@0.2.6(798c550dd1dd1cae8b436928b9d790e0))(ai@3.4.33(openai@4.58.1(zod@3.23.8))(react@18.2.0)(sswr@2.1.0(svelte@4.2.19))(svelte@4.2.19)(vue@3.5.3(typescript@5.3.3))(zod@3.23.8))(babel-plugin-macros@3.1.0)(mathjs@13.1.1)(octokit@4.0.2)
+        version: 6.6.1(20057f3ddd640f93ec7dba717284e3e5)
       '@ai-sdk/anthropic':
         specifier: ^0.0.51
         version: 0.0.51(zod@3.23.8)
@@ -31,7 +31,7 @@ importers:
         version: 3.688.0
       '@copilotkit/backend':
         specifier: ^0.9.0
-        version: 0.9.0(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+        version: 0.9.0(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
       '@copilotkit/react-core':
         specifier: ^0.25.0
         version: 0.25.0(react@18.2.0)
@@ -46,13 +46,13 @@ importers:
         version: 3.9.0(react-hook-form@7.53.0(react@18.2.0))
       '@langchain/core':
         specifier: ^0.2.6
-        version: 0.2.6(798c550dd1dd1cae8b436928b9d790e0)
+        version: 0.2.6(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
       '@mdxeditor/editor':
         specifier: ^3.19.0
         version: 3.19.0(@codemirror/language@6.10.3)(@lezer/common@1.2.3)(@lezer/highlight@1.2.1)(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)(yjs@13.6.20)
       '@next-auth/prisma-adapter':
         specifier: ^1.0.7
-        version: 1.0.7(@prisma/client@6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3))(next-auth@4.24.7(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 1.0.7(@prisma/client@6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3))(next-auth@4.24.7(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
       '@next/bundle-analyzer':
         specifier: ^14.2.15
         version: 14.2.15(bufferutil@4.0.8)(utf-8-validate@5.0.10)
@@ -136,7 +136,7 @@ importers:
         version: 3.1.3(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@sentry/nextjs':
         specifier: ^8.9.2
-        version: 8.28.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@1.30.0(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.52.1(@opentelemetry/api@1.9.0)(supports-color@8.1.1))(@opentelemetry/sdk-trace-base@1.26.0(@opentelemetry/api@1.9.0))(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)(webpack@5.94.0)
+        version: 8.28.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@1.30.0(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.52.1(@opentelemetry/api@1.9.0)(supports-color@8.1.1))(@opentelemetry/sdk-trace-base@1.26.0(@opentelemetry/api@1.9.0))(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)(webpack@5.94.0)
       '@sentry/profiling-node':
         specifier: ^8.9.2
         version: 8.28.0(supports-color@8.1.1)
@@ -178,7 +178,7 @@ importers:
         version: 1.34.3
       '@vercel/analytics':
         specifier: ^1.2.2
-        version: 1.3.1(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+        version: 1.3.1(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@vercel/blob':
         specifier: ^0.23.2
         version: 0.23.4
@@ -292,19 +292,19 @@ importers:
         version: 5.0.7
       next:
         specifier: 14.2.15
-        version: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-auth:
         specifier: ^4.24.7
-        version: 4.24.7(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.24.7(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-mdx-remote:
         specifier: ^4.4.1
         version: 4.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)
       next-themes:
         specifier: ^0.2.1
-        version: 0.2.1(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 0.2.1(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       nextjs-toploader:
         specifier: ^1.6.6
-        version: 1.6.12(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 1.6.12(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       node-fetch:
         specifier: 2.7.0
         version: 2.7.0
@@ -540,6 +540,9 @@ importers:
       jest-environment-jsdom:
         specifier: ^29.7.0
         version: 29.7.0(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10)
+      jest-runner-groups:
+        specifier: ^2.2.0
+        version: 2.2.0(jest-docblock@29.7.0)(jest-runner@29.7.0(supports-color@8.1.1))
       npm-check:
         specifier: ^6.0.1
         version: 6.0.1(supports-color@8.1.1)
@@ -557,7 +560,7 @@ importers:
         version: 1.11.2(@prisma/client@6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3))(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10)
       ts-jest:
         specifier: ^29.1.4
-        version: 29.2.5(@babel/core@7.25.2(supports-color@8.1.1))(@jest/transform@29.7.0(supports-color@8.1.1))(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.25.2(supports-color@8.1.1))(supports-color@8.1.1))(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.11.17)(typescript@5.3.3)))(typescript@5.3.3)
+        version: 29.2.5(@babel/core@7.28.4(supports-color@8.1.1))(@jest/transform@29.7.0(supports-color@8.1.1))(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4(supports-color@8.1.1))(supports-color@8.1.1))(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.11.17)(typescript@5.3.3)))(typescript@5.3.3)
       ts-node:
         specifier: latest
         version: 10.9.2(@types/node@20.11.17)(typescript@5.3.3)
@@ -7381,10 +7384,6 @@ packages:
     resolution: {integrity: sha512-xkjOecfnKGkSsOwtZ5Pz7Us/T6mrbPQrq0nh+aCO5V9nk5NLWmasAHumTKjiPJPWANe+kAZ84Jc8ooJkzZ88Sw==}
     hasBin: true
 
-  fast-xml-parser@4.5.0:
-    resolution: {integrity: sha512-/PlTQCI96+fZMAOLMZK4CWG1ItCbfZ/0jx7UIJFChPNrx7tcEgerUgWbeieCM9MfHInUDyK8DWYZ+YrywDJuTg==}
-    hasBin: true
-
   fast-xml-parser@5.2.5:
     resolution: {integrity: sha512-pfX9uG9Ki0yekDHx2SiuRIyFdyAr1kMIMitPvb0YBo8SUfKvia7w7FIyd/l6av85pFYRhZscS75MwMnbvY+hcQ==}
     hasBin: true
@@ -8445,6 +8444,13 @@ packages:
   jest-resolve@29.7.0:
     resolution: {integrity: sha512-IOVhZSrg+UvVAshDSDtHyFCCBUl/Q3AAJv8iZ6ZjnZ74xzvwuzLXid9IIIPgTnY62SJjfuupMKZsZQRsCvxEgA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+
+  jest-runner-groups@2.2.0:
+    resolution: {integrity: sha512-Sp/B9ZX0CDAKa9dIkgH0sGyl2eDuScV4SVvOxqhBMxqWpsNAkmol/C58aTFmPWZj+C0ZTW1r1BSu66MTCN+voA==}
+    engines: {node: '>= 10.14.2'}
+    peerDependencies:
+      jest-docblock: '>= 24'
+      jest-runner: '>= 24'
 
   jest-runner@29.7.0:
     resolution: {integrity: sha512-fsc4N6cPCAahybGBfTRcq5wFR6fpLznMg47sY5aDpsoejOcVYFb07AHuSnR0liMcPTgBsA3ZJL6kFOjPdoNipQ==}
@@ -11338,9 +11344,6 @@ packages:
   strnum@1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
 
-  strnum@1.1.2:
-    resolution: {integrity: sha512-vrN+B7DBIoTTZjnPNewwhx6cBA/H+IS7rfW68n7XxC1y7uoiGQBxaKzqucGUgavX15dJgiGztLJ8vxuEzwqBdA==}
-
   strnum@2.1.1:
     resolution: {integrity: sha512-7ZvoFTiCnGxBtDqJ//Cu6fWtZtc7Y3x+QOirG15wztbdngGSkht27o2pyGWrVy0b4WAy3jbKmnoK6g5VlVNUUw==}
 
@@ -12343,7 +12346,7 @@ snapshots:
 
   '@adobe/css-tools@4.4.0': {}
 
-  '@agentic/stdlib@6.6.1(@e2b/code-interpreter@0.0.7(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@langchain/core@0.2.6(798c550dd1dd1cae8b436928b9d790e0))(ai@3.4.33(openai@4.58.1(zod@3.23.8))(react@18.2.0)(sswr@2.1.0(svelte@4.2.19))(svelte@4.2.19)(vue@3.5.3(typescript@5.3.3))(zod@3.23.8))(babel-plugin-macros@3.1.0)(mathjs@13.1.1)(octokit@4.0.2)':
+  '@agentic/stdlib@6.6.1(20057f3ddd640f93ec7dba717284e3e5)':
     dependencies:
       dedent: 1.5.3(babel-plugin-macros@3.1.0)
       delay: 6.0.0
@@ -12361,7 +12364,7 @@ snapshots:
       zod-validation-error: 3.3.1(zod@3.23.8)
     optionalDependencies:
       '@e2b/code-interpreter': 0.0.7(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      '@langchain/core': 0.2.6(798c550dd1dd1cae8b436928b9d790e0)
+      '@langchain/core': 0.2.6(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
       ai: 3.4.33(openai@4.58.1(zod@3.23.8))(react@18.2.0)(sswr@2.1.0(svelte@4.2.19))(svelte@4.2.19)(vue@3.5.3(typescript@5.3.3))(zod@3.23.8)
       mathjs: 13.1.1
       octokit: 4.0.2
@@ -13655,35 +13658,77 @@ snapshots:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-async-generators@7.8.4(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-class-static-block@7.14.5(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-import-attributes@7.25.6(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-import-attributes@7.25.6(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-import-meta@7.10.4(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-json-strings@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-jsx@7.24.7(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
@@ -13695,40 +13740,88 @@ snapshots:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-logical-assignment-operators@7.10.4(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-nullish-coalescing-operator@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-numeric-separator@7.10.4(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-object-rest-spread@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-optional-catch-binding@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-optional-chaining@7.8.3(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
 
+  '@babel/plugin-syntax-private-property-in-object@7.14.5(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
+
   '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       '@babel/helper-plugin-utils': 7.24.8
+
+  '@babel/plugin-syntax-top-level-await@7.14.5(@babel/core@7.28.4(supports-color@8.1.1))':
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/helper-plugin-utils': 7.24.8
+    optional: true
 
   '@babel/plugin-syntax-typescript@7.25.4(@babel/core@7.25.2(supports-color@8.1.1))':
     dependencies:
@@ -14097,13 +14190,13 @@ snapshots:
     transitivePeerDependencies:
       - '@lezer/common'
 
-  '@copilotkit/backend@0.9.0(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))':
+  '@copilotkit/backend@0.9.0(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))':
     dependencies:
       '@copilotkit/shared': 0.9.0
-      '@langchain/core': 0.1.63(798c550dd1dd1cae8b436928b9d790e0)
-      '@langchain/openai': 0.0.28(dbfd9b6fa13bd644259f02cc5ac06f3a)
+      '@langchain/core': 0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
+      '@langchain/openai': 0.0.28(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
       js-tiktoken: 1.0.14
-      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
       openai: 4.58.1(zod@3.23.8)
       zod: 3.23.8
     transitivePeerDependencies:
@@ -14920,19 +15013,19 @@ snapshots:
 
   '@kurkle/color@0.3.2': {}
 
-  '@langchain/community@0.0.57(9d8d73f2e61b767d45a5289ad87b719a)':
+  '@langchain/community@0.0.57(4a77bcf7befdb1bc68facdf6d827ddc6)':
     dependencies:
-      '@langchain/core': 0.1.63(798c550dd1dd1cae8b436928b9d790e0)
-      '@langchain/openai': 0.0.28(dbfd9b6fa13bd644259f02cc5ac06f3a)
+      '@langchain/core': 0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
+      '@langchain/openai': 0.0.28(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
       expr-eval: 2.0.2
       flat: 5.0.2
-      langsmith: 0.1.51(7fc43d7f8c951dd43b93887910f4be7a)
+      langsmith: 0.1.51(36c1149c8eb3699a1db4e190ceaf330f)
       uuid: 9.0.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.5(zod@3.23.8)
     optionalDependencies:
       '@aws-crypto/sha256-js': 5.2.0
-      '@aws-sdk/credential-provider-node': 3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0)
+      '@aws-sdk/credential-provider-node': 3.910.0
       '@huggingface/inference': 2.8.0
       '@smithy/util-utf8': 2.3.0
       '@supabase/postgrest-js': 1.15.8
@@ -14952,13 +15045,13 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/core@0.1.63(798c550dd1dd1cae8b436928b9d790e0)':
+  '@langchain/core@0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.14
-      langsmith: 0.1.51(7fc43d7f8c951dd43b93887910f4be7a)
+      langsmith: 0.1.51(36c1149c8eb3699a1db4e190ceaf330f)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -14970,13 +15063,13 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/core@0.2.6(798c550dd1dd1cae8b436928b9d790e0)':
+  '@langchain/core@0.2.6(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.14
-      langsmith: 0.1.51(8e519b7330aaa5ca088eff6e7a23dd5f)
+      langsmith: 0.1.51(64af105f86f6d273148087570b4b6a37)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -14988,9 +15081,9 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/openai@0.0.28(dbfd9b6fa13bd644259f02cc5ac06f3a)':
+  '@langchain/openai@0.0.28(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))':
     dependencies:
-      '@langchain/core': 0.1.63(798c550dd1dd1cae8b436928b9d790e0)
+      '@langchain/core': 0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
       js-tiktoken: 1.0.14
       openai: 4.58.1(zod@3.23.8)
       zod: 3.23.8
@@ -14999,9 +15092,9 @@ snapshots:
       - encoding
       - langchain
 
-  '@langchain/textsplitters@0.0.3(798c550dd1dd1cae8b436928b9d790e0)':
+  '@langchain/textsplitters@0.0.3(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))':
     dependencies:
-      '@langchain/core': 0.2.6(798c550dd1dd1cae8b436928b9d790e0)
+      '@langchain/core': 0.2.6(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
       js-tiktoken: 1.0.14
     transitivePeerDependencies:
       - langchain
@@ -15449,10 +15542,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.2.55
 
-  '@next-auth/prisma-adapter@1.0.7(@prisma/client@6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3))(next-auth@4.24.7(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@next-auth/prisma-adapter@1.0.7(@prisma/client@6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3))(next-auth@4.24.7(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
     dependencies:
       '@prisma/client': 6.17.1(prisma@6.17.1(typescript@5.3.3))(typescript@5.3.3)
-      next-auth: 4.24.7(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next-auth: 4.24.7(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
 
   '@next/bundle-analyzer@14.2.15(bufferutil@4.0.8)(utf-8-validate@5.0.10)':
     dependencies:
@@ -17727,7 +17820,7 @@ snapshots:
       '@sentry/types': 8.28.0
       '@sentry/utils': 8.28.0
 
-  '@sentry/nextjs@8.28.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@1.30.0(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.52.1(@opentelemetry/api@1.9.0)(supports-color@8.1.1))(@opentelemetry/sdk-trace-base@1.26.0(@opentelemetry/api@1.9.0))(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)(webpack@5.94.0)':
+  '@sentry/nextjs@8.28.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@1.30.0(@opentelemetry/api@1.9.0))(@opentelemetry/instrumentation@0.52.1(@opentelemetry/api@1.9.0)(supports-color@8.1.1))(@opentelemetry/sdk-trace-base@1.26.0(@opentelemetry/api@1.9.0))(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(supports-color@8.1.1)(webpack@5.94.0)':
     dependencies:
       '@opentelemetry/instrumentation-http': 0.52.1(@opentelemetry/api@1.9.0)(supports-color@8.1.1)
       '@opentelemetry/semantic-conventions': 1.27.0
@@ -17741,7 +17834,7 @@ snapshots:
       '@sentry/vercel-edge': 8.28.0
       '@sentry/webpack-plugin': 2.22.3(supports-color@8.1.1)(webpack@5.94.0)
       chalk: 3.0.0
-      next: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       resolve: 1.22.8
       rollup: 3.29.4
       stacktrace-parser: 0.1.10
@@ -19119,11 +19212,11 @@ snapshots:
     dependencies:
       crypto-js: 4.2.0
 
-  '@vercel/analytics@1.3.1(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+  '@vercel/analytics@1.3.1(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     dependencies:
       server-only: 0.0.1
     optionalDependencies:
-      next: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
 
   '@vercel/blob@0.23.4':
@@ -19624,6 +19717,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  babel-jest@29.7.0(@babel/core@7.28.4(supports-color@8.1.1))(supports-color@8.1.1):
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@jest/transform': 29.7.0(supports-color@8.1.1)
+      '@types/babel__core': 7.20.5
+      babel-plugin-istanbul: 6.1.1(supports-color@8.1.1)
+      babel-preset-jest: 29.6.3(@babel/core@7.28.4(supports-color@8.1.1))
+      chalk: 4.1.2
+      graceful-fs: 4.2.11
+      slash: 3.0.0
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
   babel-plugin-istanbul@6.1.1(supports-color@8.1.1):
     dependencies:
       '@babel/helper-plugin-utils': 7.24.8
@@ -19666,11 +19773,38 @@ snapshots:
       '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.25.2(supports-color@8.1.1))
       '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.25.2(supports-color@8.1.1))
 
+  babel-preset-current-node-syntax@1.1.0(@babel/core@7.28.4(supports-color@8.1.1)):
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-import-attributes': 7.25.6(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.28.4(supports-color@8.1.1))
+      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.28.4(supports-color@8.1.1))
+    optional: true
+
   babel-preset-jest@29.6.3(@babel/core@7.25.2(supports-color@8.1.1)):
     dependencies:
       '@babel/core': 7.25.2(supports-color@8.1.1)
       babel-plugin-jest-hoist: 29.6.3
       babel-preset-current-node-syntax: 1.1.0(@babel/core@7.25.2(supports-color@8.1.1))
+
+  babel-preset-jest@29.6.3(@babel/core@7.28.4(supports-color@8.1.1)):
+    dependencies:
+      '@babel/core': 7.28.4(supports-color@8.1.1)
+      babel-plugin-jest-hoist: 29.6.3
+      babel-preset-current-node-syntax: 1.1.0(@babel/core@7.28.4(supports-color@8.1.1))
+    optional: true
 
   bail@2.0.2: {}
 
@@ -19680,8 +19814,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.8.16:
-    optional: true
+  baseline-browser-mapping@2.8.16: {}
 
   before-after-hook@2.2.3: {}
 
@@ -19749,7 +19882,6 @@ snapshots:
       electron-to-chromium: 1.5.237
       node-releases: 2.0.23
       update-browserslist-db: 1.1.3(browserslist@4.26.3)
-    optional: true
 
   bs-logger@0.2.6:
     dependencies:
@@ -19859,8 +19991,7 @@ snapshots:
 
   caniuse-lite@1.0.30001659: {}
 
-  caniuse-lite@1.0.30001750:
-    optional: true
+  caniuse-lite@1.0.30001750: {}
 
   canvas@2.11.2(supports-color@8.1.1):
     dependencies:
@@ -20974,8 +21105,7 @@ snapshots:
 
   electron-to-chromium@1.5.18: {}
 
-  electron-to-chromium@1.5.237:
-    optional: true
+  electron-to-chromium@1.5.237: {}
 
   elkjs@0.9.3: {}
 
@@ -21586,11 +21716,6 @@ snapshots:
   fast-xml-parser@4.4.1:
     dependencies:
       strnum: 1.0.5
-
-  fast-xml-parser@4.5.0:
-    dependencies:
-      strnum: 1.1.2
-    optional: true
 
   fast-xml-parser@5.2.5:
     dependencies:
@@ -22903,6 +23028,11 @@ snapshots:
       resolve.exports: 2.0.2
       slash: 3.0.0
 
+  jest-runner-groups@2.2.0(jest-docblock@29.7.0)(jest-runner@29.7.0(supports-color@8.1.1)):
+    dependencies:
+      jest-docblock: 29.7.0
+      jest-runner: 29.7.0(supports-color@8.1.1)
+
   jest-runner@29.7.0(supports-color@8.1.1):
     dependencies:
       '@jest/console': 29.7.0
@@ -23226,19 +23356,19 @@ snapshots:
 
   ky@1.7.2: {}
 
-  langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)):
+  langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)):
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
-      '@langchain/community': 0.0.57(9d8d73f2e61b767d45a5289ad87b719a)
-      '@langchain/core': 0.1.63(798c550dd1dd1cae8b436928b9d790e0)
-      '@langchain/openai': 0.0.28(dbfd9b6fa13bd644259f02cc5ac06f3a)
-      '@langchain/textsplitters': 0.0.3(798c550dd1dd1cae8b436928b9d790e0)
+      '@langchain/community': 0.0.57(4a77bcf7befdb1bc68facdf6d827ddc6)
+      '@langchain/core': 0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
+      '@langchain/openai': 0.0.28(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))
+      '@langchain/textsplitters': 0.0.3(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
       binary-extensions: 2.3.0
       js-tiktoken: 1.0.14
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.11
-      langsmith: 0.1.51(7fc43d7f8c951dd43b93887910f4be7a)
+      langsmith: 0.1.51(36c1149c8eb3699a1db4e190ceaf330f)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -23248,11 +23378,11 @@ snapshots:
       zod-to-json-schema: 3.23.2(zod@3.23.8)
     optionalDependencies:
       '@aws-sdk/client-s3': 3.688.0
-      '@aws-sdk/credential-provider-node': 3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0)
+      '@aws-sdk/credential-provider-node': 3.910.0
       '@supabase/supabase-js': 2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       axios: 1.7.7
       cheerio: 1.0.0-rc.12
-      fast-xml-parser: 4.5.0
+      fast-xml-parser: 5.2.5
       html-to-text: 9.0.5
       ignore: 5.3.2
       ioredis: 5.4.1(supports-color@8.1.1)
@@ -23351,7 +23481,7 @@ snapshots:
     dependencies:
       langfuse-core: 3.29.0
 
-  langsmith@0.1.51(7fc43d7f8c951dd43b93887910f4be7a):
+  langsmith@0.1.51(36c1149c8eb3699a1db4e190ceaf330f):
     dependencies:
       '@types/uuid': 10.0.0
       commander: 10.0.1
@@ -23360,11 +23490,11 @@ snapshots:
       semver: 7.6.3
       uuid: 10.0.0
     optionalDependencies:
-      '@langchain/core': 0.1.63(798c550dd1dd1cae8b436928b9d790e0)
-      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+      '@langchain/core': 0.1.63(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
+      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
       openai: 4.58.1(zod@3.23.8)
 
-  langsmith@0.1.51(8e519b7330aaa5ca088eff6e7a23dd5f):
+  langsmith@0.1.51(64af105f86f6d273148087570b4b6a37):
     dependencies:
       '@types/uuid': 10.0.0
       commander: 10.0.1
@@ -23373,8 +23503,8 @@ snapshots:
       semver: 7.6.3
       uuid: 10.0.0
     optionalDependencies:
-      '@langchain/core': 0.2.6(798c550dd1dd1cae8b436928b9d790e0)
-      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.687.0(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(@aws-sdk/client-sts@3.687.0))(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@4.5.0)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+      '@langchain/core': 0.2.6(langchain@0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)))(openai@4.58.1(zod@3.23.8))
+      langchain: 0.1.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.688.0)(@aws-sdk/credential-provider-node@3.910.0)(@huggingface/inference@2.8.0)(@smithy/util-utf8@2.3.0)(@supabase/postgrest-js@1.15.8)(@supabase/supabase-js@2.45.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@upstash/redis@1.34.3)(axios@1.7.7)(cheerio@1.0.0-rc.12)(cohere-ai@7.13.0)(discord.js@14.16.3(bufferutil@4.0.8)(utf-8-validate@5.0.10))(fast-xml-parser@5.2.5)(html-to-text@9.0.5)(ignore@5.3.2)(ioredis@5.4.1(supports-color@8.1.1))(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2(supports-color@8.1.1))(supports-color@8.1.1)(utf-8-validate@5.0.10))(lodash@4.17.21)(mammoth@1.8.0)(openai@4.58.1(zod@3.23.8))(pdf-parse@1.1.1(supports-color@8.1.1))(pg@8.12.0)(playwright@1.47.0)(puppeteer@19.11.1(bufferutil@4.0.8)(supports-color@8.1.1)(typescript@5.3.3)(utf-8-validate@5.0.10))(redis@4.7.0)(ws@8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
       openai: 4.58.1(zod@3.23.8)
 
   language-subtag-registry@0.3.23: {}
@@ -24649,13 +24779,13 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-auth@4.24.7(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next-auth@4.24.7(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nodemailer@6.9.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@babel/runtime': 7.25.6
       '@panva/hkdf': 1.2.1
       cookie: 0.5.0
       jose: 4.15.9
-      next: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       oauth: 0.9.15
       openid-client: 5.6.5
       preact: 10.23.2
@@ -24677,15 +24807,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  next-themes@0.2.1(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next-themes@0.2.1(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      next: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
   next-tick@1.1.0: {}
 
-  next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@next/env': 14.2.15
       '@swc/helpers': 0.5.5
@@ -24695,7 +24825,7 @@ snapshots:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      styled-jsx: 5.1.1(@babel/core@7.25.2(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@18.2.0)
+      styled-jsx: 5.1.1(@babel/core@7.28.4(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.15
       '@next/swc-darwin-x64': 14.2.15
@@ -24712,9 +24842,9 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-toploader@1.6.12(next@14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  nextjs-toploader@1.6.12(next@14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      next: 14.2.15(@babel/core@7.25.2(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 14.2.15(@babel/core@7.28.4(supports-color@8.1.1))(@opentelemetry/api@1.9.0)(@playwright/test@1.47.0)(babel-plugin-macros@3.1.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       nprogress: 0.2.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -24751,8 +24881,7 @@ snapshots:
 
   node-releases@2.0.18: {}
 
-  node-releases@2.0.23:
-    optional: true
+  node-releases@2.0.23: {}
 
   nodemailer@6.9.15: {}
 
@@ -25250,8 +25379,7 @@ snapshots:
 
   picocolors@1.1.0: {}
 
-  picocolors@1.1.1:
-    optional: true
+  picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
 
@@ -26529,9 +26657,6 @@ snapshots:
 
   strnum@1.0.5: {}
 
-  strnum@1.1.2:
-    optional: true
-
   strnum@2.1.1:
     optional: true
 
@@ -26541,12 +26666,12 @@ snapshots:
     dependencies:
       inline-style-parser: 0.1.1
 
-  styled-jsx@5.1.1(@babel/core@7.25.2(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@18.2.0):
+  styled-jsx@5.1.1(@babel/core@7.28.4(supports-color@8.1.1))(babel-plugin-macros@3.1.0)(react@18.2.0):
     dependencies:
       client-only: 0.0.1
       react: 18.2.0
     optionalDependencies:
-      '@babel/core': 7.25.2(supports-color@8.1.1)
+      '@babel/core': 7.28.4(supports-color@8.1.1)
       babel-plugin-macros: 3.1.0
 
   stylis@4.2.0: {}
@@ -26789,7 +26914,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-jest@29.2.5(@babel/core@7.25.2(supports-color@8.1.1))(@jest/transform@29.7.0(supports-color@8.1.1))(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.25.2(supports-color@8.1.1))(supports-color@8.1.1))(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.11.17)(typescript@5.3.3)))(typescript@5.3.3):
+  ts-jest@29.2.5(@babel/core@7.28.4(supports-color@8.1.1))(@jest/transform@29.7.0(supports-color@8.1.1))(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.28.4(supports-color@8.1.1))(supports-color@8.1.1))(jest@29.7.0(@types/node@20.11.17)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)(ts-node@10.9.2(@types/node@20.11.17)(typescript@5.3.3)))(typescript@5.3.3):
     dependencies:
       bs-logger: 0.2.6
       ejs: 3.1.10
@@ -26803,10 +26928,10 @@ snapshots:
       typescript: 5.3.3
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@babel/core': 7.25.2(supports-color@8.1.1)
+      '@babel/core': 7.28.4(supports-color@8.1.1)
       '@jest/transform': 29.7.0(supports-color@8.1.1)
       '@jest/types': 29.6.3
-      babel-jest: 29.7.0(@babel/core@7.25.2(supports-color@8.1.1))(supports-color@8.1.1)
+      babel-jest: 29.7.0(@babel/core@7.28.4(supports-color@8.1.1))(supports-color@8.1.1)
 
   ts-mixer@6.0.4:
     optional: true
@@ -27076,7 +27201,6 @@ snapshots:
       browserslist: 4.26.3
       escalade: 3.2.0
       picocolors: 1.1.1
-    optional: true
 
   update-notifier@5.1.0:
     dependencies:
@@ -27339,7 +27463,7 @@ snapshots:
       '@webassemblyjs/wasm-parser': 1.14.1
       acorn: 8.15.0
       acorn-import-attributes: 1.9.5(acorn@8.15.0)
-      browserslist: 4.23.3
+      browserslist: 4.26.3
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.18.3
       es-module-lexer: 1.7.0

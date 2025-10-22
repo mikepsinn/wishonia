@@ -1,5 +1,6 @@
 /**
  * @jest-environment node
+ * @group local
  */
 import { seedGlobalProblemPairAllocations } from "@/prisma/seedGlobalProblemPairAllocations"
 import { seedWishingWellPairAllocations } from "@/prisma/seedWishingWellPairAllocations"
@@ -40,7 +41,7 @@ describe("Database-related tests", () => {
     await aggregateGlobalProblemPairAllocations()
     const globalProblems = await prisma.globalProblem.findMany()
     for (const globalProblem of globalProblems) {
-      expect(globalProblem.averageAllocation).toBe(100 / globalProblems.length)
+      expect(globalProblem.averageAllocation).toBeCloseTo(100 / globalProblems.length)
     }
   })
   it("Converts a wish to a wishingWell", async () => {
